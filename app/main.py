@@ -107,7 +107,8 @@ from app.shared_state import redis_publish_queue
 from app.services.order_processing import generate_unique_10_digit_id
 from app.database.models import UserOrder, DemoUser
 
-# Import stop loss and take profit checker - moved inside function to avoid circular import
+# Import stop loss and take profit checker
+from app.services.pending_orders import check_and_trigger_stoploss_takeprofit
 
 # Import adjusted price worker
 from app.services.adjusted_price_worker import adjusted_price_worker
@@ -698,15 +699,9 @@ async def startup_event():
             background_tasks.add(pending_orders_task)
             pending_orders_task.add_done_callback(background_tasks.discard)
             
-            # Start the optimized SL/TP checker task
             sltp_task = asyncio.create_task(run_sltp_checker_on_market_update())
             background_tasks.add(sltp_task)
             sltp_task.add_done_callback(background_tasks.discard)
-            
-            # Start the cache updater task for users with orders
-            cache_updater_task = asyncio.create_task(run_users_with_orders_cache_updater())
-            background_tasks.add(cache_updater_task)
-            cache_updater_task.add_done_callback(background_tasks.discard)
             
             redis_cleanup_task = asyncio.create_task(cleanup_orphaned_redis_orders())
             background_tasks.add(redis_cleanup_task)
@@ -859,14 +854,14 @@ async def run_pending_order_checker():
 # --- New SL/TP Checker Task (triggered by market data updates) ---
 async def run_sltp_checker_on_market_update():
     """
-    Optimized SL/TP checker that processes only symbols that have market data updates.
-    This ensures SL/TP checks happen on every price tick with minimal database load.
+    SL/TP checker that runs only when market data updates are received.
+    This ensures SL/TP checks happen on every price tick.
     """
     logger = orders_logger
 
     # Give the application a moment to initialize everything else
     await asyncio.sleep(5) 
-    logger.info("Starting the optimized SL/TP checker task (triggered by market updates).")
+    logger.info("Starting the SL/TP checker task (triggered by market updates).")
     
     # Subscribe to market data updates
     pubsub = global_redis_client_instance.pubsub()
@@ -881,54 +876,20 @@ async def run_sltp_checker_on_market_update():
             try:
                 message_data = json.loads(message['data'], object_hook=decode_decimal)
                 if message_data.get("type") == "market_data_update":
-                    # Extract symbols from market data
-                    symbols = [key for key in message_data.keys() 
-                             if key not in ['type', '_timestamp'] and 
-                             isinstance(message_data[key], dict)]
+                    logger.info("Market data update received, triggering SL/TP check")
                     
-                    if symbols:
-                        logger.info(f"Market data update received for symbols: {symbols}, triggering optimized SL/TP check")
-                        
-                        # Process SL/TP for only the symbols that updated
-                        from app.services.pending_orders import process_sltp_batch
-                        await process_sltp_batch(symbols, global_redis_client_instance)
+                    # Run SL/TP check with fresh database session
+                    async with AsyncSessionLocal() as db:
+                        await check_and_trigger_stoploss_takeprofit(db, global_redis_client_instance)
                         
             except Exception as e:
                 logger.error(f"Error processing market data for SL/TP check: {e}", exc_info=True)
                 
     except Exception as e:
-        logger.error(f"Error in optimized SL/TP checker task: {e}", exc_info=True)
+        logger.error(f"Error in SL/TP checker task: {e}", exc_info=True)
     finally:
         await pubsub.unsubscribe(REDIS_MARKET_DATA_CHANNEL)
         await pubsub.close()
-
-# --- New Periodic Cache Update Task ---
-async def run_users_with_orders_cache_updater():
-    """
-    Periodic task to update the cache of users with open orders per symbol.
-    This keeps the cache fresh for efficient SL/TP processing.
-    """
-    logger = orders_logger
-    
-    # Give the application a moment to initialize everything else
-    await asyncio.sleep(10)  # Wait a bit longer to let other tasks start
-    logger.info("Starting the users with orders cache updater task.")
-    
-    while True:
-        try:
-            if global_redis_client_instance:
-                from app.services.pending_orders import update_users_with_orders_cache_periodic
-                await update_users_with_orders_cache_periodic(global_redis_client_instance)
-                logger.debug("Updated users with orders cache for all symbols")
-            else:
-                await asyncio.sleep(60)
-                continue
-                
-        except Exception as e:
-            logger.error(f"Error in users with orders cache updater: {e}", exc_info=True)
-        
-        # Update cache every 5 minutes
-        await asyncio.sleep(300)
 
 # --- Redis Cleanup Function ---
 async def cleanup_orphaned_redis_orders():

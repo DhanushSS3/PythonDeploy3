@@ -72,7 +72,7 @@ from app.services.order_processing import (
 )
 from app.services.portfolio_calculator import _convert_to_usd, calculate_user_portfolio
 from app.services.margin_calculator import calculate_single_order_margin, get_live_adjusted_buy_price_for_pair, get_live_adjusted_sell_price_for_pair
-# Import moved inside functions to avoid circular imports
+from app.services.pending_orders import add_pending_order, remove_pending_order
 
 from app.crud import crud_order, group as crud_group
 from app.crud.crud_order import OrderCreateInternal
@@ -567,18 +567,12 @@ async def place_order(
         if background_tasks:
             background_tasks.add_task(update_user_cache, user_id, db, redis_client, user_type)
             background_tasks.add_task(update_portfolio, user_id, db, redis_client, user_type)
-            # Add cache update for users with orders
-            from app.services.pending_orders import add_user_to_symbol_cache
-            background_tasks.add_task(add_user_to_symbol_cache, redis_client, symbol, user_id, user_type)
             if is_barclays_user_result:
                 orders_logger.info("[BARCLAYS] Scheduling barclays_push in place_order")
                 background_tasks.add_task(barclays_push)
         else:
             asyncio.create_task(update_user_cache(user_id, db, redis_client, user_type))
             asyncio.create_task(update_portfolio(user_id, db, redis_client, user_type))
-            # Add cache update for users with orders
-            from app.services.pending_orders import add_user_to_symbol_cache
-            asyncio.create_task(add_user_to_symbol_cache(redis_client, symbol, user_id, user_type))
             if is_barclays_user_result:
                 orders_logger.info("[BARCLAYS] Scheduling barclays_push in place_order (asyncio.create_task)")
                 asyncio.create_task(barclays_push())
@@ -946,7 +940,6 @@ async def place_pending_order(
         # We've already verified the order exists, so we can proceed with adding to Redis
         # Only store non-Barclays users' pending orders in Redis for price comparison
         if not is_barclays_live_user or user_type == 'demo':
-            from app.services.pending_orders import add_pending_order
             await add_pending_order(redis_client, order_dict_for_redis)
             orders_logger.info(f"Pending order {db_order.order_id} added to Redis for non-Barclays user or demo user.")
         else:
@@ -986,15 +979,9 @@ async def place_pending_order(
         if background_tasks:
             background_tasks.add_task(update_user_cache, user_id_for_order, db, redis_client, user_type)
             background_tasks.add_task(update_portfolio, user_id_for_order, db, redis_client, user_type)
-            # Add cache update for users with orders (pending orders don't affect SL/TP until triggered)
-            from app.services.pending_orders import add_user_to_symbol_cache
-            background_tasks.add_task(add_user_to_symbol_cache, redis_client, order_request.symbol, user_id_for_order, user_type)
         else:
             asyncio.create_task(update_user_cache(user_id_for_order, db, redis_client, user_type))
             asyncio.create_task(update_portfolio(user_id_for_order, db, redis_client, user_type))
-            # Add cache update for users with orders (pending orders don't affect SL/TP until triggered)
-            from app.services.pending_orders import add_user_to_symbol_cache
-            asyncio.create_task(add_user_to_symbol_cache(redis_client, order_request.symbol, user_id_for_order, user_type))
         # Barclays Firebase push (background)
         if is_barclays_live_user:
             async def barclays_push():
@@ -1658,7 +1645,7 @@ from app.database.models import User, DemoUser
 from app.api.v1.endpoints.orders import get_order_model
 from app.core.firebase import send_order_to_firebase
 from app.core.cache import get_user_data_cache, get_group_settings_cache
-# Import moved inside functions to avoid circular imports
+from app.services.pending_orders import remove_pending_order, add_pending_order
 
 class ModifyPendingOrderRequest(BaseModel):
     order_id: str
@@ -1759,7 +1746,6 @@ async def modify_pending_order(
         )
 
         # --- Update Redis Cache ---
-        from app.services.pending_orders import remove_pending_order
         await remove_pending_order(
             redis_client,
             modify_request.order_id,
@@ -1787,7 +1773,6 @@ async def modify_pending_order(
             "created_at": updated_order.created_at.isoformat() if updated_order.created_at else None,
             "updated_at": updated_order.updated_at.isoformat() if updated_order.updated_at else None,
         }
-        from app.services.pending_orders import add_pending_order
         await add_pending_order(redis_client, new_pending_order_data)
 
         # --- Update user data cache after DB update ---
@@ -1971,7 +1956,6 @@ async def cancel_pending_order(
             )
             
             # Remove from Redis pending orders
-            from app.services.pending_orders import remove_pending_order
             await remove_pending_order(
                 redis_client,
                 cancel_request.order_id,
@@ -3093,7 +3077,6 @@ async def update_order_by_service_provider(
             orders_logger.info(f"Updating user {user_id} margin from {original_margin} to {db_user.margin}")
             
             # Remove from pending orders in Redis
-            from app.services.pending_orders import remove_pending_order
             await remove_pending_order(
                 redis_client,
                 db_order.order_id,
@@ -3152,7 +3135,6 @@ async def update_order_by_service_provider(
             user_id = db_order.order_user_id
             
             # Remove from pending orders in Redis
-            from app.services.pending_orders import remove_pending_order
             await remove_pending_order(
                 redis_client,
                 db_order.order_id,

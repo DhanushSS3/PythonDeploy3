@@ -8452,3 +8452,1529 @@ fastapi.exceptions.HTTPException: 500: Error processing close order: 500: Critic
 2025-07-08 21:49:53,160 - DEBUG - orders - No users with open orders for symbol EURSGD
 2025-07-08 21:49:53,160 - DEBUG - orders - No users with open orders for symbol NOKSEK
 2025-07-08 21:49:53,161 - DEBUG - orders - No users with open orders for symbol EURJPY
+2025-07-08 21:51:26,279 - INFO - orders - Application starting up - Orders logging initialized
+2025-07-08 21:51:26,279 - INFO - orders - SL/TP Epsilon accuracy configured: 0.00001
+2025-07-08 21:51:35,342 - INFO - orders - Starting the pending order checker background task.
+2025-07-08 21:51:35,344 - INFO - orders - Starting the optimized SL/TP checker task (triggered by market updates).
+2025-07-08 21:51:38,505 - INFO - orders - Market data update received for symbols: ['GBPSEK', 'XAGUSD', 'NZDJPY', 'GBPAUD', 'BTCUSD', 'USDJPY', 'USDCNH', 'CADCHF', 'EURNZD', 'USDSGD', 'EURZAR', 'AUDJPY', 'EURSEK', 'EURPLN', 'SGDJPY', 'JP225', 'USDCHF', 'EURCAD', 'USDCZK', 'USDNOK', 'CADJPY', 'USDSEK', 'US30', 'GBPUSD', 'EURAUD', 'NZDUSD', 'AUDUSD', 'AUDCAD', 'EURNOK', 'GBPNZD', 'EURCHF', 'NZDCAD', 'GBPNOK', 'EURUSD', 'AUDCHF', 'NOKSEK', 'USDCAD', 'EURGBP', 'EURJPY'], triggering optimized SL/TP check
+2025-07-08 21:51:38,505 - INFO - orders - Processing SL/TP batch for 39 symbols: ['GBPSEK', 'XAGUSD', 'NZDJPY', 'GBPAUD', 'BTCUSD', 'USDJPY', 'USDCNH', 'CADCHF', 'EURNZD', 'USDSGD', 'EURZAR', 'AUDJPY', 'EURSEK', 'EURPLN', 'SGDJPY', 'JP225', 'USDCHF', 'EURCAD', 'USDCZK', 'USDNOK', 'CADJPY', 'USDSEK', 'US30', 'GBPUSD', 'EURAUD', 'NZDUSD', 'AUDUSD', 'AUDCAD', 'EURNOK', 'GBPNZD', 'EURCHF', 'NZDCAD', 'GBPNOK', 'EURUSD', 'AUDCHF', 'NOKSEK', 'USDCAD', 'EURGBP', 'EURJPY']
+2025-07-08 21:51:38,518 - DEBUG - orders - No users with open orders for symbol GBPSEK
+2025-07-08 21:51:38,519 - DEBUG - orders - No users with open orders for symbol XAGUSD
+2025-07-08 21:51:38,521 - DEBUG - orders - No users with open orders for symbol NZDJPY
+2025-07-08 21:51:38,524 - DEBUG - orders - No users with open orders for symbol GBPAUD
+2025-07-08 21:51:38,525 - DEBUG - orders - No users with open orders for symbol BTCUSD
+2025-07-08 21:51:38,531 - DEBUG - orders - No users with open orders for symbol USDCNH
+2025-07-08 21:51:38,532 - DEBUG - orders - No users with open orders for symbol USDJPY
+2025-07-08 21:51:38,534 - DEBUG - orders - No users with open orders for symbol CADCHF
+2025-07-08 21:51:40,343 - INFO - orders - Starting the users with orders cache updater task.
+2025-07-08 21:51:40,600 - DEBUG - orders - No users with open orders for symbol EURNZD
+2025-07-08 21:51:40,600 - DEBUG - orders - No users with open orders for symbol USDSGD
+2025-07-08 21:51:40,606 - DEBUG - orders - No users with open orders for symbol EURZAR
+2025-07-08 21:51:40,607 - INFO - orders - Processing SL/TP for symbol AUDJPY with 1 users
+2025-07-08 21:51:40,613 - DEBUG - orders - No users with open orders for symbol EURSEK
+2025-07-08 21:51:40,619 - DEBUG - orders - Updated cache for symbol AUDJPY with 1 users
+2025-07-08 21:51:40,626 - DEBUG - orders - No users with open orders for symbol EURPLN
+2025-07-08 21:51:40,627 - DEBUG - orders - No users with open orders for symbol SGDJPY
+2025-07-08 21:51:40,637 - DEBUG - orders - No users with open orders for symbol JP225
+2025-07-08 21:51:40,641 - DEBUG - orders - No users with open orders for symbol USDCHF
+2025-07-08 21:51:40,642 - DEBUG - orders - No users with open orders for symbol EURCAD
+2025-07-08 21:51:40,660 - DEBUG - orders - No users with open orders for symbol USDCZK
+2025-07-08 21:51:40,683 - DEBUG - orders - Updated cache for symbol AUDSGD with 1 users
+2025-07-08 21:51:40,693 - DEBUG - orders - No users with open orders for symbol USDNOK
+2025-07-08 21:51:40,698 - DEBUG - orders - No users with open orders for symbol CADJPY
+2025-07-08 21:51:40,707 - DEBUG - orders - No users with open orders for symbol USDSEK
+2025-07-08 21:51:40,715 - DEBUG - orders - No users with open orders for symbol US30
+2025-07-08 21:51:40,746 - DEBUG - orders - No users with open orders for symbol GBPUSD
+2025-07-08 21:51:40,747 - DEBUG - orders - No users with open orders for symbol EURAUD
+2025-07-08 21:51:40,748 - DEBUG - orders - No users with open orders for symbol NZDUSD
+2025-07-08 21:51:40,753 - DEBUG - orders - No users with open orders for symbol AUDUSD
+2025-07-08 21:51:40,755 - DEBUG - orders - Updated cache for symbol AUDCHF with 1 users
+2025-07-08 21:51:40,760 - INFO - orders - Processing SL/TP for symbol AUDCAD with 2 users
+2025-07-08 21:51:40,789 - DEBUG - orders - No users with open orders for symbol EURNOK
+2025-07-08 21:51:40,793 - DEBUG - orders - No users with open orders for symbol GBPNZD
+2025-07-08 21:51:40,795 - DEBUG - orders - No users with open orders for symbol EURCHF
+2025-07-08 21:51:40,797 - DEBUG - orders - No users with open orders for symbol NZDCAD
+2025-07-08 21:51:40,816 - DEBUG - orders - Updated cache for symbol AUDCAD with 2 users
+2025-07-08 21:51:40,817 - DEBUG - orders - No users with open orders for symbol GBPNOK
+2025-07-08 21:51:40,818 - DEBUG - orders - No users with open orders for symbol EURUSD
+2025-07-08 21:51:40,821 - INFO - orders - Processing SL/TP for symbol AUDCHF with 1 users
+2025-07-08 21:51:40,822 - DEBUG - orders - No users with open orders for symbol NOKSEK
+2025-07-08 21:51:40,825 - DEBUG - orders - Updated users with orders cache for all symbols
+2025-07-08 21:51:40,829 - DEBUG - orders - No users with open orders for symbol USDCAD
+2025-07-08 21:51:40,829 - DEBUG - orders - No users with open orders for symbol EURGBP
+2025-07-08 21:51:40,830 - DEBUG - orders - No users with open orders for symbol EURJPY
+2025-07-08 21:51:40,838 - INFO - orders - Market data update received for symbols: ['GBPSEK', 'XAGUSD', 'NZDJPY', 'GBPAUD', 'BTCUSD', 'USDCNH', 'EURNZD', 'EURSEK', 'USDZAR', 'EURPLN', 'SGDJPY', 'JP225', 'EURCAD', 'CADJPY', 'USDSEK', 'GBPUSD', 'EURAUD', 'CHFSGD', 'NZDUSD', 'AUDCAD', 'EURNOK', 'D30', 'GBPNOK', 'EURUSD', 'NOKSEK', 'EURSGD', 'USDCAD'], triggering optimized SL/TP check
+2025-07-08 21:51:40,838 - INFO - orders - Processing SL/TP batch for 27 symbols: ['GBPSEK', 'XAGUSD', 'NZDJPY', 'GBPAUD', 'BTCUSD', 'USDCNH', 'EURNZD', 'EURSEK', 'USDZAR', 'EURPLN', 'SGDJPY', 'JP225', 'EURCAD', 'CADJPY', 'USDSEK', 'GBPUSD', 'EURAUD', 'CHFSGD', 'NZDUSD', 'AUDCAD', 'EURNOK', 'D30', 'GBPNOK', 'EURUSD', 'NOKSEK', 'EURSGD', 'USDCAD']
+2025-07-08 21:51:40,843 - DEBUG - orders - No users with open orders for symbol GBPSEK
+2025-07-08 21:51:40,844 - DEBUG - orders - No users with open orders for symbol NZDJPY
+2025-07-08 21:51:40,844 - DEBUG - orders - No users with open orders for symbol XAGUSD
+2025-07-08 21:51:40,846 - DEBUG - orders - No users with open orders for symbol GBPAUD
+2025-07-08 21:51:40,846 - DEBUG - orders - No users with open orders for symbol BTCUSD
+2025-07-08 21:51:40,849 - DEBUG - orders - No users with open orders for symbol USDCNH
+2025-07-08 21:51:40,850 - DEBUG - orders - No users with open orders for symbol EURSEK
+2025-07-08 21:51:40,850 - DEBUG - orders - No users with open orders for symbol EURNZD
+2025-07-08 21:51:40,851 - DEBUG - orders - No users with open orders for symbol USDZAR
+2025-07-08 21:51:40,852 - DEBUG - orders - No users with open orders for symbol EURPLN
+2025-07-08 21:51:40,860 - DEBUG - orders - No users with open orders for symbol SGDJPY
+2025-07-08 21:51:40,862 - DEBUG - orders - No users with open orders for symbol JP225
+2025-07-08 21:51:40,862 - DEBUG - orders - No users with open orders for symbol EURCAD
+2025-07-08 21:51:40,863 - DEBUG - orders - No users with open orders for symbol CADJPY
+2025-07-08 21:51:40,863 - DEBUG - orders - No users with open orders for symbol USDSEK
+2025-07-08 21:51:40,865 - DEBUG - orders - No users with open orders for symbol GBPUSD
+2025-07-08 21:51:40,865 - DEBUG - orders - No users with open orders for symbol EURAUD
+2025-07-08 21:51:40,867 - DEBUG - orders - No users with open orders for symbol CHFSGD
+2025-07-08 21:51:40,867 - DEBUG - orders - No users with open orders for symbol NZDUSD
+2025-07-08 21:51:40,868 - INFO - orders - Processing SL/TP for symbol AUDCAD with 2 users
+2025-07-08 21:51:40,874 - DEBUG - orders - No users with open orders for symbol EURNOK
+2025-07-08 21:51:40,874 - DEBUG - orders - No users with open orders for symbol D30
+2025-07-08 21:51:40,878 - DEBUG - orders - No users with open orders for symbol EURUSD
+2025-07-08 21:51:40,878 - DEBUG - orders - No users with open orders for symbol GBPNOK
+2025-07-08 21:51:40,880 - DEBUG - orders - No users with open orders for symbol NOKSEK
+2025-07-08 21:51:40,883 - DEBUG - orders - No users with open orders for symbol EURSGD
+2025-07-08 21:51:40,884 - DEBUG - orders - No users with open orders for symbol USDCAD
+2025-07-08 21:51:40,896 - INFO - orders - Market data update received for symbols: ['GBPSEK', 'GBPAUD', 'USDCNH', 'CADCHF', 'EURNZD', 'EURZAR', 'AUDJPY', 'EURSEK', 'EURPLN', 'JP225', 'USDCHF', 'USDCZK', 'USDNOK', 'US30', 'GBPUSD', 'EURAUD', 'CHFSGD', 'NZDUSD', 'AUDUSD', 'AUDCAD', 'EURNOK', 'GBPNZD', 'NZDCAD', 'GBPNOK', 'EURUSD', 'NOKSEK', 'EURSGD', 'USDCAD', 'EURGBP'], triggering optimized SL/TP check
+2025-07-08 21:51:40,896 - INFO - orders - Processing SL/TP batch for 29 symbols: ['GBPSEK', 'GBPAUD', 'USDCNH', 'CADCHF', 'EURNZD', 'EURZAR', 'AUDJPY', 'EURSEK', 'EURPLN', 'JP225', 'USDCHF', 'USDCZK', 'USDNOK', 'US30', 'GBPUSD', 'EURAUD', 'CHFSGD', 'NZDUSD', 'AUDUSD', 'AUDCAD', 'EURNOK', 'GBPNZD', 'NZDCAD', 'GBPNOK', 'EURUSD', 'NOKSEK', 'EURSGD', 'USDCAD', 'EURGBP']
+2025-07-08 21:51:42,936 - DEBUG - orders - No users with open orders for symbol GBPSEK
+2025-07-08 21:51:42,938 - DEBUG - orders - No users with open orders for symbol GBPAUD
+2025-07-08 21:51:42,939 - DEBUG - orders - No users with open orders for symbol USDCNH
+2025-07-08 21:51:42,940 - DEBUG - orders - No users with open orders for symbol CADCHF
+2025-07-08 21:51:42,940 - DEBUG - orders - No users with open orders for symbol EURNZD
+2025-07-08 21:51:42,948 - DEBUG - orders - No users with open orders for symbol EURZAR
+2025-07-08 21:51:42,952 - INFO - orders - Processing SL/TP for symbol AUDJPY with 1 users
+2025-07-08 21:51:42,955 - DEBUG - orders - No users with open orders for symbol EURPLN
+2025-07-08 21:51:42,955 - DEBUG - orders - No users with open orders for symbol EURSEK
+2025-07-08 21:51:42,960 - DEBUG - orders - No users with open orders for symbol JP225
+2025-07-08 21:51:42,967 - DEBUG - orders - No users with open orders for symbol USDCHF
+2025-07-08 21:51:42,968 - DEBUG - orders - No users with open orders for symbol USDCZK
+2025-07-08 21:51:42,969 - DEBUG - orders - No users with open orders for symbol USDNOK
+2025-07-08 21:51:42,969 - DEBUG - orders - No users with open orders for symbol US30
+2025-07-08 21:51:42,973 - DEBUG - orders - No users with open orders for symbol GBPUSD
+2025-07-08 21:51:42,976 - DEBUG - orders - No users with open orders for symbol EURAUD
+2025-07-08 21:51:42,989 - DEBUG - orders - No users with open orders for symbol CHFSGD
+2025-07-08 21:51:42,989 - DEBUG - orders - No users with open orders for symbol NZDUSD
+2025-07-08 21:51:42,990 - DEBUG - orders - No users with open orders for symbol AUDUSD
+2025-07-08 21:51:42,996 - INFO - orders - Processing SL/TP for symbol AUDCAD with 2 users
+2025-07-08 21:51:43,001 - DEBUG - orders - No users with open orders for symbol EURNOK
+2025-07-08 21:51:43,005 - DEBUG - orders - No users with open orders for symbol GBPNZD
+2025-07-08 21:51:43,006 - DEBUG - orders - No users with open orders for symbol NZDCAD
+2025-07-08 21:51:43,009 - DEBUG - orders - No users with open orders for symbol GBPNOK
+2025-07-08 21:51:43,012 - DEBUG - orders - No users with open orders for symbol EURUSD
+2025-07-08 21:51:43,018 - DEBUG - orders - No users with open orders for symbol NOKSEK
+2025-07-08 21:51:43,020 - DEBUG - orders - No users with open orders for symbol EURSGD
+2025-07-08 21:51:43,024 - DEBUG - orders - No users with open orders for symbol USDCAD
+2025-07-08 21:51:43,032 - DEBUG - orders - No users with open orders for symbol EURGBP
+2025-07-08 21:51:43,043 - INFO - orders - Market data update received for symbols: ['GBPSEK', 'XAGUSD', 'NZDJPY', 'GBPAUD', 'USDJPY', 'USDCNH', 'CADCHF', 'EURNZD', 'USDSGD', 'EURZAR', 'AUDJPY', 'EURSEK', 'SGDJPY', 'EURCAD', 'USDCZK', 'USDNOK', 'USDSEK', 'US30', 'GBPUSD', 'EURAUD', 'CHFSGD', 'NZDUSD', 'AUDUSD', 'EURNOK', 'GBPNZD', 'NZDCAD', 'GBPNOK', 'EURUSD', 'NOKSEK', 'USDCAD', 'EURGBP'], triggering optimized SL/TP check
+2025-07-08 21:51:43,043 - INFO - orders - Processing SL/TP batch for 31 symbols: ['GBPSEK', 'XAGUSD', 'NZDJPY', 'GBPAUD', 'USDJPY', 'USDCNH', 'CADCHF', 'EURNZD', 'USDSGD', 'EURZAR', 'AUDJPY', 'EURSEK', 'SGDJPY', 'EURCAD', 'USDCZK', 'USDNOK', 'USDSEK', 'US30', 'GBPUSD', 'EURAUD', 'CHFSGD', 'NZDUSD', 'AUDUSD', 'EURNOK', 'GBPNZD', 'NZDCAD', 'GBPNOK', 'EURUSD', 'NOKSEK', 'USDCAD', 'EURGBP']
+2025-07-08 21:51:43,047 - DEBUG - orders - No users with open orders for symbol GBPSEK
+2025-07-08 21:51:43,047 - DEBUG - orders - No users with open orders for symbol XAGUSD
+2025-07-08 21:51:45,064 - DEBUG - orders - No users with open orders for symbol NZDJPY
+2025-07-08 21:51:45,065 - DEBUG - orders - No users with open orders for symbol USDJPY
+2025-07-08 21:51:45,066 - DEBUG - orders - No users with open orders for symbol GBPAUD
+2025-07-08 21:51:45,067 - DEBUG - orders - No users with open orders for symbol USDCNH
+2025-07-08 21:51:45,069 - DEBUG - orders - No users with open orders for symbol CADCHF
+2025-07-08 21:51:45,079 - DEBUG - orders - No users with open orders for symbol EURNZD
+2025-07-08 21:51:45,084 - DEBUG - orders - No users with open orders for symbol USDSGD
+2025-07-08 21:51:45,085 - DEBUG - orders - No users with open orders for symbol EURZAR
+2025-07-08 21:51:45,089 - INFO - orders - Processing SL/TP for symbol AUDJPY with 1 users
+2025-07-08 21:51:45,091 - DEBUG - orders - No users with open orders for symbol EURSEK
+2025-07-08 21:51:45,091 - DEBUG - orders - No users with open orders for symbol SGDJPY
+2025-07-08 21:51:45,093 - DEBUG - orders - No users with open orders for symbol EURCAD
+2025-07-08 21:51:45,095 - DEBUG - orders - No users with open orders for symbol USDCZK
+2025-07-08 21:51:45,107 - DEBUG - orders - No users with open orders for symbol USDNOK
+2025-07-08 21:51:45,109 - DEBUG - orders - No users with open orders for symbol USDSEK
+2025-07-08 21:51:45,117 - DEBUG - orders - No users with open orders for symbol US30
+2025-07-08 21:51:45,119 - DEBUG - orders - No users with open orders for symbol GBPUSD
+2025-07-08 21:51:45,121 - DEBUG - orders - No users with open orders for symbol EURAUD
+2025-07-08 21:51:45,123 - DEBUG - orders - No users with open orders for symbol CHFSGD
+2025-07-08 21:51:45,126 - DEBUG - orders - No users with open orders for symbol NZDUSD
+2025-07-08 21:51:45,129 - DEBUG - orders - No users with open orders for symbol AUDUSD
+2025-07-08 21:51:45,132 - DEBUG - orders - No users with open orders for symbol EURNOK
+2025-07-08 21:51:45,132 - DEBUG - orders - No users with open orders for symbol GBPNZD
+2025-07-08 21:51:45,133 - DEBUG - orders - No users with open orders for symbol NZDCAD
+2025-07-08 21:51:45,134 - DEBUG - orders - No users with open orders for symbol GBPNOK
+2025-07-08 21:51:45,135 - DEBUG - orders - No users with open orders for symbol EURUSD
+2025-07-08 21:51:45,137 - DEBUG - orders - No users with open orders for symbol NOKSEK
+2025-07-08 21:51:45,137 - DEBUG - orders - No users with open orders for symbol USDCAD
+2025-07-08 21:51:45,142 - DEBUG - orders - No users with open orders for symbol EURGBP
+2025-07-08 21:51:45,146 - INFO - orders - Market data update received for symbols: ['GBPSEK', 'NZDJPY', 'GBPAUD', 'USDJPY', 'CADCHF', 'EURNZD', 'USDSGD', 'EURZAR', 'AUDJPY', 'SGDJPY', 'USDCHF', 'EURCAD', 'USDNOK', 'USDSEK', 'GBPUSD', 'CHFSGD', 'NZDUSD', 'AUDUSD', 'EURNOK', 'GBPNZD', 'EURCHF', 'NZDCAD', 'GBPNOK', 'EURUSD', 'AUDCHF', 'NOKSEK', 'EURSGD', 'USDCAD', 'EURGBP', 'EURJPY'], triggering optimized SL/TP check
+2025-07-08 21:51:45,146 - INFO - orders - Processing SL/TP batch for 30 symbols: ['GBPSEK', 'NZDJPY', 'GBPAUD', 'USDJPY', 'CADCHF', 'EURNZD', 'USDSGD', 'EURZAR', 'AUDJPY', 'SGDJPY', 'USDCHF', 'EURCAD', 'USDNOK', 'USDSEK', 'GBPUSD', 'CHFSGD', 'NZDUSD', 'AUDUSD', 'EURNOK', 'GBPNZD', 'EURCHF', 'NZDCAD', 'GBPNOK', 'EURUSD', 'AUDCHF', 'NOKSEK', 'EURSGD', 'USDCAD', 'EURGBP', 'EURJPY']
+2025-07-08 21:51:45,162 - DEBUG - orders - No users with open orders for symbol GBPSEK
+2025-07-08 21:51:45,162 - DEBUG - orders - No users with open orders for symbol NZDJPY
+2025-07-08 21:51:45,162 - DEBUG - orders - No users with open orders for symbol USDJPY
+2025-07-08 21:51:45,163 - DEBUG - orders - No users with open orders for symbol GBPAUD
+2025-07-08 21:51:47,223 - DEBUG - orders - No users with open orders for symbol CADCHF
+2025-07-08 21:51:47,228 - DEBUG - orders - No users with open orders for symbol EURNZD
+2025-07-08 21:51:47,229 - DEBUG - orders - No users with open orders for symbol USDSGD
+2025-07-08 21:51:47,230 - DEBUG - orders - No users with open orders for symbol EURZAR
+2025-07-08 21:51:47,232 - INFO - orders - Processing SL/TP for symbol AUDJPY with 1 users
+2025-07-08 21:51:47,238 - DEBUG - orders - No users with open orders for symbol SGDJPY
+2025-07-08 21:51:47,239 - DEBUG - orders - No users with open orders for symbol USDCHF
+2025-07-08 21:51:47,244 - DEBUG - orders - No users with open orders for symbol EURCAD
+2025-07-08 21:51:47,252 - DEBUG - orders - No users with open orders for symbol USDNOK
+2025-07-08 21:51:47,254 - DEBUG - orders - No users with open orders for symbol USDSEK
+2025-07-08 21:51:47,262 - DEBUG - orders - No users with open orders for symbol GBPUSD
+2025-07-08 21:51:47,265 - DEBUG - orders - No users with open orders for symbol CHFSGD
+2025-07-08 21:51:47,266 - DEBUG - orders - No users with open orders for symbol NZDUSD
+2025-07-08 21:51:47,269 - DEBUG - orders - No users with open orders for symbol AUDUSD
+2025-07-08 21:51:47,271 - DEBUG - orders - No users with open orders for symbol EURNOK
+2025-07-08 21:51:47,272 - DEBUG - orders - No users with open orders for symbol GBPNZD
+2025-07-08 21:51:47,273 - DEBUG - orders - No users with open orders for symbol EURCHF
+2025-07-08 21:51:47,273 - DEBUG - orders - No users with open orders for symbol NZDCAD
+2025-07-08 21:51:47,276 - DEBUG - orders - No users with open orders for symbol GBPNOK
+2025-07-08 21:51:47,278 - DEBUG - orders - No users with open orders for symbol EURUSD
+2025-07-08 21:51:47,278 - INFO - orders - Processing SL/TP for symbol AUDCHF with 1 users
+2025-07-08 21:51:47,281 - DEBUG - orders - No users with open orders for symbol EURSGD
+2025-07-08 21:51:47,282 - DEBUG - orders - No users with open orders for symbol NOKSEK
+2025-07-08 21:51:47,285 - DEBUG - orders - No users with open orders for symbol USDCAD
+2025-07-08 21:51:47,290 - DEBUG - orders - No users with open orders for symbol EURJPY
+2025-07-08 21:51:47,292 - DEBUG - orders - No users with open orders for symbol EURGBP
+2025-07-08 21:51:47,307 - INFO - orders - Market data update received for symbols: ['GBPSEK', 'XAGUSD', 'NZDJPY', 'GBPAUD', 'USDJPY', 'USDCNH', 'CADCHF', 'EURNZD', 'USDSGD', 'EURZAR', 'EURSEK', 'USDZAR', 'EURPLN', 'SGDJPY', 'JP225', 'USDCHF', 'EURCAD', 'USDNOK', 'CADJPY', 'USDSEK', 'GBPUSD', 'EURAUD', 'CHFSGD', 'NZDUSD', 'AUDUSD', 'AUDCAD', 'EURNOK', 'GBPNZD', 'GBPNOK', 'EURUSD', 'AUDCHF', 'EURSGD', 'USDCAD', 'EURGBP', 'EURJPY'], triggering optimized SL/TP check
+2025-07-08 21:51:47,308 - INFO - orders - Processing SL/TP batch for 35 symbols: ['GBPSEK', 'XAGUSD', 'NZDJPY', 'GBPAUD', 'USDJPY', 'USDCNH', 'CADCHF', 'EURNZD', 'USDSGD', 'EURZAR', 'EURSEK', 'USDZAR', 'EURPLN', 'SGDJPY', 'JP225', 'USDCHF', 'EURCAD', 'USDNOK', 'CADJPY', 'USDSEK', 'GBPUSD', 'EURAUD', 'CHFSGD', 'NZDUSD', 'AUDUSD', 'AUDCAD', 'EURNOK', 'GBPNZD', 'GBPNOK', 'EURUSD', 'AUDCHF', 'EURSGD', 'USDCAD', 'EURGBP', 'EURJPY']
+2025-07-08 21:51:47,313 - DEBUG - orders - No users with open orders for symbol GBPAUD
+2025-07-08 21:51:47,314 - DEBUG - orders - No users with open orders for symbol USDJPY
+2025-07-08 21:51:47,314 - DEBUG - orders - No users with open orders for symbol XAGUSD
+2025-07-08 21:51:47,314 - DEBUG - orders - No users with open orders for symbol NZDJPY
+2025-07-08 21:51:47,314 - DEBUG - orders - No users with open orders for symbol GBPSEK
+2025-07-08 21:51:49,348 - DEBUG - orders - No users with open orders for symbol USDCNH
+2025-07-08 21:51:49,349 - DEBUG - orders - No users with open orders for symbol CADCHF
+2025-07-08 21:51:49,350 - DEBUG - orders - No users with open orders for symbol EURNZD
+2025-07-08 21:51:49,351 - DEBUG - orders - No users with open orders for symbol USDSGD
+2025-07-08 21:51:49,355 - DEBUG - orders - No users with open orders for symbol EURZAR
+2025-07-08 21:51:49,368 - DEBUG - orders - No users with open orders for symbol EURSEK
+2025-07-08 21:51:49,370 - DEBUG - orders - No users with open orders for symbol USDZAR
+2025-07-08 21:51:49,371 - DEBUG - orders - No users with open orders for symbol EURPLN
+2025-07-08 21:51:49,374 - DEBUG - orders - No users with open orders for symbol SGDJPY
+2025-07-08 21:51:49,375 - DEBUG - orders - No users with open orders for symbol JP225
+2025-07-08 21:51:49,397 - DEBUG - orders - No users with open orders for symbol USDCHF
+2025-07-08 21:51:49,399 - DEBUG - orders - No users with open orders for symbol EURCAD
+2025-07-08 21:51:49,407 - DEBUG - orders - No users with open orders for symbol USDNOK
+2025-07-08 21:51:49,409 - DEBUG - orders - No users with open orders for symbol CADJPY
+2025-07-08 21:51:49,430 - DEBUG - orders - No users with open orders for symbol USDSEK
+2025-07-08 21:51:49,432 - DEBUG - orders - No users with open orders for symbol GBPUSD
+2025-07-08 21:51:49,435 - DEBUG - orders - No users with open orders for symbol EURAUD
+2025-07-08 21:51:49,439 - DEBUG - orders - No users with open orders for symbol CHFSGD
+2025-07-08 21:51:49,445 - DEBUG - orders - No users with open orders for symbol NZDUSD
+2025-07-08 21:51:49,448 - DEBUG - orders - No users with open orders for symbol AUDUSD
+2025-07-08 21:51:49,454 - INFO - orders - Processing SL/TP for symbol AUDCAD with 2 users
+2025-07-08 21:51:49,456 - DEBUG - orders - No users with open orders for symbol EURNOK
+2025-07-08 21:51:49,459 - DEBUG - orders - No users with open orders for symbol GBPNZD
+2025-07-08 21:51:49,462 - DEBUG - orders - No users with open orders for symbol GBPNOK
+2025-07-08 21:51:49,463 - DEBUG - orders - No users with open orders for symbol EURUSD
+2025-07-08 21:51:49,474 - INFO - orders - Processing SL/TP for symbol AUDCHF with 1 users
+2025-07-08 21:51:49,476 - DEBUG - orders - No users with open orders for symbol EURSGD
+2025-07-08 21:51:49,478 - DEBUG - orders - No users with open orders for symbol USDCAD
+2025-07-08 21:51:49,490 - DEBUG - orders - No users with open orders for symbol EURGBP
+2025-07-08 21:51:49,497 - DEBUG - orders - No users with open orders for symbol EURJPY
+2025-07-08 21:51:49,514 - INFO - orders - Market data update received for symbols: ['GBPSEK', 'GBPAUD', 'USDJPY', 'EURNZD', 'EURZAR', 'AUDJPY', 'EURSEK', 'USDZAR', 'EURPLN', 'SGDJPY', 'USDCHF', 'EURCAD', 'USDCZK', 'USDNOK', 'CADJPY', 'USDSEK', 'US30', 'EURAUD', 'CHFSGD', 'AUDUSD', 'AUDCAD', 'EURNOK', 'GBPNZD', 'EURCHF', 'D30', 'NZDCAD', 'GBPNOK', 'EURUSD', 'AUDCHF', 'NOKSEK', 'EURSGD', 'USDCAD', 'EURJPY'], triggering optimized SL/TP check
+2025-07-08 21:51:49,514 - INFO - orders - Processing SL/TP batch for 33 symbols: ['GBPSEK', 'GBPAUD', 'USDJPY', 'EURNZD', 'EURZAR', 'AUDJPY', 'EURSEK', 'USDZAR', 'EURPLN', 'SGDJPY', 'USDCHF', 'EURCAD', 'USDCZK', 'USDNOK', 'CADJPY', 'USDSEK', 'US30', 'EURAUD', 'CHFSGD', 'AUDUSD', 'AUDCAD', 'EURNOK', 'GBPNZD', 'EURCHF', 'D30', 'NZDCAD', 'GBPNOK', 'EURUSD', 'AUDCHF', 'NOKSEK', 'EURSGD', 'USDCAD', 'EURJPY']
+2025-07-08 21:51:49,520 - DEBUG - orders - No users with open orders for symbol EURZAR
+2025-07-08 21:51:49,520 - DEBUG - orders - No users with open orders for symbol EURNZD
+2025-07-08 21:51:49,520 - DEBUG - orders - No users with open orders for symbol USDJPY
+2025-07-08 21:51:49,520 - DEBUG - orders - No users with open orders for symbol GBPSEK
+2025-07-08 21:51:49,520 - DEBUG - orders - No users with open orders for symbol GBPAUD
+2025-07-08 21:51:49,529 - DEBUG - orders - No users with open orders for symbol EURPLN
+2025-07-08 21:51:49,529 - DEBUG - orders - No users with open orders for symbol USDZAR
+2025-07-08 21:51:49,529 - DEBUG - orders - No users with open orders for symbol EURSEK
+2025-07-08 21:51:49,530 - INFO - orders - Processing SL/TP for symbol AUDJPY with 1 users
+2025-07-08 21:51:49,531 - DEBUG - orders - No users with open orders for symbol SGDJPY
+2025-07-08 21:51:49,544 - DEBUG - orders - No users with open orders for symbol USDNOK
+2025-07-08 21:51:49,545 - DEBUG - orders - No users with open orders for symbol USDCZK
+2025-07-08 21:51:49,545 - DEBUG - orders - No users with open orders for symbol EURCAD
+2025-07-08 21:51:49,545 - DEBUG - orders - No users with open orders for symbol USDCHF
+2025-07-08 21:51:49,552 - DEBUG - orders - No users with open orders for symbol EURAUD
+2025-07-08 21:51:49,552 - DEBUG - orders - No users with open orders for symbol US30
+2025-07-08 21:51:49,552 - DEBUG - orders - No users with open orders for symbol CADJPY
+2025-07-08 21:51:49,552 - DEBUG - orders - No users with open orders for symbol USDSEK
+2025-07-08 21:51:49,557 - DEBUG - orders - No users with open orders for symbol EURNOK
+2025-07-08 21:51:49,557 - INFO - orders - Processing SL/TP for symbol AUDCAD with 2 users
+2025-07-08 21:51:49,558 - DEBUG - orders - No users with open orders for symbol CHFSGD
+2025-07-08 21:51:49,558 - DEBUG - orders - No users with open orders for symbol AUDUSD
+2025-07-08 21:51:49,564 - DEBUG - orders - No users with open orders for symbol D30
+2025-07-08 21:51:49,565 - DEBUG - orders - No users with open orders for symbol EURCHF
+2025-07-08 21:51:49,565 - DEBUG - orders - No users with open orders for symbol GBPNZD
+2025-07-08 21:51:49,569 - DEBUG - orders - No users with open orders for symbol NZDCAD
+2025-07-08 21:51:49,571 - INFO - orders - Processing SL/TP for symbol AUDCHF with 1 users
+2025-07-08 21:51:49,574 - DEBUG - orders - No users with open orders for symbol EURUSD
+2025-07-08 21:51:49,574 - DEBUG - orders - No users with open orders for symbol GBPNOK
+2025-07-08 21:51:49,576 - DEBUG - orders - No users with open orders for symbol NOKSEK
+2025-07-08 21:51:49,580 - DEBUG - orders - No users with open orders for symbol USDCAD
+2025-07-08 21:51:49,580 - DEBUG - orders - No users with open orders for symbol EURSGD
+2025-07-08 21:51:49,584 - DEBUG - orders - No users with open orders for symbol EURJPY
+2025-07-08 21:51:50,720 - INFO - orders - Market data update received for symbols: ['GBPSEK', 'XAGUSD', 'NZDJPY', 'GBPAUD', 'USDJPY', 'CADCHF', 'EURNZD', 'USDSGD', 'EURZAR', 'AUDJPY', 'EURSEK', 'SGDJPY', 'USDCHF', 'USDCZK', 'USDNOK', 'CADJPY', 'USDSEK', 'US30', 'GBPUSD', 'EURAUD', 'CHFSGD', 'AUDCAD', 'EURNOK', 'GBPNZD', 'EURCHF', 'NZDCAD', 'GBPNOK', 'EURUSD', 'AUDCHF', 'NOKSEK', 'EURSGD', 'USDCAD', 'EURGBP', 'EURJPY'], triggering optimized SL/TP check
+2025-07-08 21:51:50,720 - INFO - orders - Processing SL/TP batch for 34 symbols: ['GBPSEK', 'XAGUSD', 'NZDJPY', 'GBPAUD', 'USDJPY', 'CADCHF', 'EURNZD', 'USDSGD', 'EURZAR', 'AUDJPY', 'EURSEK', 'SGDJPY', 'USDCHF', 'USDCZK', 'USDNOK', 'CADJPY', 'USDSEK', 'US30', 'GBPUSD', 'EURAUD', 'CHFSGD', 'AUDCAD', 'EURNOK', 'GBPNZD', 'EURCHF', 'NZDCAD', 'GBPNOK', 'EURUSD', 'AUDCHF', 'NOKSEK', 'EURSGD', 'USDCAD', 'EURGBP', 'EURJPY']
+2025-07-08 21:51:50,729 - DEBUG - orders - No users with open orders for symbol NZDJPY
+2025-07-08 21:51:50,730 - DEBUG - orders - No users with open orders for symbol XAGUSD
+2025-07-08 21:51:50,730 - DEBUG - orders - No users with open orders for symbol USDJPY
+2025-07-08 21:51:50,730 - DEBUG - orders - No users with open orders for symbol GBPSEK
+2025-07-08 21:51:50,730 - DEBUG - orders - No users with open orders for symbol GBPAUD
+2025-07-08 21:51:50,745 - INFO - orders - Processing SL/TP for symbol AUDJPY with 1 users
+2025-07-08 21:51:50,746 - DEBUG - orders - No users with open orders for symbol EURZAR
+2025-07-08 21:51:50,747 - DEBUG - orders - No users with open orders for symbol USDSGD
+2025-07-08 21:51:50,747 - DEBUG - orders - No users with open orders for symbol EURNZD
+2025-07-08 21:51:50,747 - DEBUG - orders - No users with open orders for symbol CADCHF
+2025-07-08 21:51:50,753 - DEBUG - orders - No users with open orders for symbol USDCZK
+2025-07-08 21:51:50,753 - DEBUG - orders - No users with open orders for symbol USDCHF
+2025-07-08 21:51:50,753 - DEBUG - orders - No users with open orders for symbol SGDJPY
+2025-07-08 21:51:50,753 - DEBUG - orders - No users with open orders for symbol EURSEK
+2025-07-08 21:51:50,757 - DEBUG - orders - No users with open orders for symbol USDNOK
+2025-07-08 21:51:50,758 - DEBUG - orders - No users with open orders for symbol USDSEK
+2025-07-08 21:51:50,758 - DEBUG - orders - No users with open orders for symbol US30
+2025-07-08 21:51:50,758 - DEBUG - orders - No users with open orders for symbol CADJPY
+2025-07-08 21:51:50,759 - INFO - orders - Processing SL/TP for symbol AUDCAD with 2 users
+2025-07-08 21:51:50,760 - DEBUG - orders - No users with open orders for symbol CHFSGD
+2025-07-08 21:51:50,761 - DEBUG - orders - No users with open orders for symbol EURAUD
+2025-07-08 21:51:50,761 - DEBUG - orders - No users with open orders for symbol GBPUSD
+2025-07-08 21:51:50,763 - DEBUG - orders - No users with open orders for symbol GBPNZD
+2025-07-08 21:51:50,764 - DEBUG - orders - No users with open orders for symbol EURCHF
+2025-07-08 21:51:50,765 - DEBUG - orders - No users with open orders for symbol EURNOK
+2025-07-08 21:51:50,769 - DEBUG - orders - No users with open orders for symbol EURUSD
+2025-07-08 21:51:50,769 - DEBUG - orders - No users with open orders for symbol GBPNOK
+2025-07-08 21:51:50,769 - DEBUG - orders - No users with open orders for symbol NZDCAD
+2025-07-08 21:51:50,771 - INFO - orders - Processing SL/TP for symbol AUDCHF with 1 users
+2025-07-08 21:51:50,773 - DEBUG - orders - No users with open orders for symbol USDCAD
+2025-07-08 21:51:50,774 - DEBUG - orders - No users with open orders for symbol EURSGD
+2025-07-08 21:51:50,774 - DEBUG - orders - No users with open orders for symbol NOKSEK
+2025-07-08 21:51:50,778 - DEBUG - orders - No users with open orders for symbol EURJPY
+2025-07-08 21:51:50,778 - DEBUG - orders - No users with open orders for symbol EURGBP
+2025-07-08 21:51:52,927 - INFO - orders - Market data update received for symbols: ['GBPSEK', 'GBPAUD', 'CADCHF', 'EURNZD', 'USDSGD', 'AUDJPY', 'EURSEK', 'EURPLN', 'SGDJPY', 'JP225', 'EURCAD', 'USDCZK', 'CADJPY', 'USDSEK', 'EURAUD', 'CHFSGD', 'NZDUSD', 'AUDUSD', 'AUDCAD', 'EURNOK', 'EURCHF', 'D30', 'NZDCAD', 'EURUSD', 'AUDCHF', 'EURSGD', 'USDCAD', 'EURGBP', 'EURJPY'], triggering optimized SL/TP check
+2025-07-08 21:51:52,927 - INFO - orders - Processing SL/TP batch for 29 symbols: ['GBPSEK', 'GBPAUD', 'CADCHF', 'EURNZD', 'USDSGD', 'AUDJPY', 'EURSEK', 'EURPLN', 'SGDJPY', 'JP225', 'EURCAD', 'USDCZK', 'CADJPY', 'USDSEK', 'EURAUD', 'CHFSGD', 'NZDUSD', 'AUDUSD', 'AUDCAD', 'EURNOK', 'EURCHF', 'D30', 'NZDCAD', 'EURUSD', 'AUDCHF', 'EURSGD', 'USDCAD', 'EURGBP', 'EURJPY']
+2025-07-08 21:51:52,935 - DEBUG - orders - No users with open orders for symbol EURNZD
+2025-07-08 21:51:52,936 - DEBUG - orders - No users with open orders for symbol USDSGD
+2025-07-08 21:51:52,936 - DEBUG - orders - No users with open orders for symbol GBPAUD
+2025-07-08 21:51:52,936 - DEBUG - orders - No users with open orders for symbol GBPSEK
+2025-07-08 21:51:52,936 - DEBUG - orders - No users with open orders for symbol CADCHF
+2025-07-08 21:51:52,940 - DEBUG - orders - No users with open orders for symbol JP225
+2025-07-08 21:51:52,940 - DEBUG - orders - No users with open orders for symbol SGDJPY
+2025-07-08 21:51:52,940 - DEBUG - orders - No users with open orders for symbol EURPLN
+2025-07-08 21:51:52,941 - DEBUG - orders - No users with open orders for symbol EURSEK
+2025-07-08 21:51:52,941 - INFO - orders - Processing SL/TP for symbol AUDJPY with 1 users
+2025-07-08 21:51:52,951 - DEBUG - orders - No users with open orders for symbol USDSEK
+2025-07-08 21:51:52,951 - DEBUG - orders - No users with open orders for symbol CADJPY
+2025-07-08 21:51:52,951 - DEBUG - orders - No users with open orders for symbol USDCZK
+2025-07-08 21:51:52,951 - DEBUG - orders - No users with open orders for symbol EURCAD
+2025-07-08 21:51:52,957 - DEBUG - orders - No users with open orders for symbol AUDUSD
+2025-07-08 21:51:52,958 - DEBUG - orders - No users with open orders for symbol NZDUSD
+2025-07-08 21:51:52,958 - DEBUG - orders - No users with open orders for symbol CHFSGD
+2025-07-08 21:51:52,958 - DEBUG - orders - No users with open orders for symbol EURAUD
+2025-07-08 21:51:52,960 - DEBUG - orders - No users with open orders for symbol D30
+2025-07-08 21:51:52,960 - DEBUG - orders - No users with open orders for symbol EURCHF
+2025-07-08 21:51:52,960 - DEBUG - orders - No users with open orders for symbol EURNOK
+2025-07-08 21:51:52,961 - INFO - orders - Processing SL/TP for symbol AUDCAD with 2 users
+2025-07-08 21:51:52,963 - INFO - orders - Processing SL/TP for symbol AUDCHF with 1 users
+2025-07-08 21:51:52,965 - DEBUG - orders - No users with open orders for symbol EURUSD
+2025-07-08 21:51:52,965 - DEBUG - orders - No users with open orders for symbol NZDCAD
+2025-07-08 21:51:52,970 - DEBUG - orders - No users with open orders for symbol USDCAD
+2025-07-08 21:51:52,970 - DEBUG - orders - No users with open orders for symbol EURSGD
+2025-07-08 21:51:52,970 - DEBUG - orders - No users with open orders for symbol EURGBP
+2025-07-08 21:51:52,972 - DEBUG - orders - No users with open orders for symbol EURJPY
+2025-07-08 21:51:55,230 - INFO - orders - Market data update received for symbols: ['GBPSEK', 'XAGUSD', 'NZDJPY', 'GBPAUD', 'USDJPY', 'CADCHF', 'EURNZD', 'USDZAR', 'SGDJPY', 'EURCAD', 'USDNOK', 'CADJPY', 'US30', 'GBPUSD', 'EURAUD', 'CHFSGD', 'NZDUSD', 'AUDCAD', 'EURNOK', 'GBPNZD', 'EURCHF', 'NZDCAD', 'GBPNOK', 'EURUSD', 'NOKSEK', 'EURSGD', 'USDCAD', 'EURGBP', 'EURJPY'], triggering optimized SL/TP check
+2025-07-08 21:51:55,230 - INFO - orders - Processing SL/TP batch for 29 symbols: ['GBPSEK', 'XAGUSD', 'NZDJPY', 'GBPAUD', 'USDJPY', 'CADCHF', 'EURNZD', 'USDZAR', 'SGDJPY', 'EURCAD', 'USDNOK', 'CADJPY', 'US30', 'GBPUSD', 'EURAUD', 'CHFSGD', 'NZDUSD', 'AUDCAD', 'EURNOK', 'GBPNZD', 'EURCHF', 'NZDCAD', 'GBPNOK', 'EURUSD', 'NOKSEK', 'EURSGD', 'USDCAD', 'EURGBP', 'EURJPY']
+2025-07-08 21:51:55,237 - DEBUG - orders - No users with open orders for symbol NZDJPY
+2025-07-08 21:51:55,237 - DEBUG - orders - No users with open orders for symbol GBPAUD
+2025-07-08 21:51:55,237 - DEBUG - orders - No users with open orders for symbol GBPSEK
+2025-07-08 21:51:55,237 - DEBUG - orders - No users with open orders for symbol XAGUSD
+2025-07-08 21:51:55,251 - DEBUG - orders - No users with open orders for symbol USDJPY
+2025-07-08 21:51:55,251 - DEBUG - orders - No users with open orders for symbol USDZAR
+2025-07-08 21:51:55,252 - DEBUG - orders - No users with open orders for symbol CADCHF
+2025-07-08 21:51:55,253 - DEBUG - orders - No users with open orders for symbol EURNZD
+2025-07-08 21:51:57,279 - DEBUG - orders - No users with open orders for symbol SGDJPY
+2025-07-08 21:51:57,280 - DEBUG - orders - No users with open orders for symbol EURCAD
+2025-07-08 21:51:57,280 - DEBUG - orders - No users with open orders for symbol USDNOK
+2025-07-08 21:51:57,280 - DEBUG - orders - No users with open orders for symbol US30
+2025-07-08 21:51:57,281 - DEBUG - orders - No users with open orders for symbol CADJPY
+2025-07-08 21:51:57,281 - DEBUG - orders - No users with open orders for symbol GBPUSD
+2025-07-08 21:51:57,282 - DEBUG - orders - No users with open orders for symbol CHFSGD
+2025-07-08 21:51:57,283 - DEBUG - orders - No users with open orders for symbol EURAUD
+2025-07-08 21:51:57,283 - DEBUG - orders - No users with open orders for symbol NZDUSD
+2025-07-08 21:51:57,283 - INFO - orders - Processing SL/TP for symbol AUDCAD with 2 users
+2025-07-08 21:51:57,285 - DEBUG - orders - No users with open orders for symbol EURNOK
+2025-07-08 21:51:57,286 - DEBUG - orders - No users with open orders for symbol GBPNZD
+2025-07-08 21:51:57,287 - DEBUG - orders - No users with open orders for symbol EURCHF
+2025-07-08 21:51:57,288 - DEBUG - orders - No users with open orders for symbol NZDCAD
+2025-07-08 21:51:57,290 - DEBUG - orders - No users with open orders for symbol GBPNOK
+2025-07-08 21:51:57,292 - DEBUG - orders - No users with open orders for symbol EURUSD
+2025-07-08 21:51:57,292 - DEBUG - orders - No users with open orders for symbol NOKSEK
+2025-07-08 21:51:57,293 - DEBUG - orders - No users with open orders for symbol EURSGD
+2025-07-08 21:51:57,295 - DEBUG - orders - No users with open orders for symbol USDCAD
+2025-07-08 21:51:57,295 - DEBUG - orders - No users with open orders for symbol EURGBP
+2025-07-08 21:51:57,296 - DEBUG - orders - No users with open orders for symbol EURJPY
+2025-07-08 21:51:57,521 - INFO - orders - Market data update received for symbols: ['GBPSEK', 'XAGUSD', 'NZDJPY', 'GBPAUD', 'USDJPY', 'USDCNH', 'CADCHF', 'EURNZD', 'USDSGD', 'EURZAR', 'EURSEK', 'USDZAR', 'EURPLN', 'SGDJPY', 'JP225', 'EURCAD', 'USDCZK', 'USDNOK', 'CADJPY', 'USDSEK', 'CHFSGD', 'NZDUSD', 'AUDCAD', 'EURNOK', 'GBPNZD', 'D30', 'NZDCAD', 'GBPNOK', 'EURUSD', 'EURSGD', 'USDCAD', 'EURJPY'], triggering optimized SL/TP check
+2025-07-08 21:51:57,521 - INFO - orders - Processing SL/TP batch for 32 symbols: ['GBPSEK', 'XAGUSD', 'NZDJPY', 'GBPAUD', 'USDJPY', 'USDCNH', 'CADCHF', 'EURNZD', 'USDSGD', 'EURZAR', 'EURSEK', 'USDZAR', 'EURPLN', 'SGDJPY', 'JP225', 'EURCAD', 'USDCZK', 'USDNOK', 'CADJPY', 'USDSEK', 'CHFSGD', 'NZDUSD', 'AUDCAD', 'EURNOK', 'GBPNZD', 'D30', 'NZDCAD', 'GBPNOK', 'EURUSD', 'EURSGD', 'USDCAD', 'EURJPY']
+2025-07-08 21:51:57,529 - DEBUG - orders - No users with open orders for symbol GBPAUD
+2025-07-08 21:51:57,529 - DEBUG - orders - No users with open orders for symbol NZDJPY
+2025-07-08 21:51:57,530 - DEBUG - orders - No users with open orders for symbol GBPSEK
+2025-07-08 21:51:57,530 - DEBUG - orders - No users with open orders for symbol XAGUSD
+2025-07-08 21:51:57,531 - DEBUG - orders - No users with open orders for symbol USDJPY
+2025-07-08 21:51:57,546 - DEBUG - orders - No users with open orders for symbol EURZAR
+2025-07-08 21:51:57,546 - DEBUG - orders - No users with open orders for symbol USDSGD
+2025-07-08 21:51:57,546 - DEBUG - orders - No users with open orders for symbol EURNZD
+2025-07-08 21:51:57,546 - DEBUG - orders - No users with open orders for symbol CADCHF
+2025-07-08 21:51:57,547 - DEBUG - orders - No users with open orders for symbol USDCNH
+2025-07-08 21:51:57,550 - DEBUG - orders - No users with open orders for symbol JP225
+2025-07-08 21:51:57,550 - DEBUG - orders - No users with open orders for symbol SGDJPY
+2025-07-08 21:51:57,551 - DEBUG - orders - No users with open orders for symbol EURPLN
+2025-07-08 21:51:57,551 - DEBUG - orders - No users with open orders for symbol USDZAR
+2025-07-08 21:51:57,551 - DEBUG - orders - No users with open orders for symbol EURSEK
+2025-07-08 21:51:57,553 - DEBUG - orders - No users with open orders for symbol USDSEK
+2025-07-08 21:51:57,553 - DEBUG - orders - No users with open orders for symbol CADJPY
+2025-07-08 21:51:57,553 - DEBUG - orders - No users with open orders for symbol USDNOK
+2025-07-08 21:51:57,554 - DEBUG - orders - No users with open orders for symbol USDCZK
+2025-07-08 21:51:57,554 - DEBUG - orders - No users with open orders for symbol EURCAD
+2025-07-08 21:51:57,555 - DEBUG - orders - No users with open orders for symbol NZDUSD
+2025-07-08 21:51:57,556 - DEBUG - orders - No users with open orders for symbol CHFSGD
+2025-07-08 21:51:57,556 - DEBUG - orders - No users with open orders for symbol EURNOK
+2025-07-08 21:51:57,556 - INFO - orders - Processing SL/TP for symbol AUDCAD with 2 users
+2025-07-08 21:51:57,558 - DEBUG - orders - No users with open orders for symbol GBPNZD
+2025-07-08 21:51:57,558 - DEBUG - orders - No users with open orders for symbol NZDCAD
+2025-07-08 21:51:57,558 - DEBUG - orders - No users with open orders for symbol GBPNOK
+2025-07-08 21:51:57,559 - DEBUG - orders - No users with open orders for symbol D30
+2025-07-08 21:51:57,560 - DEBUG - orders - No users with open orders for symbol EURUSD
+2025-07-08 21:51:57,561 - DEBUG - orders - No users with open orders for symbol EURJPY
+2025-07-08 21:51:57,561 - DEBUG - orders - No users with open orders for symbol USDCAD
+2025-07-08 21:51:57,561 - DEBUG - orders - No users with open orders for symbol EURSGD
+2025-07-08 21:51:59,848 - INFO - orders - Market data update received for symbols: ['GBPSEK', 'XAGUSD', 'NZDJPY', 'GBPAUD', 'USDJPY', 'USDCNH', 'CADCHF', 'EURNZD', 'EURZAR', 'AUDJPY', 'USDZAR', 'SGDJPY', 'USDCHF', 'EURCAD', 'CADJPY', 'USDSEK', 'EURAUD', 'CHFSGD', 'NZDUSD', 'AUDUSD', 'AUDCAD', 'EURNOK', 'GBPNZD', 'EURCHF', 'NZDCAD', 'GBPNOK', 'EURUSD', 'AUDCHF', 'NOKSEK', 'EURSGD', 'EURGBP', 'EURJPY'], triggering optimized SL/TP check
+2025-07-08 21:51:59,849 - INFO - orders - Processing SL/TP batch for 32 symbols: ['GBPSEK', 'XAGUSD', 'NZDJPY', 'GBPAUD', 'USDJPY', 'USDCNH', 'CADCHF', 'EURNZD', 'EURZAR', 'AUDJPY', 'USDZAR', 'SGDJPY', 'USDCHF', 'EURCAD', 'CADJPY', 'USDSEK', 'EURAUD', 'CHFSGD', 'NZDUSD', 'AUDUSD', 'AUDCAD', 'EURNOK', 'GBPNZD', 'EURCHF', 'NZDCAD', 'GBPNOK', 'EURUSD', 'AUDCHF', 'NOKSEK', 'EURSGD', 'EURGBP', 'EURJPY']
+2025-07-08 21:51:59,855 - DEBUG - orders - No users with open orders for symbol USDJPY
+2025-07-08 21:51:59,855 - DEBUG - orders - No users with open orders for symbol NZDJPY
+2025-07-08 21:51:59,855 - DEBUG - orders - No users with open orders for symbol XAGUSD
+2025-07-08 21:51:59,855 - DEBUG - orders - No users with open orders for symbol GBPSEK
+2025-07-08 21:51:59,855 - DEBUG - orders - No users with open orders for symbol GBPAUD
+2025-07-08 21:51:59,859 - INFO - orders - Processing SL/TP for symbol AUDJPY with 1 users
+2025-07-08 21:51:59,860 - DEBUG - orders - No users with open orders for symbol EURZAR
+2025-07-08 21:51:59,860 - DEBUG - orders - No users with open orders for symbol EURNZD
+2025-07-08 21:51:59,860 - DEBUG - orders - No users with open orders for symbol CADCHF
+2025-07-08 21:51:59,860 - DEBUG - orders - No users with open orders for symbol USDCNH
+2025-07-08 21:51:59,873 - DEBUG - orders - No users with open orders for symbol EURCAD
+2025-07-08 21:51:59,874 - DEBUG - orders - No users with open orders for symbol USDCHF
+2025-07-08 21:51:59,874 - DEBUG - orders - No users with open orders for symbol SGDJPY
+2025-07-08 21:51:59,874 - DEBUG - orders - No users with open orders for symbol USDZAR
+2025-07-08 21:51:59,880 - DEBUG - orders - No users with open orders for symbol CHFSGD
+2025-07-08 21:51:59,880 - DEBUG - orders - No users with open orders for symbol EURAUD
+2025-07-08 21:51:59,880 - DEBUG - orders - No users with open orders for symbol CADJPY
+2025-07-08 21:51:59,880 - DEBUG - orders - No users with open orders for symbol USDSEK
+2025-07-08 21:51:59,882 - DEBUG - orders - No users with open orders for symbol EURNOK
+2025-07-08 21:51:59,882 - INFO - orders - Processing SL/TP for symbol AUDCAD with 2 users
+2025-07-08 21:51:59,883 - DEBUG - orders - No users with open orders for symbol AUDUSD
+2025-07-08 21:51:59,883 - DEBUG - orders - No users with open orders for symbol NZDUSD
+2025-07-08 21:51:59,885 - DEBUG - orders - No users with open orders for symbol NZDCAD
+2025-07-08 21:51:59,885 - DEBUG - orders - No users with open orders for symbol EURCHF
+2025-07-08 21:51:59,885 - DEBUG - orders - No users with open orders for symbol GBPNZD
+2025-07-08 21:51:59,888 - INFO - orders - Processing SL/TP for symbol AUDCHF with 1 users
+2025-07-08 21:51:59,890 - DEBUG - orders - No users with open orders for symbol GBPNOK
+2025-07-08 21:51:59,891 - DEBUG - orders - No users with open orders for symbol EURUSD
+2025-07-08 21:51:59,891 - DEBUG - orders - No users with open orders for symbol NOKSEK
+2025-07-08 21:51:59,893 - DEBUG - orders - No users with open orders for symbol EURGBP
+2025-07-08 21:51:59,893 - DEBUG - orders - No users with open orders for symbol EURSGD
+2025-07-08 21:51:59,893 - DEBUG - orders - No users with open orders for symbol EURJPY
+2025-07-08 21:52:02,171 - INFO - orders - Market data update received for symbols: ['GBPSEK', 'XAGUSD', 'GBPAUD', 'USDJPY', 'CADCHF', 'EURNZD', 'EURZAR', 'AUDJPY', 'EURPLN', 'JP225', 'EURCAD', 'USDCZK', 'USDNOK', 'CADJPY', 'USDSEK', 'GBPUSD', 'EURAUD', 'CHFSGD', 'NZDUSD', 'AUDUSD', 'AUDCAD', 'EURNOK', 'GBPNZD', 'NZDCAD', 'GBPNOK', 'EURUSD', 'NOKSEK', 'USDCAD', 'EURJPY'], triggering optimized SL/TP check
+2025-07-08 21:52:02,171 - INFO - orders - Processing SL/TP batch for 29 symbols: ['GBPSEK', 'XAGUSD', 'GBPAUD', 'USDJPY', 'CADCHF', 'EURNZD', 'EURZAR', 'AUDJPY', 'EURPLN', 'JP225', 'EURCAD', 'USDCZK', 'USDNOK', 'CADJPY', 'USDSEK', 'GBPUSD', 'EURAUD', 'CHFSGD', 'NZDUSD', 'AUDUSD', 'AUDCAD', 'EURNOK', 'GBPNZD', 'NZDCAD', 'GBPNOK', 'EURUSD', 'NOKSEK', 'USDCAD', 'EURJPY']
+2025-07-08 21:52:02,179 - DEBUG - orders - No users with open orders for symbol GBPAUD
+2025-07-08 21:52:02,179 - DEBUG - orders - No users with open orders for symbol XAGUSD
+2025-07-08 21:52:02,179 - DEBUG - orders - No users with open orders for symbol GBPSEK
+2025-07-08 21:52:02,179 - DEBUG - orders - No users with open orders for symbol USDJPY
+2025-07-08 21:52:02,179 - DEBUG - orders - No users with open orders for symbol CADCHF
+2025-07-08 21:52:02,191 - DEBUG - orders - No users with open orders for symbol JP225
+2025-07-08 21:52:02,191 - DEBUG - orders - No users with open orders for symbol EURPLN
+2025-07-08 21:52:02,191 - INFO - orders - Processing SL/TP for symbol AUDJPY with 1 users
+2025-07-08 21:52:02,192 - DEBUG - orders - No users with open orders for symbol EURZAR
+2025-07-08 21:52:02,192 - DEBUG - orders - No users with open orders for symbol EURNZD
+2025-07-08 21:52:02,196 - DEBUG - orders - No users with open orders for symbol CADJPY
+2025-07-08 21:52:02,196 - DEBUG - orders - No users with open orders for symbol USDNOK
+2025-07-08 21:52:02,196 - DEBUG - orders - No users with open orders for symbol USDCZK
+2025-07-08 21:52:02,197 - DEBUG - orders - No users with open orders for symbol EURCAD
+2025-07-08 21:52:02,201 - DEBUG - orders - No users with open orders for symbol CHFSGD
+2025-07-08 21:52:02,201 - DEBUG - orders - No users with open orders for symbol EURAUD
+2025-07-08 21:52:02,201 - DEBUG - orders - No users with open orders for symbol GBPUSD
+2025-07-08 21:52:02,202 - DEBUG - orders - No users with open orders for symbol USDSEK
+2025-07-08 21:52:02,203 - DEBUG - orders - No users with open orders for symbol AUDUSD
+2025-07-08 21:52:02,203 - DEBUG - orders - No users with open orders for symbol NZDUSD
+2025-07-08 21:52:02,204 - DEBUG - orders - No users with open orders for symbol EURNOK
+2025-07-08 21:52:02,204 - INFO - orders - Processing SL/TP for symbol AUDCAD with 2 users
+2025-07-08 21:52:02,207 - DEBUG - orders - No users with open orders for symbol NZDCAD
+2025-07-08 21:52:02,207 - DEBUG - orders - No users with open orders for symbol GBPNZD
+2025-07-08 21:52:02,207 - DEBUG - orders - No users with open orders for symbol GBPNOK
+2025-07-08 21:52:02,209 - DEBUG - orders - No users with open orders for symbol EURUSD
+2025-07-08 21:52:02,210 - DEBUG - orders - No users with open orders for symbol NOKSEK
+2025-07-08 21:52:02,210 - DEBUG - orders - No users with open orders for symbol EURJPY
+2025-07-08 21:52:02,212 - DEBUG - orders - No users with open orders for symbol USDCAD
+2025-07-08 21:52:04,430 - INFO - orders - Market data update received for symbols: ['GBPSEK', 'XAGUSD', 'GBPAUD', 'CADCHF', 'EURNZD', 'AUDJPY', 'EURSEK', 'SGDJPY', 'EURCAD', 'USDCZK', 'USDNOK', 'USDSEK', 'EURAUD', 'CHFSGD', 'NZDUSD', 'AUDUSD', 'AUDCAD', 'EURNOK', 'GBPNZD', 'NZDCAD', 'GBPNOK', 'NOKSEK', 'USDCAD'], triggering optimized SL/TP check
+2025-07-08 21:52:04,430 - INFO - orders - Processing SL/TP batch for 23 symbols: ['GBPSEK', 'XAGUSD', 'GBPAUD', 'CADCHF', 'EURNZD', 'AUDJPY', 'EURSEK', 'SGDJPY', 'EURCAD', 'USDCZK', 'USDNOK', 'USDSEK', 'EURAUD', 'CHFSGD', 'NZDUSD', 'AUDUSD', 'AUDCAD', 'EURNOK', 'GBPNZD', 'NZDCAD', 'GBPNOK', 'NOKSEK', 'USDCAD']
+2025-07-08 21:52:04,439 - DEBUG - orders - No users with open orders for symbol CADCHF
+2025-07-08 21:52:04,439 - DEBUG - orders - No users with open orders for symbol EURNZD
+2025-07-08 21:52:04,439 - DEBUG - orders - No users with open orders for symbol XAGUSD
+2025-07-08 21:52:04,439 - DEBUG - orders - No users with open orders for symbol GBPSEK
+2025-07-08 21:52:04,439 - DEBUG - orders - No users with open orders for symbol GBPAUD
+2025-07-08 21:52:04,443 - DEBUG - orders - No users with open orders for symbol USDCZK
+2025-07-08 21:52:04,443 - DEBUG - orders - No users with open orders for symbol EURCAD
+2025-07-08 21:52:04,443 - DEBUG - orders - No users with open orders for symbol SGDJPY
+2025-07-08 21:52:04,443 - DEBUG - orders - No users with open orders for symbol EURSEK
+2025-07-08 21:52:04,443 - INFO - orders - Processing SL/TP for symbol AUDJPY with 1 users
+2025-07-08 21:52:04,452 - DEBUG - orders - No users with open orders for symbol CHFSGD
+2025-07-08 21:52:04,452 - DEBUG - orders - No users with open orders for symbol EURAUD
+2025-07-08 21:52:04,452 - DEBUG - orders - No users with open orders for symbol USDSEK
+2025-07-08 21:52:04,453 - DEBUG - orders - No users with open orders for symbol USDNOK
+2025-07-08 21:52:04,458 - DEBUG - orders - No users with open orders for symbol EURNOK
+2025-07-08 21:52:04,458 - INFO - orders - Processing SL/TP for symbol AUDCAD with 2 users
+2025-07-08 21:52:04,459 - DEBUG - orders - No users with open orders for symbol AUDUSD
+2025-07-08 21:52:04,460 - DEBUG - orders - No users with open orders for symbol NZDUSD
+2025-07-08 21:52:04,464 - DEBUG - orders - No users with open orders for symbol GBPNZD
+2025-07-08 21:52:04,464 - DEBUG - orders - No users with open orders for symbol GBPNOK
+2025-07-08 21:52:04,464 - DEBUG - orders - No users with open orders for symbol NZDCAD
+2025-07-08 21:52:04,467 - DEBUG - orders - No users with open orders for symbol USDCAD
+2025-07-08 21:52:04,467 - DEBUG - orders - No users with open orders for symbol NOKSEK
+2025-07-08 21:52:06,774 - INFO - orders - Market data update received for symbols: ['GBPSEK', 'GBPAUD', 'USDJPY', 'USDCNH', 'EURNZD', 'USDSGD', 'EURZAR', 'AUDJPY', 'EURSEK', 'USDZAR', 'EURPLN', 'SGDJPY', 'EURCAD', 'USDNOK', 'CADJPY', 'USDSEK', 'US30', 'GBPUSD', 'EURAUD', 'CHFSGD', 'NZDUSD', 'AUDCAD', 'EURCHF', 'D30', 'NZDCAD', 'EURUSD', 'NOKSEK', 'EURSGD'], triggering optimized SL/TP check
+2025-07-08 21:52:06,774 - INFO - orders - Processing SL/TP batch for 28 symbols: ['GBPSEK', 'GBPAUD', 'USDJPY', 'USDCNH', 'EURNZD', 'USDSGD', 'EURZAR', 'AUDJPY', 'EURSEK', 'USDZAR', 'EURPLN', 'SGDJPY', 'EURCAD', 'USDNOK', 'CADJPY', 'USDSEK', 'US30', 'GBPUSD', 'EURAUD', 'CHFSGD', 'NZDUSD', 'AUDCAD', 'EURCHF', 'D30', 'NZDCAD', 'EURUSD', 'NOKSEK', 'EURSGD']
+2025-07-08 21:52:06,783 - DEBUG - orders - No users with open orders for symbol USDJPY
+2025-07-08 21:52:06,783 - DEBUG - orders - No users with open orders for symbol EURNZD
+2025-07-08 21:52:06,783 - DEBUG - orders - No users with open orders for symbol GBPSEK
+2025-07-08 21:52:06,783 - DEBUG - orders - No users with open orders for symbol GBPAUD
+2025-07-08 21:52:06,784 - DEBUG - orders - No users with open orders for symbol USDCNH
+2025-07-08 21:52:06,797 - DEBUG - orders - No users with open orders for symbol USDZAR
+2025-07-08 21:52:06,797 - DEBUG - orders - No users with open orders for symbol EURSEK
+2025-07-08 21:52:06,798 - INFO - orders - Processing SL/TP for symbol AUDJPY with 1 users
+2025-07-08 21:52:06,798 - DEBUG - orders - No users with open orders for symbol EURZAR
+2025-07-08 21:52:06,799 - DEBUG - orders - No users with open orders for symbol USDSGD
+2025-07-08 21:52:06,803 - DEBUG - orders - No users with open orders for symbol USDNOK
+2025-07-08 21:52:06,803 - DEBUG - orders - No users with open orders for symbol EURCAD
+2025-07-08 21:52:06,803 - DEBUG - orders - No users with open orders for symbol SGDJPY
+2025-07-08 21:52:06,803 - DEBUG - orders - No users with open orders for symbol EURPLN
+2025-07-08 21:52:06,806 - DEBUG - orders - No users with open orders for symbol USDSEK
+2025-07-08 21:52:06,806 - DEBUG - orders - No users with open orders for symbol CADJPY
+2025-07-08 21:52:06,806 - DEBUG - orders - No users with open orders for symbol GBPUSD
+2025-07-08 21:52:06,806 - DEBUG - orders - No users with open orders for symbol US30
+2025-07-08 21:52:06,807 - DEBUG - orders - No users with open orders for symbol CHFSGD
+2025-07-08 21:52:06,808 - DEBUG - orders - No users with open orders for symbol EURAUD
+2025-07-08 21:52:06,808 - INFO - orders - Processing SL/TP for symbol AUDCAD with 2 users
+2025-07-08 21:52:06,810 - DEBUG - orders - No users with open orders for symbol NZDUSD
+2025-07-08 21:52:06,813 - DEBUG - orders - No users with open orders for symbol D30
+2025-07-08 21:52:06,813 - DEBUG - orders - No users with open orders for symbol EURCHF
+2025-07-08 21:52:06,814 - DEBUG - orders - No users with open orders for symbol NZDCAD
+2025-07-08 21:52:06,815 - DEBUG - orders - No users with open orders for symbol EURUSD
+2025-07-08 21:52:06,815 - DEBUG - orders - No users with open orders for symbol EURSGD
+2025-07-08 21:52:06,816 - DEBUG - orders - No users with open orders for symbol NOKSEK
+2025-07-08 21:52:09,060 - INFO - orders - Market data update received for symbols: ['GBPSEK', 'XAGUSD', 'NZDJPY', 'GBPAUD', 'USDJPY', 'USDCNH', 'CADCHF', 'EURNZD', 'USDSGD', 'EURZAR', 'AUDJPY', 'SGDJPY', 'JP225', 'USDCHF', 'USDCZK', 'USDNOK', 'CADJPY', 'USDSEK', 'GBPUSD', 'EURAUD', 'CHFSGD', 'NZDUSD', 'AUDUSD', 'AUDCAD', 'GBPNZD', 'EURCHF', 'NZDCAD', 'GBPNOK', 'EURUSD', 'AUDCHF', 'NOKSEK', 'EURSGD', 'USDCAD', 'EURGBP', 'EURJPY'], triggering optimized SL/TP check
+2025-07-08 21:52:09,060 - INFO - orders - Processing SL/TP batch for 35 symbols: ['GBPSEK', 'XAGUSD', 'NZDJPY', 'GBPAUD', 'USDJPY', 'USDCNH', 'CADCHF', 'EURNZD', 'USDSGD', 'EURZAR', 'AUDJPY', 'SGDJPY', 'JP225', 'USDCHF', 'USDCZK', 'USDNOK', 'CADJPY', 'USDSEK', 'GBPUSD', 'EURAUD', 'CHFSGD', 'NZDUSD', 'AUDUSD', 'AUDCAD', 'GBPNZD', 'EURCHF', 'NZDCAD', 'GBPNOK', 'EURUSD', 'AUDCHF', 'NOKSEK', 'EURSGD', 'USDCAD', 'EURGBP', 'EURJPY']
+2025-07-08 21:52:09,067 - DEBUG - orders - No users with open orders for symbol USDJPY
+2025-07-08 21:52:09,067 - DEBUG - orders - No users with open orders for symbol GBPAUD
+2025-07-08 21:52:09,067 - DEBUG - orders - No users with open orders for symbol NZDJPY
+2025-07-08 21:52:09,068 - DEBUG - orders - No users with open orders for symbol XAGUSD
+2025-07-08 21:52:09,068 - DEBUG - orders - No users with open orders for symbol GBPSEK
+2025-07-08 21:52:09,083 - DEBUG - orders - No users with open orders for symbol EURZAR
+2025-07-08 21:52:09,084 - DEBUG - orders - No users with open orders for symbol USDSGD
+2025-07-08 21:52:09,084 - DEBUG - orders - No users with open orders for symbol EURNZD
+2025-07-08 21:52:09,084 - DEBUG - orders - No users with open orders for symbol CADCHF
+2025-07-08 21:52:09,084 - DEBUG - orders - No users with open orders for symbol USDCNH
+2025-07-08 21:52:09,087 - DEBUG - orders - No users with open orders for symbol USDCZK
+2025-07-08 21:52:09,087 - DEBUG - orders - No users with open orders for symbol USDCHF
+2025-07-08 21:52:09,087 - DEBUG - orders - No users with open orders for symbol JP225
+2025-07-08 21:52:09,087 - DEBUG - orders - No users with open orders for symbol SGDJPY
+2025-07-08 21:52:09,088 - INFO - orders - Processing SL/TP for symbol AUDJPY with 1 users
+2025-07-08 21:52:09,090 - DEBUG - orders - No users with open orders for symbol GBPUSD
+2025-07-08 21:52:09,091 - DEBUG - orders - No users with open orders for symbol USDSEK
+2025-07-08 21:52:09,091 - DEBUG - orders - No users with open orders for symbol CADJPY
+2025-07-08 21:52:09,091 - DEBUG - orders - No users with open orders for symbol USDNOK
+2025-07-08 21:52:09,092 - DEBUG - orders - No users with open orders for symbol AUDUSD
+2025-07-08 21:52:09,093 - DEBUG - orders - No users with open orders for symbol NZDUSD
+2025-07-08 21:52:09,093 - DEBUG - orders - No users with open orders for symbol CHFSGD
+2025-07-08 21:52:09,093 - DEBUG - orders - No users with open orders for symbol EURAUD
+2025-07-08 21:52:09,095 - DEBUG - orders - No users with open orders for symbol NZDCAD
+2025-07-08 21:52:09,095 - DEBUG - orders - No users with open orders for symbol EURCHF
+2025-07-08 21:52:09,095 - DEBUG - orders - No users with open orders for symbol GBPNZD
+2025-07-08 21:52:09,095 - INFO - orders - Processing SL/TP for symbol AUDCAD with 2 users
+2025-07-08 21:52:09,097 - INFO - orders - Processing SL/TP for symbol AUDCHF with 1 users
+2025-07-08 21:52:09,098 - DEBUG - orders - No users with open orders for symbol EURUSD
+2025-07-08 21:52:09,098 - DEBUG - orders - No users with open orders for symbol GBPNOK
+2025-07-08 21:52:09,102 - DEBUG - orders - No users with open orders for symbol EURSGD
+2025-07-08 21:52:09,102 - DEBUG - orders - No users with open orders for symbol NOKSEK
+2025-07-08 21:52:09,105 - DEBUG - orders - No users with open orders for symbol USDCAD
+2025-07-08 21:52:09,108 - DEBUG - orders - No users with open orders for symbol EURJPY
+2025-07-08 21:52:09,115 - DEBUG - orders - No users with open orders for symbol EURGBP
+2025-07-08 21:52:10,704 - INFO - orders - Order placement request received - User: 1, Symbol: AUDCHF, Type: BUY
+2025-07-08 21:52:11,084 - INFO - orders - [MARGIN_CALC] Market data for AUDCHF: {'b': '0.5211200000', 'o': '0.5210600000'}
+2025-07-08 21:52:11,084 - WARNING - orders - [MARGIN_CALC] Missing ask price for AUDCHF, using bid price with spread: bid=0.5211200000, ask=0.52117211200000
+2025-07-08 21:52:11,084 - INFO - orders - [MARGIN_CALC] Using prices for AUDCHF: bid=0.5211200000, ask=0.52117211200000
+2025-07-08 21:52:11,086 - INFO - orders - [CURRENCY_CONVERT] Starting conversion of 5.21 CHF to USD for margin_calculation (user_id: 1, position: None)
+2025-07-08 21:52:11,086 - INFO - orders - [CURRENCY_CONVERT] Trying direct conversion with symbol: CHFUSD
+2025-07-08 21:52:11,088 - INFO - orders - [CURRENCY_CONVERT] Direct conversion prices from cache: None
+2025-07-08 21:52:11,088 - INFO - orders - [CURRENCY_CONVERT] No direct conversion rate found for CHFUSD, trying inverse
+2025-07-08 21:52:11,088 - INFO - orders - [CURRENCY_CONVERT] Trying inverse conversion with symbol: USDCHF
+2025-07-08 21:52:11,089 - INFO - orders - [CURRENCY_CONVERT] Inverse conversion prices from cache: {'b': Decimal('0.7970400000'), 'o': Decimal('0.7970100000')}
+2025-07-08 21:52:11,089 - INFO - orders - [CURRENCY_CONVERT] Found inverse conversion rate (bid): 0.7970400000
+2025-07-08 21:52:11,089 - INFO - orders - [CURRENCY_CONVERT] Inverse conversion successful: 5.21 CHF / 0.7970400000 = 6.536685737227742647796848339 USD
+2025-07-08 21:52:11,090 - INFO - orders - [MARGIN_CALC_OPTIMIZED] Symbol: AUDCHF, Type: BUY, Qty: 0.01, Price: 0.52117211200000, Margin: 6.536685737227742647796848339, Commission: 0.10
+2025-07-08 21:52:11,090 - INFO - orders - [HEDGING_MARGIN_DEBUG] Starting hedging calculation for User: 1, Symbol: AUDCHF, OrderType: BUY, Quantity: 0.01, FullMargin: 6.536685737227742647796848339
+2025-07-08 21:52:11,090 - INFO - orders - [HEDGING_MARGIN_DEBUG] Existing open orders count: 0
+2025-07-08 21:52:11,090 - INFO - orders - [HEDGING_MARGIN_DEBUG] Created simulated order: Type=BUY, Qty=0.01, Margin=6.536685737227742647796848339
+2025-07-08 21:52:11,090 - INFO - orders - [HEDGING_MARGIN_DEBUG] About to calculate margin before and after for 0 existing orders + 1 new order
+2025-07-08 21:52:11,090 - INFO - orders - [HEDGING_MARGIN_DEBUG] Executing margin calculation tasks...
+2025-07-08 21:52:11,091 - INFO - orders - [MARGIN_TOTAL_CONTRIB] No open positions for User 1, Symbol AUDCHF. Returning zero margin.
+2025-07-08 21:52:11,091 - INFO - orders - [MARGIN_TOTAL_CONTRIB] Calculating margin for 1 positions for User 1, Symbol AUDCHF
+2025-07-08 21:52:11,091 - INFO - orders - [MARGIN_TOTAL_CONTRIB_POS] User 1, Symbol AUDCHF, Pos 1 (ID: None): Type=BUY, Qty=0.01, StoredMargin=6.536685737227742647796848339
+2025-07-08 21:52:11,091 - INFO - orders - [MARGIN_TOTAL_CONTRIB_POS] User 1, Symbol AUDCHF, Pos 1: MarginPerLot=653.6685737227742647796848339
+2025-07-08 21:52:11,092 - INFO - orders - [MARGIN_TOTAL_CONTRIB_CALC] User 1, Symbol AUDCHF: TotalBuyQty=0.01, TotalSellQty=0, NetQty=0.01, IsHedged=False
+2025-07-08 21:52:11,092 - INFO - orders - [MARGIN_TOTAL_CONTRIB_CALC] User 1, Symbol AUDCHF: AllMarginsPerLot=[Decimal('653.6685737227742647796848339')], HighestMarginPerLot=653.6685737227742647796848339
+2025-07-08 21:52:11,092 - INFO - orders - [MARGIN_TOTAL_CONTRIB_EXIT] User 1, Symbol AUDCHF: CalculatedTotalMargin=6.54
+2025-07-08 21:52:11,093 - INFO - orders - [HEDGING_MARGIN_DEBUG] Margin calculation tasks completed
+2025-07-08 21:52:11,093 - INFO - orders - [HEDGING_MARGIN_DEBUG] User: 1, Symbol: AUDCHF, OrderType: BUY, MarginBefore: 0.0, MarginAfter: 6.54, AdditionalMargin: 6.54, OpenOrders: 0
+2025-07-08 21:52:11,093 - INFO - orders - [HEDGING_MARGIN_DEBUG] Simulated order: Type=BUY, Qty=0.01, Margin=6.536685737227742647796848339
+2025-07-08 21:52:11,155 - INFO - orders - [CACHE_UPDATE] Updating balance/margin cache for user 1: balance=24896.08000000, margin=6.54000000 (was 0E-8)
+2025-07-08 21:52:11,155 - INFO - orders - [CACHE_UPDATE] Balance/margin cache updated for user 1
+2025-07-08 21:52:11,156 - INFO - orders - [PERF] Order processing: 0.4473s
+2025-07-08 21:52:11,156 - DEBUG - orders - [DEBUG][create_user_order] Received order_data: {'order_id': '3651828427', 'order_status': 'OPEN', 'order_user_id': 1, 'order_company_name': 'AUDCHF', 'order_type': 'BUY', 'order_price': Decimal('0.52117211200000'), 'order_quantity': Decimal('0.01'), 'contract_value': Decimal('1000.00'), 'margin': Decimal('6.536685737227742647796848339'), 'commission': Decimal('0.10'), 'status': 'OPEN', 'stop_loss': None, 'take_profit': None, 'stoploss_id': None, 'takeprofit_id': None, 'close_id': None}
+2025-07-08 21:52:11,157 - DEBUG - orders - [DEBUG][create_user_order] Created OrderActionHistory record for order_id: 3651828427
+2025-07-08 21:52:11,188 - INFO - orders - [PERF] Order creation: 0.0316s
+2025-07-08 21:52:11,188 - INFO - orders - is_barclays_live_user in place_order: False
+2025-07-08 21:52:11,188 - INFO - orders - [PUBLISH_DEBUG] Publishing order update for user 1
+2025-07-08 21:52:11,193 - INFO - orders - [PUBLISH_DEBUG] Publishing user data update for user 1
+2025-07-08 21:52:11,196 - INFO - orders - [PUBLISH_DEBUG] Publishing market data trigger
+2025-07-08 21:52:11,202 - INFO - orders - [PERF] TOTAL place_order: 0.4985s
+2025-07-08 21:52:11,686 - INFO - orders - Market data update received for symbols: ['GBPSEK', 'XAGUSD', 'NZDJPY', 'GBPAUD', 'BTCUSD', 'USDCNH', 'CADCHF', 'EURNZD', 'USDSGD', 'EURZAR', 'AUDJPY', 'EURSEK', 'SGDJPY', 'JP225', 'USDCHF', 'EURCAD', 'USDCZK', 'USDNOK', 'CADJPY', 'USDSEK', 'GBPUSD', 'EURAUD', 'CHFSGD', 'AUDCAD', 'EURNOK', 'GBPNZD', 'EURCHF', 'NZDCAD', 'GBPNOK', 'EURUSD', 'NOKSEK', 'EURSGD', 'EURGBP', 'EURJPY'], triggering optimized SL/TP check
+2025-07-08 21:52:11,686 - INFO - orders - Processing SL/TP batch for 34 symbols: ['GBPSEK', 'XAGUSD', 'NZDJPY', 'GBPAUD', 'BTCUSD', 'USDCNH', 'CADCHF', 'EURNZD', 'USDSGD', 'EURZAR', 'AUDJPY', 'EURSEK', 'SGDJPY', 'JP225', 'USDCHF', 'EURCAD', 'USDCZK', 'USDNOK', 'CADJPY', 'USDSEK', 'GBPUSD', 'EURAUD', 'CHFSGD', 'AUDCAD', 'EURNOK', 'GBPNZD', 'EURCHF', 'NZDCAD', 'GBPNOK', 'EURUSD', 'NOKSEK', 'EURSGD', 'EURGBP', 'EURJPY']
+2025-07-08 21:52:11,702 - DEBUG - orders - No users with open orders for symbol XAGUSD
+2025-07-08 21:52:11,703 - DEBUG - orders - No users with open orders for symbol GBPSEK
+2025-07-08 21:52:11,703 - DEBUG - orders - No users with open orders for symbol GBPAUD
+2025-07-08 21:52:11,703 - DEBUG - orders - No users with open orders for symbol NZDJPY
+2025-07-08 21:52:11,708 - DEBUG - orders - No users with open orders for symbol BTCUSD
+2025-07-08 21:52:11,733 - DEBUG - orders - No users with open orders for symbol USDSGD
+2025-07-08 21:52:11,734 - DEBUG - orders - No users with open orders for symbol EURNZD
+2025-07-08 21:52:11,735 - DEBUG - orders - No users with open orders for symbol CADCHF
+2025-07-08 21:52:11,735 - DEBUG - orders - No users with open orders for symbol USDCNH
+2025-07-08 21:52:11,742 - DEBUG - orders - No users with open orders for symbol EURZAR
+2025-07-08 21:52:11,746 - INFO - orders - Processing SL/TP for symbol AUDJPY with 1 users
+2025-07-08 21:52:11,748 - DEBUG - orders - No users with open orders for symbol JP225
+2025-07-08 21:52:11,750 - DEBUG - orders - No users with open orders for symbol SGDJPY
+2025-07-08 21:52:11,750 - DEBUG - orders - No users with open orders for symbol EURSEK
+2025-07-08 21:52:11,753 - DEBUG - orders - No users with open orders for symbol USDCHF
+2025-07-08 21:52:11,756 - DEBUG - orders - Added user 1 (demo) to symbol AUDCHF cache
+2025-07-08 21:52:11,758 - DEBUG - orders - No users with open orders for symbol EURCAD
+2025-07-08 21:52:11,759 - DEBUG - orders - No users with open orders for symbol USDNOK
+2025-07-08 21:52:11,760 - DEBUG - orders - No users with open orders for symbol USDCZK
+2025-07-08 21:52:11,763 - DEBUG - orders - No users with open orders for symbol CADJPY
+2025-07-08 21:52:11,769 - DEBUG - orders - No users with open orders for symbol USDSEK
+2025-07-08 21:52:11,769 - DEBUG - orders - No users with open orders for symbol EURAUD
+2025-07-08 21:52:11,770 - DEBUG - orders - No users with open orders for symbol GBPUSD
+2025-07-08 21:52:11,774 - DEBUG - orders - No users with open orders for symbol CHFSGD
+2025-07-08 21:52:11,779 - DEBUG - orders - No users with open orders for symbol EURNOK
+2025-07-08 21:52:11,781 - INFO - orders - Processing SL/TP for symbol AUDCAD with 2 users
+2025-07-08 21:52:11,786 - DEBUG - orders - No users with open orders for symbol GBPNZD
+2025-07-08 21:52:11,788 - DEBUG - orders - No users with open orders for symbol EURCHF
+2025-07-08 21:52:11,792 - DEBUG - orders - No users with open orders for symbol NZDCAD
+2025-07-08 21:52:11,793 - DEBUG - orders - No users with open orders for symbol GBPNOK
+2025-07-08 21:52:11,795 - DEBUG - orders - No users with open orders for symbol EURUSD
+2025-07-08 21:52:11,798 - DEBUG - orders - No users with open orders for symbol NOKSEK
+2025-07-08 21:52:11,801 - DEBUG - orders - No users with open orders for symbol EURSGD
+2025-07-08 21:52:11,801 - DEBUG - orders - No users with open orders for symbol EURGBP
+2025-07-08 21:52:11,803 - DEBUG - orders - No users with open orders for symbol EURJPY
+2025-07-08 21:52:13,677 - INFO - orders - Market data update received for symbols: ['GBPSEK', 'XAGUSD', 'NZDJPY', 'BTCUSD', 'USDCNH', 'CADCHF', 'EURNZD', 'EURZAR', 'AUDJPY', 'USDZAR', 'EURPLN', 'SGDJPY', 'EURCAD', 'USDCZK', 'USDNOK', 'CADJPY', 'USDSEK', 'US30', 'EURAUD', 'CHFSGD', 'AUDUSD', 'AUDCAD', 'EURNOK', 'GBPNZD', 'GBPNOK', 'EURUSD', 'AUDCHF', 'NOKSEK', 'USDCAD', 'EURGBP'], triggering optimized SL/TP check
+2025-07-08 21:52:13,677 - INFO - orders - Processing SL/TP batch for 30 symbols: ['GBPSEK', 'XAGUSD', 'NZDJPY', 'BTCUSD', 'USDCNH', 'CADCHF', 'EURNZD', 'EURZAR', 'AUDJPY', 'USDZAR', 'EURPLN', 'SGDJPY', 'EURCAD', 'USDCZK', 'USDNOK', 'CADJPY', 'USDSEK', 'US30', 'EURAUD', 'CHFSGD', 'AUDUSD', 'AUDCAD', 'EURNOK', 'GBPNZD', 'GBPNOK', 'EURUSD', 'AUDCHF', 'NOKSEK', 'USDCAD', 'EURGBP']
+2025-07-08 21:52:13,687 - DEBUG - orders - No users with open orders for symbol USDCNH
+2025-07-08 21:52:13,687 - DEBUG - orders - No users with open orders for symbol NZDJPY
+2025-07-08 21:52:13,687 - DEBUG - orders - No users with open orders for symbol BTCUSD
+2025-07-08 21:52:13,687 - DEBUG - orders - No users with open orders for symbol XAGUSD
+2025-07-08 21:52:13,687 - DEBUG - orders - No users with open orders for symbol GBPSEK
+2025-07-08 21:52:13,694 - DEBUG - orders - No users with open orders for symbol USDZAR
+2025-07-08 21:52:13,694 - INFO - orders - Processing SL/TP for symbol AUDJPY with 1 users
+2025-07-08 21:52:13,696 - DEBUG - orders - No users with open orders for symbol EURZAR
+2025-07-08 21:52:13,702 - DEBUG - orders - No users with open orders for symbol EURNZD
+2025-07-08 21:52:13,702 - DEBUG - orders - No users with open orders for symbol CADCHF
+2025-07-08 21:52:13,721 - DEBUG - orders - No users with open orders for symbol USDCZK
+2025-07-08 21:52:13,721 - DEBUG - orders - No users with open orders for symbol EURCAD
+2025-07-08 21:52:13,721 - DEBUG - orders - No users with open orders for symbol SGDJPY
+2025-07-08 21:52:13,721 - DEBUG - orders - No users with open orders for symbol EURPLN
+2025-07-08 21:52:13,726 - DEBUG - orders - No users with open orders for symbol USDNOK
+2025-07-08 21:52:13,727 - DEBUG - orders - No users with open orders for symbol USDSEK
+2025-07-08 21:52:13,727 - DEBUG - orders - No users with open orders for symbol US30
+2025-07-08 21:52:13,727 - DEBUG - orders - No users with open orders for symbol CADJPY
+2025-07-08 21:52:13,729 - DEBUG - orders - No users with open orders for symbol CHFSGD
+2025-07-08 21:52:13,729 - DEBUG - orders - No users with open orders for symbol AUDUSD
+2025-07-08 21:52:13,729 - DEBUG - orders - No users with open orders for symbol EURAUD
+2025-07-08 21:52:13,729 - INFO - orders - Processing SL/TP for symbol AUDCAD with 2 users
+2025-07-08 21:52:13,734 - DEBUG - orders - No users with open orders for symbol EURNOK
+2025-07-08 21:52:13,735 - DEBUG - orders - No users with open orders for symbol GBPNOK
+2025-07-08 21:52:13,735 - DEBUG - orders - No users with open orders for symbol GBPNZD
+2025-07-08 21:52:13,740 - DEBUG - orders - No users with open orders for symbol NOKSEK
+2025-07-08 21:52:13,740 - INFO - orders - Processing SL/TP for symbol AUDCHF with 2 users
+2025-07-08 21:52:13,742 - DEBUG - orders - No users with open orders for symbol EURUSD
+2025-07-08 21:52:13,743 - DEBUG - orders - No users with open orders for symbol USDCAD
+2025-07-08 21:52:13,745 - DEBUG - orders - No users with open orders for symbol EURGBP
+2025-07-08 21:52:15,986 - INFO - orders - Market data update received for symbols: ['GBPSEK', 'XAGUSD', 'NZDJPY', 'GBPAUD', 'BTCUSD', 'USDJPY', 'CADCHF', 'USDSGD', 'EURZAR', 'AUDJPY', 'EURSEK', 'EURPLN', 'USDCHF', 'EURCAD', 'USDCZK', 'CADJPY', 'USDSEK', 'GBPUSD', 'EURAUD', 'CHFSGD', 'AUDCAD', 'EURNOK', 'GBPNOK', 'EURUSD', 'AUDCHF', 'NOKSEK', 'EURSGD', 'USDCAD', 'EURGBP'], triggering optimized SL/TP check
+2025-07-08 21:52:15,986 - INFO - orders - Processing SL/TP batch for 29 symbols: ['GBPSEK', 'XAGUSD', 'NZDJPY', 'GBPAUD', 'BTCUSD', 'USDJPY', 'CADCHF', 'USDSGD', 'EURZAR', 'AUDJPY', 'EURSEK', 'EURPLN', 'USDCHF', 'EURCAD', 'USDCZK', 'CADJPY', 'USDSEK', 'GBPUSD', 'EURAUD', 'CHFSGD', 'AUDCAD', 'EURNOK', 'GBPNOK', 'EURUSD', 'AUDCHF', 'NOKSEK', 'EURSGD', 'USDCAD', 'EURGBP']
+2025-07-08 21:52:15,990 - DEBUG - orders - No users with open orders for symbol XAGUSD
+2025-07-08 21:52:15,990 - DEBUG - orders - No users with open orders for symbol GBPSEK
+2025-07-08 21:52:15,990 - DEBUG - orders - No users with open orders for symbol NZDJPY
+2025-07-08 21:52:15,990 - DEBUG - orders - No users with open orders for symbol BTCUSD
+2025-07-08 21:52:15,990 - DEBUG - orders - No users with open orders for symbol GBPAUD
+2025-07-08 21:52:15,992 - INFO - orders - Processing SL/TP for symbol AUDJPY with 1 users
+2025-07-08 21:52:15,993 - DEBUG - orders - No users with open orders for symbol EURZAR
+2025-07-08 21:52:15,993 - DEBUG - orders - No users with open orders for symbol USDSGD
+2025-07-08 21:52:15,993 - DEBUG - orders - No users with open orders for symbol CADCHF
+2025-07-08 21:52:15,993 - DEBUG - orders - No users with open orders for symbol USDJPY
+2025-07-08 21:52:15,999 - DEBUG - orders - No users with open orders for symbol EURCAD
+2025-07-08 21:52:15,999 - DEBUG - orders - No users with open orders for symbol USDCHF
+2025-07-08 21:52:15,999 - DEBUG - orders - No users with open orders for symbol EURPLN
+2025-07-08 21:52:15,999 - DEBUG - orders - No users with open orders for symbol EURSEK
+2025-07-08 21:52:16,002 - DEBUG - orders - No users with open orders for symbol GBPUSD
+2025-07-08 21:52:16,002 - DEBUG - orders - No users with open orders for symbol USDSEK
+2025-07-08 21:52:16,003 - DEBUG - orders - No users with open orders for symbol CADJPY
+2025-07-08 21:52:16,003 - DEBUG - orders - No users with open orders for symbol USDCZK
+2025-07-08 21:52:16,004 - DEBUG - orders - No users with open orders for symbol CHFSGD
+2025-07-08 21:52:16,004 - DEBUG - orders - No users with open orders for symbol EURAUD
+2025-07-08 21:52:16,004 - INFO - orders - Processing SL/TP for symbol AUDCAD with 2 users
+2025-07-08 21:52:16,004 - DEBUG - orders - No users with open orders for symbol EURNOK
+2025-07-08 21:52:16,005 - DEBUG - orders - No users with open orders for symbol EURUSD
+2025-07-08 21:52:16,005 - DEBUG - orders - No users with open orders for symbol GBPNOK
+2025-07-08 21:52:16,006 - INFO - orders - Processing SL/TP for symbol AUDCHF with 2 users
+2025-07-08 21:52:16,006 - DEBUG - orders - No users with open orders for symbol NOKSEK
+2025-07-08 21:52:16,006 - DEBUG - orders - No users with open orders for symbol USDCAD
+2025-07-08 21:52:16,006 - DEBUG - orders - No users with open orders for symbol EURSGD
+2025-07-08 21:52:16,008 - DEBUG - orders - No users with open orders for symbol EURGBP
+2025-07-08 21:52:16,233 - INFO - orders - Order placement request received - User: 1, Symbol: AUDCHF, Type: SELL
+2025-07-08 21:52:16,606 - INFO - orders - [MARGIN_CALC] Market data for AUDCHF: {'b': '0.5211400000', 'o': '0.5210700000'}
+2025-07-08 21:52:16,606 - WARNING - orders - [MARGIN_CALC] Missing ask price for AUDCHF, using bid price with spread: bid=0.5211400000, ask=0.52119211400000
+2025-07-08 21:52:16,606 - INFO - orders - [MARGIN_CALC] Using prices for AUDCHF: bid=0.5211400000, ask=0.52119211400000
+2025-07-08 21:52:16,608 - INFO - orders - [CURRENCY_CONVERT] Starting conversion of 5.21 CHF to USD for margin_calculation (user_id: 1, position: None)
+2025-07-08 21:52:16,609 - INFO - orders - [CURRENCY_CONVERT] Trying direct conversion with symbol: CHFUSD
+2025-07-08 21:52:16,609 - INFO - orders - [CURRENCY_CONVERT] Direct conversion prices from cache: None
+2025-07-08 21:52:16,610 - INFO - orders - [CURRENCY_CONVERT] No direct conversion rate found for CHFUSD, trying inverse
+2025-07-08 21:52:16,610 - INFO - orders - [CURRENCY_CONVERT] Trying inverse conversion with symbol: USDCHF
+2025-07-08 21:52:16,611 - INFO - orders - [CURRENCY_CONVERT] Inverse conversion prices from cache: {'b': Decimal('0.7970400000'), 'o': Decimal('0.7970100000')}
+2025-07-08 21:52:16,611 - INFO - orders - [CURRENCY_CONVERT] Found inverse conversion rate (bid): 0.7970400000
+2025-07-08 21:52:16,611 - INFO - orders - [CURRENCY_CONVERT] Inverse conversion successful: 5.21 CHF / 0.7970400000 = 6.536685737227742647796848339 USD
+2025-07-08 21:52:16,611 - INFO - orders - [MARGIN_CALC_OPTIMIZED] Symbol: AUDCHF, Type: SELL, Qty: 0.01, Price: 0.5211400000, Margin: 6.536685737227742647796848339, Commission: 0.10
+2025-07-08 21:52:16,611 - INFO - orders - [HEDGING_MARGIN_DEBUG] Starting hedging calculation for User: 1, Symbol: AUDCHF, OrderType: SELL, Quantity: 0.01, FullMargin: 6.536685737227742647796848339
+2025-07-08 21:52:16,612 - INFO - orders - [HEDGING_MARGIN_DEBUG] Existing open orders count: 1
+2025-07-08 21:52:16,612 - INFO - orders - [HEDGING_MARGIN_DEBUG] Created simulated order: Type=SELL, Qty=0.01, Margin=6.536685737227742647796848339
+2025-07-08 21:52:16,612 - INFO - orders - [HEDGING_MARGIN_DEBUG] About to calculate margin before and after for 1 existing orders + 1 new order
+2025-07-08 21:52:16,612 - INFO - orders - [HEDGING_MARGIN_DEBUG] Executing margin calculation tasks...
+2025-07-08 21:52:16,612 - INFO - orders - [MARGIN_TOTAL_CONTRIB] Calculating margin for 1 positions for User 1, Symbol AUDCHF
+2025-07-08 21:52:16,613 - INFO - orders - [MARGIN_TOTAL_CONTRIB_POS] User 1, Symbol AUDCHF, Pos 1 (ID: 677): Type=BUY, Qty=0.01000000, StoredMargin=6.53668574
+2025-07-08 21:52:16,613 - INFO - orders - [MARGIN_TOTAL_CONTRIB_POS] User 1, Symbol AUDCHF, Pos 1: MarginPerLot=653.668574
+2025-07-08 21:52:16,613 - INFO - orders - [MARGIN_TOTAL_CONTRIB_CALC] User 1, Symbol AUDCHF: TotalBuyQty=0.01000000, TotalSellQty=0, NetQty=0.01000000, IsHedged=False
+2025-07-08 21:52:16,613 - INFO - orders - [MARGIN_TOTAL_CONTRIB_CALC] User 1, Symbol AUDCHF: AllMarginsPerLot=[Decimal('653.668574')], HighestMarginPerLot=653.668574
+2025-07-08 21:52:16,613 - INFO - orders - [MARGIN_TOTAL_CONTRIB_EXIT] User 1, Symbol AUDCHF: CalculatedTotalMargin=6.54
+2025-07-08 21:52:16,613 - INFO - orders - [MARGIN_TOTAL_CONTRIB] Calculating margin for 2 positions for User 1, Symbol AUDCHF
+2025-07-08 21:52:16,614 - INFO - orders - [MARGIN_TOTAL_CONTRIB_POS] User 1, Symbol AUDCHF, Pos 1 (ID: 677): Type=BUY, Qty=0.01000000, StoredMargin=6.53668574
+2025-07-08 21:52:16,614 - INFO - orders - [MARGIN_TOTAL_CONTRIB_POS] User 1, Symbol AUDCHF, Pos 1: MarginPerLot=653.668574
+2025-07-08 21:52:16,614 - INFO - orders - [MARGIN_TOTAL_CONTRIB_POS] User 1, Symbol AUDCHF, Pos 2 (ID: None): Type=SELL, Qty=0.01, StoredMargin=6.536685737227742647796848339
+2025-07-08 21:52:16,614 - INFO - orders - [MARGIN_TOTAL_CONTRIB_POS] User 1, Symbol AUDCHF, Pos 2: MarginPerLot=653.6685737227742647796848339
+2025-07-08 21:52:16,614 - INFO - orders - [MARGIN_TOTAL_CONTRIB_CALC] User 1, Symbol AUDCHF: TotalBuyQty=0.01000000, TotalSellQty=0.01, NetQty=0.01000000, IsHedged=True
+2025-07-08 21:52:16,614 - INFO - orders - [MARGIN_TOTAL_CONTRIB_CALC] User 1, Symbol AUDCHF: AllMarginsPerLot=[Decimal('653.668574'), Decimal('653.6685737227742647796848339')], HighestMarginPerLot=653.668574
+2025-07-08 21:52:16,614 - INFO - orders - [MARGIN_TOTAL_CONTRIB_EXIT] User 1, Symbol AUDCHF: CalculatedTotalMargin=6.54
+2025-07-08 21:52:16,615 - INFO - orders - [HEDGING_MARGIN_DEBUG] Margin calculation tasks completed
+2025-07-08 21:52:16,615 - INFO - orders - [HEDGING_MARGIN_DEBUG] User: 1, Symbol: AUDCHF, OrderType: SELL, MarginBefore: 6.54, MarginAfter: 6.54, AdditionalMargin: 0.0, OpenOrders: 1
+2025-07-08 21:52:16,615 - INFO - orders - [HEDGING_MARGIN_DEBUG] Simulated order: Type=SELL, Qty=0.01, Margin=6.536685737227742647796848339
+2025-07-08 21:52:16,628 - INFO - orders - [CACHE_UPDATE] Updating balance/margin cache for user 1: balance=24896.08000000, margin=6.54000000 (was 6.54000000)
+2025-07-08 21:52:16,628 - INFO - orders - [CACHE_UPDATE] Balance/margin cache updated for user 1
+2025-07-08 21:52:16,628 - INFO - orders - [PERF] Order processing: 0.3912s
+2025-07-08 21:52:16,629 - DEBUG - orders - [DEBUG][create_user_order] Received order_data: {'order_id': '2312432300', 'order_status': 'OPEN', 'order_user_id': 1, 'order_company_name': 'AUDCHF', 'order_type': 'SELL', 'order_price': Decimal('0.5211400000'), 'order_quantity': Decimal('0.01'), 'contract_value': Decimal('1000.00'), 'margin': Decimal('6.536685737227742647796848339'), 'commission': Decimal('0.10'), 'status': 'OPEN', 'stop_loss': None, 'take_profit': None, 'stoploss_id': None, 'takeprofit_id': None, 'close_id': None}
+2025-07-08 21:52:16,629 - DEBUG - orders - [DEBUG][create_user_order] Created OrderActionHistory record for order_id: 2312432300
+2025-07-08 21:52:16,670 - INFO - orders - [PERF] Order creation: 0.0412s
+2025-07-08 21:52:16,670 - INFO - orders - is_barclays_live_user in place_order: False
+2025-07-08 21:52:16,670 - INFO - orders - [PUBLISH_DEBUG] Publishing order update for user 1
+2025-07-08 21:52:16,671 - INFO - orders - [PUBLISH_DEBUG] Publishing user data update for user 1
+2025-07-08 21:52:16,672 - INFO - orders - [PUBLISH_DEBUG] Publishing market data trigger
+2025-07-08 21:52:16,678 - INFO - orders - [PERF] TOTAL place_order: 0.4461s
+2025-07-08 21:52:18,357 - INFO - orders - Market data update received for symbols: ['XAGUSD', 'GBPAUD', 'USDCNH', 'EURNZD', 'EURZAR', 'AUDJPY', 'EURSEK', 'USDZAR', 'SGDJPY', 'USDCHF', 'EURCAD', 'USDCZK', 'CADJPY', 'US30', 'GBPUSD', 'EURAUD', 'CHFSGD', 'AUDUSD', 'AUDCAD', 'EURNOK', 'GBPNZD', 'GBPNOK', 'EURUSD', 'AUDCHF', 'NOKSEK', 'EURSGD', 'USDCAD', 'EURJPY'], triggering optimized SL/TP check
+2025-07-08 21:52:18,359 - INFO - orders - Processing SL/TP batch for 28 symbols: ['XAGUSD', 'GBPAUD', 'USDCNH', 'EURNZD', 'EURZAR', 'AUDJPY', 'EURSEK', 'USDZAR', 'SGDJPY', 'USDCHF', 'EURCAD', 'USDCZK', 'CADJPY', 'US30', 'GBPUSD', 'EURAUD', 'CHFSGD', 'AUDUSD', 'AUDCAD', 'EURNOK', 'GBPNZD', 'GBPNOK', 'EURUSD', 'AUDCHF', 'NOKSEK', 'EURSGD', 'USDCAD', 'EURJPY']
+2025-07-08 21:52:18,363 - DEBUG - orders - No users with open orders for symbol EURZAR
+2025-07-08 21:52:18,363 - DEBUG - orders - No users with open orders for symbol USDCNH
+2025-07-08 21:52:18,363 - DEBUG - orders - No users with open orders for symbol GBPAUD
+2025-07-08 21:52:18,364 - DEBUG - orders - No users with open orders for symbol XAGUSD
+2025-07-08 21:52:18,364 - DEBUG - orders - No users with open orders for symbol EURNZD
+2025-07-08 21:52:18,373 - DEBUG - orders - No users with open orders for symbol USDCHF
+2025-07-08 21:52:18,373 - DEBUG - orders - No users with open orders for symbol SGDJPY
+2025-07-08 21:52:18,373 - DEBUG - orders - No users with open orders for symbol USDZAR
+2025-07-08 21:52:18,373 - DEBUG - orders - No users with open orders for symbol EURSEK
+2025-07-08 21:52:18,373 - INFO - orders - Processing SL/TP for symbol AUDJPY with 1 users
+2025-07-08 21:52:18,379 - DEBUG - orders - No users with open orders for symbol EURCAD
+2025-07-08 21:52:18,379 - DEBUG - orders - No users with open orders for symbol CADJPY
+2025-07-08 21:52:18,379 - DEBUG - orders - No users with open orders for symbol US30
+2025-07-08 21:52:18,379 - DEBUG - orders - No users with open orders for symbol USDCZK
+2025-07-08 21:52:18,382 - DEBUG - orders - No users with open orders for symbol AUDUSD
+2025-07-08 21:52:18,382 - DEBUG - orders - No users with open orders for symbol CHFSGD
+2025-07-08 21:52:18,383 - DEBUG - orders - No users with open orders for symbol EURAUD
+2025-07-08 21:52:18,383 - DEBUG - orders - No users with open orders for symbol GBPUSD
+2025-07-08 21:52:18,385 - DEBUG - orders - No users with open orders for symbol EURNOK
+2025-07-08 21:52:18,385 - DEBUG - orders - No users with open orders for symbol GBPNZD
+2025-07-08 21:52:18,385 - INFO - orders - Processing SL/TP for symbol AUDCAD with 2 users
+2025-07-08 21:52:18,386 - DEBUG - orders - No users with open orders for symbol GBPNOK
+2025-07-08 21:52:18,388 - DEBUG - orders - No users with open orders for symbol EURUSD
+2025-07-08 21:52:18,388 - INFO - orders - Processing SL/TP for symbol AUDCHF with 2 users
+2025-07-08 21:52:18,390 - DEBUG - orders - No users with open orders for symbol NOKSEK
+2025-07-08 21:52:18,391 - DEBUG - orders - No users with open orders for symbol EURSGD
+2025-07-08 21:52:18,395 - DEBUG - orders - No users with open orders for symbol USDCAD
+2025-07-08 21:52:18,395 - DEBUG - orders - No users with open orders for symbol EURJPY
+2025-07-08 21:52:20,602 - INFO - orders - Market data update received for symbols: ['GBPSEK', 'NZDJPY', 'GBPAUD', 'USDCNH', 'CADCHF', 'USDSGD', 'EURZAR', 'AUDJPY', 'EURPLN', 'JP225', 'USDCHF', 'EURCAD', 'USDNOK', 'CADJPY', 'USDSEK', 'GBPUSD', 'EURAUD', 'CHFSGD', 'AUDUSD', 'AUDCAD', 'EURNOK', 'GBPNZD', 'EURCHF', 'NZDCAD', 'GBPNOK', 'AUDCHF', 'NOKSEK', 'USDCAD', 'EURGBP'], triggering optimized SL/TP check
+2025-07-08 21:52:20,603 - INFO - orders - Processing SL/TP batch for 29 symbols: ['GBPSEK', 'NZDJPY', 'GBPAUD', 'USDCNH', 'CADCHF', 'USDSGD', 'EURZAR', 'AUDJPY', 'EURPLN', 'JP225', 'USDCHF', 'EURCAD', 'USDNOK', 'CADJPY', 'USDSEK', 'GBPUSD', 'EURAUD', 'CHFSGD', 'AUDUSD', 'AUDCAD', 'EURNOK', 'GBPNZD', 'EURCHF', 'NZDCAD', 'GBPNOK', 'AUDCHF', 'NOKSEK', 'USDCAD', 'EURGBP']
+2025-07-08 21:52:20,610 - DEBUG - orders - No users with open orders for symbol CADCHF
+2025-07-08 21:52:20,610 - DEBUG - orders - No users with open orders for symbol NZDJPY
+2025-07-08 21:52:20,610 - DEBUG - orders - No users with open orders for symbol GBPSEK
+2025-07-08 21:52:20,610 - DEBUG - orders - No users with open orders for symbol GBPAUD
+2025-07-08 21:52:20,610 - DEBUG - orders - No users with open orders for symbol USDCNH
+2025-07-08 21:52:20,626 - DEBUG - orders - No users with open orders for symbol EURPLN
+2025-07-08 21:52:20,627 - INFO - orders - Processing SL/TP for symbol AUDJPY with 1 users
+2025-07-08 21:52:20,629 - DEBUG - orders - No users with open orders for symbol EURZAR
+2025-07-08 21:52:20,629 - DEBUG - orders - No users with open orders for symbol USDSGD
+2025-07-08 21:52:20,630 - DEBUG - orders - No users with open orders for symbol JP225
+2025-07-08 21:52:20,635 - DEBUG - orders - No users with open orders for symbol CADJPY
+2025-07-08 21:52:20,635 - DEBUG - orders - No users with open orders for symbol USDNOK
+2025-07-08 21:52:20,636 - DEBUG - orders - No users with open orders for symbol EURCAD
+2025-07-08 21:52:20,636 - DEBUG - orders - No users with open orders for symbol USDCHF
+2025-07-08 21:52:20,644 - DEBUG - orders - No users with open orders for symbol GBPUSD
+2025-07-08 21:52:20,645 - DEBUG - orders - No users with open orders for symbol USDSEK
+2025-07-08 21:52:20,645 - DEBUG - orders - No users with open orders for symbol EURAUD
+2025-07-08 21:52:20,645 - DEBUG - orders - No users with open orders for symbol CHFSGD
+2025-07-08 21:52:20,647 - DEBUG - orders - No users with open orders for symbol AUDUSD
+2025-07-08 21:52:20,647 - INFO - orders - Processing SL/TP for symbol AUDCAD with 2 users
+2025-07-08 21:52:20,648 - DEBUG - orders - No users with open orders for symbol GBPNZD
+2025-07-08 21:52:20,649 - DEBUG - orders - No users with open orders for symbol EURNOK
+2025-07-08 21:52:20,652 - DEBUG - orders - No users with open orders for symbol NZDCAD
+2025-07-08 21:52:20,652 - DEBUG - orders - No users with open orders for symbol EURCHF
+2025-07-08 21:52:20,652 - DEBUG - orders - No users with open orders for symbol GBPNOK
+2025-07-08 21:52:20,654 - INFO - orders - Processing SL/TP for symbol AUDCHF with 2 users
+2025-07-08 21:52:20,659 - DEBUG - orders - No users with open orders for symbol EURGBP
+2025-07-08 21:52:20,660 - DEBUG - orders - No users with open orders for symbol USDCAD
+2025-07-08 21:52:20,660 - DEBUG - orders - No users with open orders for symbol NOKSEK
+2025-07-08 21:52:22,939 - INFO - orders - Market data update received for symbols: ['GBPSEK', 'XAGUSD', 'NZDJPY', 'USDCNH', 'CADCHF', 'EURNZD', 'USDSGD', 'AUDJPY', 'EURSEK', 'SGDJPY', 'USDCHF', 'EURCAD', 'USDCZK', 'USDNOK', 'CADJPY', 'US30', 'EURAUD', 'CHFSGD', 'AUDUSD', 'AUDCAD', 'EURNOK', 'GBPNZD', 'EURCHF', 'NZDCAD', 'GBPNOK', 'EURUSD', 'USDCAD'], triggering optimized SL/TP check
+2025-07-08 21:52:22,939 - INFO - orders - Processing SL/TP batch for 27 symbols: ['GBPSEK', 'XAGUSD', 'NZDJPY', 'USDCNH', 'CADCHF', 'EURNZD', 'USDSGD', 'AUDJPY', 'EURSEK', 'SGDJPY', 'USDCHF', 'EURCAD', 'USDCZK', 'USDNOK', 'CADJPY', 'US30', 'EURAUD', 'CHFSGD', 'AUDUSD', 'AUDCAD', 'EURNOK', 'GBPNZD', 'EURCHF', 'NZDCAD', 'GBPNOK', 'EURUSD', 'USDCAD']
+2025-07-08 21:52:22,947 - DEBUG - orders - No users with open orders for symbol CADCHF
+2025-07-08 21:52:22,947 - DEBUG - orders - No users with open orders for symbol NZDJPY
+2025-07-08 21:52:22,947 - DEBUG - orders - No users with open orders for symbol GBPSEK
+2025-07-08 21:52:22,948 - DEBUG - orders - No users with open orders for symbol XAGUSD
+2025-07-08 21:52:22,948 - DEBUG - orders - No users with open orders for symbol USDCNH
+2025-07-08 21:52:22,954 - DEBUG - orders - No users with open orders for symbol SGDJPY
+2025-07-08 21:52:22,955 - DEBUG - orders - No users with open orders for symbol EURSEK
+2025-07-08 21:52:22,955 - INFO - orders - Processing SL/TP for symbol AUDJPY with 1 users
+2025-07-08 21:52:22,956 - DEBUG - orders - No users with open orders for symbol USDSGD
+2025-07-08 21:52:22,956 - DEBUG - orders - No users with open orders for symbol EURNZD
+2025-07-08 21:52:22,970 - DEBUG - orders - No users with open orders for symbol USDNOK
+2025-07-08 21:52:22,970 - DEBUG - orders - No users with open orders for symbol USDCZK
+2025-07-08 21:52:22,970 - DEBUG - orders - No users with open orders for symbol EURCAD
+2025-07-08 21:52:22,970 - DEBUG - orders - No users with open orders for symbol USDCHF
+2025-07-08 21:52:22,975 - DEBUG - orders - No users with open orders for symbol CADJPY
+2025-07-08 21:52:22,975 - DEBUG - orders - No users with open orders for symbol CHFSGD
+2025-07-08 21:52:22,975 - DEBUG - orders - No users with open orders for symbol US30
+2025-07-08 21:52:22,975 - DEBUG - orders - No users with open orders for symbol EURAUD
+2025-07-08 21:52:22,977 - DEBUG - orders - No users with open orders for symbol EURNOK
+2025-07-08 21:52:22,978 - DEBUG - orders - No users with open orders for symbol AUDUSD
+2025-07-08 21:52:22,978 - INFO - orders - Processing SL/TP for symbol AUDCAD with 2 users
+2025-07-08 21:52:22,979 - DEBUG - orders - No users with open orders for symbol GBPNZD
+2025-07-08 21:52:22,982 - DEBUG - orders - No users with open orders for symbol EURCHF
+2025-07-08 21:52:22,982 - DEBUG - orders - No users with open orders for symbol NZDCAD
+2025-07-08 21:52:22,982 - DEBUG - orders - No users with open orders for symbol GBPNOK
+2025-07-08 21:52:22,983 - DEBUG - orders - No users with open orders for symbol EURUSD
+2025-07-08 21:52:22,983 - DEBUG - orders - No users with open orders for symbol USDCAD
+2025-07-08 21:52:25,207 - INFO - orders - Market data update received for symbols: ['GBPSEK', 'XAGUSD', 'GBPAUD', 'EURNZD', 'AUDJPY', 'EURSEK', 'USDCZK', 'CADJPY', 'USDSEK', 'EURAUD', 'CHFSGD', 'AUDUSD', 'AUDCAD', 'CHFJPY', 'AUDCHF', 'NOKSEK', 'USDCAD'], triggering optimized SL/TP check
+2025-07-08 21:52:25,209 - INFO - orders - Processing SL/TP batch for 17 symbols: ['GBPSEK', 'XAGUSD', 'GBPAUD', 'EURNZD', 'AUDJPY', 'EURSEK', 'USDCZK', 'CADJPY', 'USDSEK', 'EURAUD', 'CHFSGD', 'AUDUSD', 'AUDCAD', 'CHFJPY', 'AUDCHF', 'NOKSEK', 'USDCAD']
+2025-07-08 21:52:25,212 - DEBUG - orders - No users with open orders for symbol GBPAUD
+2025-07-08 21:52:25,212 - DEBUG - orders - No users with open orders for symbol GBPSEK
+2025-07-08 21:52:25,212 - DEBUG - orders - No users with open orders for symbol XAGUSD
+2025-07-08 21:52:25,213 - INFO - orders - Processing SL/TP for symbol AUDJPY with 1 users
+2025-07-08 21:52:25,214 - DEBUG - orders - No users with open orders for symbol EURNZD
+2025-07-08 21:52:25,224 - DEBUG - orders - No users with open orders for symbol USDSEK
+2025-07-08 21:52:25,224 - DEBUG - orders - No users with open orders for symbol CADJPY
+2025-07-08 21:52:25,224 - DEBUG - orders - No users with open orders for symbol EURSEK
+2025-07-08 21:52:25,225 - DEBUG - orders - No users with open orders for symbol USDCZK
+2025-07-08 21:52:25,228 - DEBUG - orders - No users with open orders for symbol CHFSGD
+2025-07-08 21:52:25,229 - DEBUG - orders - No users with open orders for symbol AUDUSD
+2025-07-08 21:52:25,229 - DEBUG - orders - No users with open orders for symbol EURAUD
+2025-07-08 21:52:25,230 - INFO - orders - Processing SL/TP for symbol AUDCAD with 2 users
+2025-07-08 21:52:25,232 - DEBUG - orders - No users with open orders for symbol NOKSEK
+2025-07-08 21:52:25,232 - INFO - orders - Processing SL/TP for symbol AUDCHF with 2 users
+2025-07-08 21:52:25,233 - DEBUG - orders - No users with open orders for symbol CHFJPY
+2025-07-08 21:52:25,235 - DEBUG - orders - No users with open orders for symbol USDCAD
+2025-07-08 21:52:27,481 - INFO - orders - Market data update received for symbols: ['GBPSEK', 'XAGUSD', 'NZDJPY', 'GBPAUD', 'USDJPY', 'USDCNH', 'CADCHF', 'EURNZD', 'USDSGD', 'AUDJPY', 'EURSEK', 'USDZAR', 'EURPLN', 'SGDJPY', 'JP225', 'USDCHF', 'EURCAD', 'USDNOK', 'CADJPY', 'USDSEK', 'GBPUSD', 'EURAUD', 'CHFSGD', 'NZDUSD', 'AUDUSD', 'AUDCAD', 'EURNOK', 'GBPNZD', 'EURCHF', 'CHFJPY', 'EURUSD', 'NOKSEK', 'EURSGD', 'USDCAD', 'EURGBP', 'EURJPY'], triggering optimized SL/TP check
+2025-07-08 21:52:27,484 - INFO - orders - Processing SL/TP batch for 36 symbols: ['GBPSEK', 'XAGUSD', 'NZDJPY', 'GBPAUD', 'USDJPY', 'USDCNH', 'CADCHF', 'EURNZD', 'USDSGD', 'AUDJPY', 'EURSEK', 'USDZAR', 'EURPLN', 'SGDJPY', 'JP225', 'USDCHF', 'EURCAD', 'USDNOK', 'CADJPY', 'USDSEK', 'GBPUSD', 'EURAUD', 'CHFSGD', 'NZDUSD', 'AUDUSD', 'AUDCAD', 'EURNOK', 'GBPNZD', 'EURCHF', 'CHFJPY', 'EURUSD', 'NOKSEK', 'EURSGD', 'USDCAD', 'EURGBP', 'EURJPY']
+2025-07-08 21:52:27,497 - DEBUG - orders - No users with open orders for symbol GBPAUD
+2025-07-08 21:52:27,497 - DEBUG - orders - No users with open orders for symbol NZDJPY
+2025-07-08 21:52:27,497 - DEBUG - orders - No users with open orders for symbol USDJPY
+2025-07-08 21:52:27,497 - DEBUG - orders - No users with open orders for symbol XAGUSD
+2025-07-08 21:52:27,498 - DEBUG - orders - No users with open orders for symbol GBPSEK
+2025-07-08 21:52:27,503 - INFO - orders - Processing SL/TP for symbol AUDJPY with 1 users
+2025-07-08 21:52:27,504 - DEBUG - orders - No users with open orders for symbol USDSGD
+2025-07-08 21:52:27,504 - DEBUG - orders - No users with open orders for symbol EURNZD
+2025-07-08 21:52:27,504 - DEBUG - orders - No users with open orders for symbol CADCHF
+2025-07-08 21:52:27,504 - DEBUG - orders - No users with open orders for symbol USDCNH
+2025-07-08 21:52:27,507 - DEBUG - orders - No users with open orders for symbol USDZAR
+2025-07-08 21:52:27,508 - DEBUG - orders - No users with open orders for symbol EURSEK
+2025-07-08 21:52:27,509 - DEBUG - orders - No users with open orders for symbol EURPLN
+2025-07-08 21:52:27,509 - DEBUG - orders - No users with open orders for symbol SGDJPY
+2025-07-08 21:52:27,512 - DEBUG - orders - No users with open orders for symbol USDNOK
+2025-07-08 21:52:27,512 - DEBUG - orders - No users with open orders for symbol EURCAD
+2025-07-08 21:52:27,512 - DEBUG - orders - No users with open orders for symbol USDCHF
+2025-07-08 21:52:27,512 - DEBUG - orders - No users with open orders for symbol JP225
+2025-07-08 21:52:27,514 - DEBUG - orders - No users with open orders for symbol CADJPY
+2025-07-08 21:52:27,514 - DEBUG - orders - No users with open orders for symbol USDSEK
+2025-07-08 21:52:27,514 - DEBUG - orders - No users with open orders for symbol EURAUD
+2025-07-08 21:52:27,514 - DEBUG - orders - No users with open orders for symbol GBPUSD
+2025-07-08 21:52:27,515 - DEBUG - orders - No users with open orders for symbol NZDUSD
+2025-07-08 21:52:27,515 - DEBUG - orders - No users with open orders for symbol CHFSGD
+2025-07-08 21:52:27,515 - DEBUG - orders - No users with open orders for symbol AUDUSD
+2025-07-08 21:52:27,515 - INFO - orders - Processing SL/TP for symbol AUDCAD with 2 users
+2025-07-08 21:52:27,523 - DEBUG - orders - No users with open orders for symbol EURNOK
+2025-07-08 21:52:27,523 - DEBUG - orders - No users with open orders for symbol GBPNZD
+2025-07-08 21:52:27,525 - DEBUG - orders - No users with open orders for symbol CHFJPY
+2025-07-08 21:52:27,526 - DEBUG - orders - No users with open orders for symbol EURCHF
+2025-07-08 21:52:27,526 - DEBUG - orders - No users with open orders for symbol EURUSD
+2025-07-08 21:52:27,527 - DEBUG - orders - No users with open orders for symbol NOKSEK
+2025-07-08 21:52:27,530 - DEBUG - orders - No users with open orders for symbol USDCAD
+2025-07-08 21:52:27,530 - DEBUG - orders - No users with open orders for symbol EURSGD
+2025-07-08 21:52:27,530 - DEBUG - orders - No users with open orders for symbol EURGBP
+2025-07-08 21:52:27,531 - DEBUG - orders - No users with open orders for symbol EURJPY
+2025-07-08 21:52:29,828 - INFO - orders - Market data update received for symbols: ['GBPSEK', 'XAGUSD', 'NZDJPY', 'GBPAUD', 'USDCNH', 'CADCHF', 'EURNZD', 'USDSGD', 'EURZAR', 'AUDJPY', 'EURSEK', 'USDZAR', 'EURPLN', 'SGDJPY', 'USDCHF', 'EURCAD', 'USDCZK', 'CADJPY', 'USDSEK', 'GBPUSD', 'EURAUD', 'CHFSGD', 'NZDUSD', 'AUDUSD', 'AUDCAD', 'EURNOK', 'GBPNZD', 'EURCHF', 'D30', 'NZDCAD', 'GBPNOK', 'EURUSD', 'AUDCHF', 'NOKSEK', 'EURSGD', 'USDCAD', 'EURGBP', 'EURJPY'], triggering optimized SL/TP check
+2025-07-08 21:52:29,829 - INFO - orders - Processing SL/TP batch for 38 symbols: ['GBPSEK', 'XAGUSD', 'NZDJPY', 'GBPAUD', 'USDCNH', 'CADCHF', 'EURNZD', 'USDSGD', 'EURZAR', 'AUDJPY', 'EURSEK', 'USDZAR', 'EURPLN', 'SGDJPY', 'USDCHF', 'EURCAD', 'USDCZK', 'CADJPY', 'USDSEK', 'GBPUSD', 'EURAUD', 'CHFSGD', 'NZDUSD', 'AUDUSD', 'AUDCAD', 'EURNOK', 'GBPNZD', 'EURCHF', 'D30', 'NZDCAD', 'GBPNOK', 'EURUSD', 'AUDCHF', 'NOKSEK', 'EURSGD', 'USDCAD', 'EURGBP', 'EURJPY']
+2025-07-08 21:52:29,838 - DEBUG - orders - No users with open orders for symbol USDCNH
+2025-07-08 21:52:29,838 - DEBUG - orders - No users with open orders for symbol GBPSEK
+2025-07-08 21:52:29,838 - DEBUG - orders - No users with open orders for symbol GBPAUD
+2025-07-08 21:52:29,838 - DEBUG - orders - No users with open orders for symbol NZDJPY
+2025-07-08 21:52:29,838 - DEBUG - orders - No users with open orders for symbol XAGUSD
+2025-07-08 21:52:29,850 - DEBUG - orders - No users with open orders for symbol EURZAR
+2025-07-08 21:52:29,850 - DEBUG - orders - No users with open orders for symbol USDSGD
+2025-07-08 21:52:29,851 - DEBUG - orders - No users with open orders for symbol EURNZD
+2025-07-08 21:52:29,851 - DEBUG - orders - No users with open orders for symbol CADCHF
+2025-07-08 21:52:29,851 - INFO - orders - Processing SL/TP for symbol AUDJPY with 1 users
+2025-07-08 21:52:29,855 - DEBUG - orders - No users with open orders for symbol USDZAR
+2025-07-08 21:52:29,856 - DEBUG - orders - No users with open orders for symbol EURSEK
+2025-07-08 21:52:29,856 - DEBUG - orders - No users with open orders for symbol EURPLN
+2025-07-08 21:52:29,856 - DEBUG - orders - No users with open orders for symbol SGDJPY
+2025-07-08 21:52:29,859 - DEBUG - orders - No users with open orders for symbol CADJPY
+2025-07-08 21:52:29,859 - DEBUG - orders - No users with open orders for symbol USDCZK
+2025-07-08 21:52:29,859 - DEBUG - orders - No users with open orders for symbol EURCAD
+2025-07-08 21:52:29,859 - DEBUG - orders - No users with open orders for symbol USDCHF
+2025-07-08 21:52:29,861 - DEBUG - orders - No users with open orders for symbol CHFSGD
+2025-07-08 21:52:29,861 - DEBUG - orders - No users with open orders for symbol EURAUD
+2025-07-08 21:52:29,861 - DEBUG - orders - No users with open orders for symbol GBPUSD
+2025-07-08 21:52:29,861 - DEBUG - orders - No users with open orders for symbol USDSEK
+2025-07-08 21:52:29,862 - DEBUG - orders - No users with open orders for symbol EURNOK
+2025-07-08 21:52:29,862 - INFO - orders - Processing SL/TP for symbol AUDCAD with 2 users
+2025-07-08 21:52:29,863 - DEBUG - orders - No users with open orders for symbol AUDUSD
+2025-07-08 21:52:29,863 - DEBUG - orders - No users with open orders for symbol NZDUSD
+2025-07-08 21:52:29,866 - DEBUG - orders - No users with open orders for symbol NZDCAD
+2025-07-08 21:52:29,866 - DEBUG - orders - No users with open orders for symbol D30
+2025-07-08 21:52:29,866 - DEBUG - orders - No users with open orders for symbol EURCHF
+2025-07-08 21:52:29,866 - DEBUG - orders - No users with open orders for symbol GBPNZD
+2025-07-08 21:52:29,867 - DEBUG - orders - No users with open orders for symbol GBPNOK
+2025-07-08 21:52:29,867 - DEBUG - orders - No users with open orders for symbol EURUSD
+2025-07-08 21:52:29,867 - DEBUG - orders - No users with open orders for symbol NOKSEK
+2025-07-08 21:52:29,868 - INFO - orders - Processing SL/TP for symbol AUDCHF with 2 users
+2025-07-08 21:52:29,872 - DEBUG - orders - No users with open orders for symbol USDCAD
+2025-07-08 21:52:29,873 - DEBUG - orders - No users with open orders for symbol EURSGD
+2025-07-08 21:52:29,873 - DEBUG - orders - No users with open orders for symbol EURGBP
+2025-07-08 21:52:29,875 - DEBUG - orders - No users with open orders for symbol EURJPY
+2025-07-08 21:52:32,198 - INFO - orders - Market data update received for symbols: ['XAGUSD', 'GBPAUD', 'CADCHF', 'EURNZD', 'USDSGD', 'EURZAR', 'AUDJPY', 'EURSEK', 'USDZAR', 'EURPLN', 'SGDJPY', 'JP225', 'USDCHF', 'USDNOK', 'CADJPY', 'USDSEK', 'US30', 'GBPUSD', 'EURAUD', 'CHFSGD', 'NZDUSD', 'AUDUSD', 'AUDCAD', 'EURNOK', 'GBPNZD', 'NZDCAD', 'GBPNOK', 'EURUSD', 'AUDCHF', 'EURSGD', 'USDCAD', 'EURJPY'], triggering optimized SL/TP check
+2025-07-08 21:52:32,199 - INFO - orders - Processing SL/TP batch for 32 symbols: ['XAGUSD', 'GBPAUD', 'CADCHF', 'EURNZD', 'USDSGD', 'EURZAR', 'AUDJPY', 'EURSEK', 'USDZAR', 'EURPLN', 'SGDJPY', 'JP225', 'USDCHF', 'USDNOK', 'CADJPY', 'USDSEK', 'US30', 'GBPUSD', 'EURAUD', 'CHFSGD', 'NZDUSD', 'AUDUSD', 'AUDCAD', 'EURNOK', 'GBPNZD', 'NZDCAD', 'GBPNOK', 'EURUSD', 'AUDCHF', 'EURSGD', 'USDCAD', 'EURJPY']
+2025-07-08 21:52:32,227 - DEBUG - orders - No users with open orders for symbol USDSGD
+2025-07-08 21:52:32,227 - DEBUG - orders - No users with open orders for symbol CADCHF
+2025-07-08 21:52:32,228 - DEBUG - orders - No users with open orders for symbol XAGUSD
+2025-07-08 21:52:32,229 - DEBUG - orders - No users with open orders for symbol GBPAUD
+2025-07-08 21:52:32,229 - DEBUG - orders - No users with open orders for symbol EURNZD
+2025-07-08 21:52:32,244 - DEBUG - orders - No users with open orders for symbol EURPLN
+2025-07-08 21:52:32,244 - DEBUG - orders - No users with open orders for symbol USDZAR
+2025-07-08 21:52:32,245 - DEBUG - orders - No users with open orders for symbol EURSEK
+2025-07-08 21:52:32,246 - INFO - orders - Processing SL/TP for symbol AUDJPY with 1 users
+2025-07-08 21:52:32,247 - DEBUG - orders - No users with open orders for symbol EURZAR
+2025-07-08 21:52:32,252 - DEBUG - orders - No users with open orders for symbol SGDJPY
+2025-07-08 21:52:32,253 - DEBUG - orders - No users with open orders for symbol USDNOK
+2025-07-08 21:52:32,253 - DEBUG - orders - No users with open orders for symbol JP225
+2025-07-08 21:52:32,253 - DEBUG - orders - No users with open orders for symbol USDCHF
+2025-07-08 21:52:32,256 - DEBUG - orders - No users with open orders for symbol GBPUSD
+2025-07-08 21:52:32,256 - DEBUG - orders - No users with open orders for symbol US30
+2025-07-08 21:52:32,256 - DEBUG - orders - No users with open orders for symbol USDSEK
+2025-07-08 21:52:32,256 - DEBUG - orders - No users with open orders for symbol CADJPY
+2025-07-08 21:52:32,258 - DEBUG - orders - No users with open orders for symbol AUDUSD
+2025-07-08 21:52:32,258 - DEBUG - orders - No users with open orders for symbol NZDUSD
+2025-07-08 21:52:32,258 - DEBUG - orders - No users with open orders for symbol CHFSGD
+2025-07-08 21:52:32,258 - DEBUG - orders - No users with open orders for symbol EURAUD
+2025-07-08 21:52:32,260 - DEBUG - orders - No users with open orders for symbol NZDCAD
+2025-07-08 21:52:32,260 - DEBUG - orders - No users with open orders for symbol GBPNZD
+2025-07-08 21:52:32,260 - DEBUG - orders - No users with open orders for symbol EURNOK
+2025-07-08 21:52:32,261 - INFO - orders - Processing SL/TP for symbol AUDCAD with 2 users
+2025-07-08 21:52:32,264 - INFO - orders - Processing SL/TP for symbol AUDCHF with 2 users
+2025-07-08 21:52:32,265 - DEBUG - orders - No users with open orders for symbol GBPNOK
+2025-07-08 21:52:32,265 - DEBUG - orders - No users with open orders for symbol EURUSD
+2025-07-08 21:52:32,267 - DEBUG - orders - No users with open orders for symbol EURSGD
+2025-07-08 21:52:32,268 - DEBUG - orders - No users with open orders for symbol EURJPY
+2025-07-08 21:52:32,271 - DEBUG - orders - No users with open orders for symbol USDCAD
+2025-07-08 21:52:34,422 - INFO - orders - Market data update received for symbols: ['GBPSEK', 'XAGUSD', 'NZDJPY', 'GBPAUD', 'USDJPY', 'USDCNH', 'EURNZD', 'EURZAR', 'EURPLN', 'SGDJPY', 'JP225', 'USDNOK', 'USDSEK', 'GBPUSD', 'CHFSGD', 'NZDUSD', 'EURNOK', 'GBPNZD', 'GBPNOK', 'EURUSD', 'EURSGD', 'USDCAD', 'EURJPY'], triggering optimized SL/TP check
+2025-07-08 21:52:34,422 - INFO - orders - Processing SL/TP batch for 23 symbols: ['GBPSEK', 'XAGUSD', 'NZDJPY', 'GBPAUD', 'USDJPY', 'USDCNH', 'EURNZD', 'EURZAR', 'EURPLN', 'SGDJPY', 'JP225', 'USDNOK', 'USDSEK', 'GBPUSD', 'CHFSGD', 'NZDUSD', 'EURNOK', 'GBPNZD', 'GBPNOK', 'EURUSD', 'EURSGD', 'USDCAD', 'EURJPY']
+2025-07-08 21:52:34,430 - DEBUG - orders - No users with open orders for symbol GBPAUD
+2025-07-08 21:52:34,430 - DEBUG - orders - No users with open orders for symbol XAGUSD
+2025-07-08 21:52:34,430 - DEBUG - orders - No users with open orders for symbol GBPSEK
+2025-07-08 21:52:34,431 - DEBUG - orders - No users with open orders for symbol NZDJPY
+2025-07-08 21:52:34,431 - DEBUG - orders - No users with open orders for symbol USDJPY
+2025-07-08 21:52:34,435 - DEBUG - orders - No users with open orders for symbol SGDJPY
+2025-07-08 21:52:34,435 - DEBUG - orders - No users with open orders for symbol EURPLN
+2025-07-08 21:52:34,435 - DEBUG - orders - No users with open orders for symbol EURZAR
+2025-07-08 21:52:34,435 - DEBUG - orders - No users with open orders for symbol EURNZD
+2025-07-08 21:52:34,435 - DEBUG - orders - No users with open orders for symbol USDCNH
+2025-07-08 21:52:34,446 - DEBUG - orders - No users with open orders for symbol GBPUSD
+2025-07-08 21:52:34,446 - DEBUG - orders - No users with open orders for symbol USDSEK
+2025-07-08 21:52:34,447 - DEBUG - orders - No users with open orders for symbol CHFSGD
+2025-07-08 21:52:34,447 - DEBUG - orders - No users with open orders for symbol USDNOK
+2025-07-08 21:52:34,447 - DEBUG - orders - No users with open orders for symbol JP225
+2025-07-08 21:52:34,450 - DEBUG - orders - No users with open orders for symbol NZDUSD
+2025-07-08 21:52:34,451 - DEBUG - orders - No users with open orders for symbol GBPNZD
+2025-07-08 21:52:34,451 - DEBUG - orders - No users with open orders for symbol EURNOK
+2025-07-08 21:52:34,451 - DEBUG - orders - No users with open orders for symbol EURUSD
+2025-07-08 21:52:34,451 - DEBUG - orders - No users with open orders for symbol GBPNOK
+2025-07-08 21:52:34,451 - DEBUG - orders - No users with open orders for symbol EURJPY
+2025-07-08 21:52:34,452 - DEBUG - orders - No users with open orders for symbol USDCAD
+2025-07-08 21:52:34,452 - DEBUG - orders - No users with open orders for symbol EURSGD
+2025-07-08 21:52:36,682 - INFO - orders - Market data update received for symbols: ['GBPSEK', 'XAGUSD', 'NZDJPY', 'GBPAUD', 'USDCNH', 'CADCHF', 'EURNZD', 'USDSGD', 'EURZAR', 'AUDJPY', 'EURSEK', 'SGDJPY', 'USDCHF', 'EURCAD', 'USDCZK', 'CADJPY', 'EURAUD', 'CHFSGD', 'NZDUSD', 'AUDUSD', 'AUDCAD', 'GBPNZD', 'NZDCAD', 'GBPNOK', 'EURUSD', 'EURSGD', 'USDCAD', 'EURGBP', 'EURJPY'], triggering optimized SL/TP check
+2025-07-08 21:52:36,682 - INFO - orders - Processing SL/TP batch for 29 symbols: ['GBPSEK', 'XAGUSD', 'NZDJPY', 'GBPAUD', 'USDCNH', 'CADCHF', 'EURNZD', 'USDSGD', 'EURZAR', 'AUDJPY', 'EURSEK', 'SGDJPY', 'USDCHF', 'EURCAD', 'USDCZK', 'CADJPY', 'EURAUD', 'CHFSGD', 'NZDUSD', 'AUDUSD', 'AUDCAD', 'GBPNZD', 'NZDCAD', 'GBPNOK', 'EURUSD', 'EURSGD', 'USDCAD', 'EURGBP', 'EURJPY']
+2025-07-08 21:52:36,692 - DEBUG - orders - No users with open orders for symbol USDCNH
+2025-07-08 21:52:36,692 - DEBUG - orders - No users with open orders for symbol NZDJPY
+2025-07-08 21:52:36,693 - DEBUG - orders - No users with open orders for symbol XAGUSD
+2025-07-08 21:52:36,693 - DEBUG - orders - No users with open orders for symbol GBPSEK
+2025-07-08 21:52:36,693 - DEBUG - orders - No users with open orders for symbol GBPAUD
+2025-07-08 21:52:36,704 - DEBUG - orders - No users with open orders for symbol EURZAR
+2025-07-08 21:52:36,705 - DEBUG - orders - No users with open orders for symbol CADCHF
+2025-07-08 21:52:36,705 - DEBUG - orders - No users with open orders for symbol EURNZD
+2025-07-08 21:52:36,705 - DEBUG - orders - No users with open orders for symbol USDSGD
+2025-07-08 21:52:36,707 - INFO - orders - Processing SL/TP for symbol AUDJPY with 1 users
+2025-07-08 21:52:36,709 - DEBUG - orders - No users with open orders for symbol EURCAD
+2025-07-08 21:52:36,709 - DEBUG - orders - No users with open orders for symbol EURSEK
+2025-07-08 21:52:36,709 - DEBUG - orders - No users with open orders for symbol SGDJPY
+2025-07-08 21:52:36,711 - DEBUG - orders - No users with open orders for symbol USDCHF
+2025-07-08 21:52:36,714 - DEBUG - orders - No users with open orders for symbol CHFSGD
+2025-07-08 21:52:36,714 - DEBUG - orders - No users with open orders for symbol EURAUD
+2025-07-08 21:52:36,714 - DEBUG - orders - No users with open orders for symbol CADJPY
+2025-07-08 21:52:36,715 - DEBUG - orders - No users with open orders for symbol USDCZK
+2025-07-08 21:52:36,716 - DEBUG - orders - No users with open orders for symbol AUDUSD
+2025-07-08 21:52:36,716 - DEBUG - orders - No users with open orders for symbol NZDUSD
+2025-07-08 21:52:36,716 - INFO - orders - Processing SL/TP for symbol AUDCAD with 2 users
+2025-07-08 21:52:36,717 - DEBUG - orders - No users with open orders for symbol GBPNZD
+2025-07-08 21:52:36,719 - DEBUG - orders - No users with open orders for symbol NZDCAD
+2025-07-08 21:52:36,719 - DEBUG - orders - No users with open orders for symbol EURUSD
+2025-07-08 21:52:36,719 - DEBUG - orders - No users with open orders for symbol GBPNOK
+2025-07-08 21:52:36,723 - DEBUG - orders - No users with open orders for symbol EURGBP
+2025-07-08 21:52:36,723 - DEBUG - orders - No users with open orders for symbol EURSGD
+2025-07-08 21:52:36,723 - DEBUG - orders - No users with open orders for symbol EURJPY
+2025-07-08 21:52:36,723 - DEBUG - orders - No users with open orders for symbol USDCAD
+2025-07-08 21:52:39,052 - INFO - orders - Market data update received for symbols: ['XAGUSD', 'NZDJPY', 'GBPAUD', 'USDCNH', 'EURNZD', 'USDSGD', 'EURZAR', 'EURSEK', 'USDZAR', 'EURPLN', 'SGDJPY', 'JP225', 'USDCHF', 'USDCZK', 'USDNOK', 'USDSEK', 'US30', 'EURAUD', 'CHFSGD', 'NZDUSD', 'AUDUSD', 'EURNOK', 'EURCHF', 'D30', 'NZDCAD', 'GBPNOK', 'EURUSD', 'NOKSEK', 'EURSGD'], triggering optimized SL/TP check
+2025-07-08 21:52:39,052 - INFO - orders - Processing SL/TP batch for 29 symbols: ['XAGUSD', 'NZDJPY', 'GBPAUD', 'USDCNH', 'EURNZD', 'USDSGD', 'EURZAR', 'EURSEK', 'USDZAR', 'EURPLN', 'SGDJPY', 'JP225', 'USDCHF', 'USDCZK', 'USDNOK', 'USDSEK', 'US30', 'EURAUD', 'CHFSGD', 'NZDUSD', 'AUDUSD', 'EURNOK', 'EURCHF', 'D30', 'NZDCAD', 'GBPNOK', 'EURUSD', 'NOKSEK', 'EURSGD']
+2025-07-08 21:52:39,060 - DEBUG - orders - No users with open orders for symbol EURNZD
+2025-07-08 21:52:39,060 - DEBUG - orders - No users with open orders for symbol USDCNH
+2025-07-08 21:52:39,060 - DEBUG - orders - No users with open orders for symbol GBPAUD
+2025-07-08 21:52:39,060 - DEBUG - orders - No users with open orders for symbol NZDJPY
+2025-07-08 21:52:39,061 - DEBUG - orders - No users with open orders for symbol XAGUSD
+2025-07-08 21:52:39,077 - DEBUG - orders - No users with open orders for symbol USDZAR
+2025-07-08 21:52:39,077 - DEBUG - orders - No users with open orders for symbol EURSEK
+2025-07-08 21:52:39,077 - DEBUG - orders - No users with open orders for symbol EURZAR
+2025-07-08 21:52:39,077 - DEBUG - orders - No users with open orders for symbol USDSGD
+2025-07-08 21:52:39,077 - DEBUG - orders - No users with open orders for symbol EURPLN
+2025-07-08 21:52:39,080 - DEBUG - orders - No users with open orders for symbol USDNOK
+2025-07-08 21:52:39,080 - DEBUG - orders - No users with open orders for symbol USDCZK
+2025-07-08 21:52:39,081 - DEBUG - orders - No users with open orders for symbol USDCHF
+2025-07-08 21:52:39,081 - DEBUG - orders - No users with open orders for symbol JP225
+2025-07-08 21:52:39,081 - DEBUG - orders - No users with open orders for symbol SGDJPY
+2025-07-08 21:52:39,083 - DEBUG - orders - No users with open orders for symbol USDSEK
+2025-07-08 21:52:39,083 - DEBUG - orders - No users with open orders for symbol CHFSGD
+2025-07-08 21:52:39,083 - DEBUG - orders - No users with open orders for symbol US30
+2025-07-08 21:52:39,083 - DEBUG - orders - No users with open orders for symbol EURAUD
+2025-07-08 21:52:39,084 - DEBUG - orders - No users with open orders for symbol NZDUSD
+2025-07-08 21:52:39,087 - DEBUG - orders - No users with open orders for symbol D30
+2025-07-08 21:52:39,088 - DEBUG - orders - No users with open orders for symbol EURCHF
+2025-07-08 21:52:39,090 - DEBUG - orders - No users with open orders for symbol EURNOK
+2025-07-08 21:52:39,092 - DEBUG - orders - No users with open orders for symbol AUDUSD
+2025-07-08 21:52:39,097 - DEBUG - orders - No users with open orders for symbol NZDCAD
+2025-07-08 21:52:39,097 - DEBUG - orders - No users with open orders for symbol EURSGD
+2025-07-08 21:52:39,098 - DEBUG - orders - No users with open orders for symbol NOKSEK
+2025-07-08 21:52:39,098 - DEBUG - orders - No users with open orders for symbol EURUSD
+2025-07-08 21:52:39,098 - DEBUG - orders - No users with open orders for symbol GBPNOK
+2025-07-08 21:52:39,793 - INFO - orders - Add stoploss request received - Order ID: 2312432300, User ID: 1
+2025-07-08 21:52:39,805 - INFO - orders - Generated stoploss_id: 1681604942 for order 2312432300
+2025-07-08 21:52:39,806 - INFO - orders - User 1 is_barclays_live_user: False
+2025-07-08 21:52:39,806 - INFO - orders - Non-Barclays user. Adding stoploss to order 2312432300 immediately
+2025-07-08 21:52:39,853 - INFO - orders - Starting update_user_static_orders for user 1, user_type demo
+2025-07-08 21:52:39,853 - INFO - orders - Using order model: DemoUserOrder
+2025-07-08 21:52:39,858 - INFO - orders - Fetched 2 open orders for user 1
+2025-07-08 21:52:39,865 - INFO - orders - Fetched 1 pending orders for user 1
+2025-07-08 21:52:39,867 - INFO - orders - Updated static orders cache for user 1 with 2 open orders and 1 pending orders
+2025-07-08 21:52:41,303 - INFO - orders - Market data update received for symbols: ['GBPSEK', 'XAGUSD', 'NZDJPY', 'GBPAUD', 'USDJPY', 'CADCHF', 'EURNZD', 'USDSGD', 'AUDJPY', 'EURSEK', 'SGDJPY', 'USDCHF', 'USDCZK', 'USDNOK', 'CADJPY', 'GBPUSD', 'EURAUD', 'CHFSGD', 'NZDUSD', 'EURNOK', 'GBPNZD', 'EURCHF', 'NZDCAD', 'GBPNOK', 'EURUSD', 'NOKSEK', 'EURSGD', 'EURJPY'], triggering optimized SL/TP check
+2025-07-08 21:52:41,303 - INFO - orders - Processing SL/TP batch for 28 symbols: ['GBPSEK', 'XAGUSD', 'NZDJPY', 'GBPAUD', 'USDJPY', 'CADCHF', 'EURNZD', 'USDSGD', 'AUDJPY', 'EURSEK', 'SGDJPY', 'USDCHF', 'USDCZK', 'USDNOK', 'CADJPY', 'GBPUSD', 'EURAUD', 'CHFSGD', 'NZDUSD', 'EURNOK', 'GBPNZD', 'EURCHF', 'NZDCAD', 'GBPNOK', 'EURUSD', 'NOKSEK', 'EURSGD', 'EURJPY']
+2025-07-08 21:52:41,308 - DEBUG - orders - No users with open orders for symbol GBPAUD
+2025-07-08 21:52:41,308 - DEBUG - orders - No users with open orders for symbol XAGUSD
+2025-07-08 21:52:41,310 - DEBUG - orders - No users with open orders for symbol GBPSEK
+2025-07-08 21:52:41,310 - DEBUG - orders - No users with open orders for symbol NZDJPY
+2025-07-08 21:52:41,310 - DEBUG - orders - No users with open orders for symbol USDJPY
+2025-07-08 21:52:41,320 - DEBUG - orders - No users with open orders for symbol EURSEK
+2025-07-08 21:52:41,321 - INFO - orders - Processing SL/TP for symbol AUDJPY with 1 users
+2025-07-08 21:52:41,322 - DEBUG - orders - No users with open orders for symbol USDSGD
+2025-07-08 21:52:41,322 - DEBUG - orders - No users with open orders for symbol EURNZD
+2025-07-08 21:52:41,323 - DEBUG - orders - No users with open orders for symbol CADCHF
+2025-07-08 21:52:41,326 - DEBUG - orders - No users with open orders for symbol SGDJPY
+2025-07-08 21:52:41,327 - DEBUG - orders - No users with open orders for symbol USDNOK
+2025-07-08 21:52:41,327 - DEBUG - orders - No users with open orders for symbol USDCHF
+2025-07-08 21:52:41,327 - DEBUG - orders - No users with open orders for symbol USDCZK
+2025-07-08 21:52:41,328 - DEBUG - orders - No users with open orders for symbol EURAUD
+2025-07-08 21:52:41,328 - DEBUG - orders - No users with open orders for symbol CADJPY
+2025-07-08 21:52:41,329 - DEBUG - orders - No users with open orders for symbol GBPUSD
+2025-07-08 21:52:41,330 - DEBUG - orders - No users with open orders for symbol CHFSGD
+2025-07-08 21:52:41,332 - DEBUG - orders - No users with open orders for symbol EURCHF
+2025-07-08 21:52:41,332 - DEBUG - orders - No users with open orders for symbol GBPNZD
+2025-07-08 21:52:41,332 - DEBUG - orders - No users with open orders for symbol EURNOK
+2025-07-08 21:52:41,333 - DEBUG - orders - No users with open orders for symbol NZDUSD
+2025-07-08 21:52:41,334 - DEBUG - orders - No users with open orders for symbol NZDCAD
+2025-07-08 21:52:41,334 - DEBUG - orders - No users with open orders for symbol NOKSEK
+2025-07-08 21:52:41,334 - DEBUG - orders - No users with open orders for symbol GBPNOK
+2025-07-08 21:52:41,335 - DEBUG - orders - No users with open orders for symbol EURUSD
+2025-07-08 21:52:41,335 - DEBUG - orders - No users with open orders for symbol EURSGD
+2025-07-08 21:52:41,336 - DEBUG - orders - No users with open orders for symbol EURJPY
+2025-07-08 21:52:43,658 - INFO - orders - Market data update received for symbols: ['GBPSEK', 'XAGUSD', 'NZDJPY', 'GBPAUD', 'USDJPY', 'USDCNH', 'CADCHF', 'EURNZD', 'USDSGD', 'EURZAR', 'AUDJPY', 'EURSEK', 'USDZAR', 'EURPLN', 'SGDJPY', 'JP225', 'USDCHF', 'EURCAD', 'USDNOK', 'CADJPY', 'USDSEK', 'US30', 'GBPUSD', 'EURAUD', 'CHFSGD', 'NZDUSD', 'AUDUSD', 'AUDCAD', 'EURNOK', 'GBPNZD', 'EURCHF', 'NZDCAD', 'GBPNOK', 'CHFJPY', 'EURUSD', 'AUDCHF', 'EURSGD', 'USDCAD', 'EURGBP', 'EURJPY'], triggering optimized SL/TP check
+2025-07-08 21:52:43,658 - INFO - orders - Processing SL/TP batch for 40 symbols: ['GBPSEK', 'XAGUSD', 'NZDJPY', 'GBPAUD', 'USDJPY', 'USDCNH', 'CADCHF', 'EURNZD', 'USDSGD', 'EURZAR', 'AUDJPY', 'EURSEK', 'USDZAR', 'EURPLN', 'SGDJPY', 'JP225', 'USDCHF', 'EURCAD', 'USDNOK', 'CADJPY', 'USDSEK', 'US30', 'GBPUSD', 'EURAUD', 'CHFSGD', 'NZDUSD', 'AUDUSD', 'AUDCAD', 'EURNOK', 'GBPNZD', 'EURCHF', 'NZDCAD', 'GBPNOK', 'CHFJPY', 'EURUSD', 'AUDCHF', 'EURSGD', 'USDCAD', 'EURGBP', 'EURJPY']
+2025-07-08 21:52:43,667 - DEBUG - orders - No users with open orders for symbol USDJPY
+2025-07-08 21:52:43,668 - DEBUG - orders - No users with open orders for symbol XAGUSD
+2025-07-08 21:52:43,668 - DEBUG - orders - No users with open orders for symbol GBPSEK
+2025-07-08 21:52:43,668 - DEBUG - orders - No users with open orders for symbol NZDJPY
+2025-07-08 21:52:43,668 - DEBUG - orders - No users with open orders for symbol GBPAUD
+2025-07-08 21:52:43,681 - DEBUG - orders - No users with open orders for symbol USDSGD
+2025-07-08 21:52:43,681 - DEBUG - orders - No users with open orders for symbol EURNZD
+2025-07-08 21:52:43,681 - DEBUG - orders - No users with open orders for symbol CADCHF
+2025-07-08 21:52:43,682 - DEBUG - orders - No users with open orders for symbol USDCNH
+2025-07-08 21:52:43,682 - DEBUG - orders - No users with open orders for symbol EURZAR
+2025-07-08 21:52:43,686 - DEBUG - orders - No users with open orders for symbol SGDJPY
+2025-07-08 21:52:43,686 - DEBUG - orders - No users with open orders for symbol EURPLN
+2025-07-08 21:52:43,687 - DEBUG - orders - No users with open orders for symbol USDZAR
+2025-07-08 21:52:43,687 - INFO - orders - Processing SL/TP for symbol AUDJPY with 1 users
+2025-07-08 21:52:43,692 - DEBUG - orders - No users with open orders for symbol EURSEK
+2025-07-08 21:52:43,694 - DEBUG - orders - No users with open orders for symbol USDNOK
+2025-07-08 21:52:43,695 - DEBUG - orders - No users with open orders for symbol EURCAD
+2025-07-08 21:52:43,695 - DEBUG - orders - No users with open orders for symbol JP225
+2025-07-08 21:52:43,695 - DEBUG - orders - No users with open orders for symbol USDCHF
+2025-07-08 21:52:43,700 - DEBUG - orders - No users with open orders for symbol USDSEK
+2025-07-08 21:52:43,700 - DEBUG - orders - No users with open orders for symbol CADJPY
+2025-07-08 21:52:43,701 - DEBUG - orders - No users with open orders for symbol GBPUSD
+2025-07-08 21:52:43,701 - DEBUG - orders - No users with open orders for symbol US30
+2025-07-08 21:52:43,702 - DEBUG - orders - No users with open orders for symbol CHFSGD
+2025-07-08 21:52:43,703 - DEBUG - orders - No users with open orders for symbol EURAUD
+2025-07-08 21:52:43,703 - DEBUG - orders - No users with open orders for symbol AUDUSD
+2025-07-08 21:52:43,703 - DEBUG - orders - No users with open orders for symbol NZDUSD
+2025-07-08 21:52:43,704 - DEBUG - orders - No users with open orders for symbol EURNOK
+2025-07-08 21:52:43,704 - INFO - orders - Processing SL/TP for symbol AUDCAD with 2 users
+2025-07-08 21:52:43,706 - DEBUG - orders - No users with open orders for symbol EURCHF
+2025-07-08 21:52:43,706 - DEBUG - orders - No users with open orders for symbol GBPNZD
+2025-07-08 21:52:43,709 - DEBUG - orders - No users with open orders for symbol GBPNOK
+2025-07-08 21:52:43,709 - DEBUG - orders - No users with open orders for symbol CHFJPY
+2025-07-08 21:52:43,709 - DEBUG - orders - No users with open orders for symbol NZDCAD
+2025-07-08 21:52:43,710 - DEBUG - orders - No users with open orders for symbol EURUSD
+2025-07-08 21:52:43,713 - DEBUG - orders - No users with open orders for symbol EURSGD
+2025-07-08 21:52:43,713 - DEBUG - orders - No users with open orders for symbol USDCAD
+2025-07-08 21:52:43,713 - INFO - orders - Processing SL/TP for symbol AUDCHF with 2 users
+2025-07-08 21:52:43,715 - DEBUG - orders - No users with open orders for symbol EURGBP
+2025-07-08 21:52:43,717 - DEBUG - orders - No users with open orders for symbol EURJPY
+2025-07-08 21:52:45,911 - INFO - orders - Market data update received for symbols: ['GBPSEK', 'XAGUSD', 'NZDJPY', 'GBPAUD', 'USDJPY', 'USDCNH', 'CADCHF', 'EURNZD', 'USDSGD', 'EURZAR', 'AUDJPY', 'EURSEK', 'SGDJPY', 'USDCHF', 'EURCAD', 'USDCZK', 'USDNOK', 'CADJPY', 'USDSEK', 'GBPUSD', 'EURAUD', 'NZDUSD', 'AUDUSD', 'AUDCAD', 'EURNOK', 'GBPNZD', 'EURCHF', 'NZDCAD', 'GBPNOK', 'EURUSD', 'AUDCHF', 'EURSGD', 'USDCAD', 'EURGBP', 'EURJPY'], triggering optimized SL/TP check
+2025-07-08 21:52:45,913 - INFO - orders - Processing SL/TP batch for 35 symbols: ['GBPSEK', 'XAGUSD', 'NZDJPY', 'GBPAUD', 'USDJPY', 'USDCNH', 'CADCHF', 'EURNZD', 'USDSGD', 'EURZAR', 'AUDJPY', 'EURSEK', 'SGDJPY', 'USDCHF', 'EURCAD', 'USDCZK', 'USDNOK', 'CADJPY', 'USDSEK', 'GBPUSD', 'EURAUD', 'NZDUSD', 'AUDUSD', 'AUDCAD', 'EURNOK', 'GBPNZD', 'EURCHF', 'NZDCAD', 'GBPNOK', 'EURUSD', 'AUDCHF', 'EURSGD', 'USDCAD', 'EURGBP', 'EURJPY']
+2025-07-08 21:52:45,916 - DEBUG - orders - No users with open orders for symbol GBPAUD
+2025-07-08 21:52:45,916 - DEBUG - orders - No users with open orders for symbol XAGUSD
+2025-07-08 21:52:45,917 - DEBUG - orders - No users with open orders for symbol GBPSEK
+2025-07-08 21:52:45,917 - DEBUG - orders - No users with open orders for symbol NZDJPY
+2025-07-08 21:52:45,917 - DEBUG - orders - No users with open orders for symbol USDJPY
+2025-07-08 21:52:45,930 - DEBUG - orders - No users with open orders for symbol EURZAR
+2025-07-08 21:52:45,930 - DEBUG - orders - No users with open orders for symbol USDSGD
+2025-07-08 21:52:45,931 - DEBUG - orders - No users with open orders for symbol EURNZD
+2025-07-08 21:52:45,931 - DEBUG - orders - No users with open orders for symbol CADCHF
+2025-07-08 21:52:45,931 - DEBUG - orders - No users with open orders for symbol USDCNH
+2025-07-08 21:52:45,934 - DEBUG - orders - No users with open orders for symbol EURCAD
+2025-07-08 21:52:45,934 - DEBUG - orders - No users with open orders for symbol USDCHF
+2025-07-08 21:52:45,935 - DEBUG - orders - No users with open orders for symbol SGDJPY
+2025-07-08 21:52:45,936 - DEBUG - orders - No users with open orders for symbol EURSEK
+2025-07-08 21:52:45,937 - INFO - orders - Processing SL/TP for symbol AUDJPY with 1 users
+2025-07-08 21:52:45,939 - DEBUG - orders - No users with open orders for symbol USDSEK
+2025-07-08 21:52:45,939 - DEBUG - orders - No users with open orders for symbol CADJPY
+2025-07-08 21:52:45,939 - DEBUG - orders - No users with open orders for symbol USDNOK
+2025-07-08 21:52:45,940 - DEBUG - orders - No users with open orders for symbol USDCZK
+2025-07-08 21:52:45,941 - DEBUG - orders - No users with open orders for symbol AUDUSD
+2025-07-08 21:52:45,942 - DEBUG - orders - No users with open orders for symbol NZDUSD
+2025-07-08 21:52:45,942 - DEBUG - orders - No users with open orders for symbol EURAUD
+2025-07-08 21:52:45,942 - DEBUG - orders - No users with open orders for symbol GBPUSD
+2025-07-08 21:52:45,945 - DEBUG - orders - No users with open orders for symbol EURCHF
+2025-07-08 21:52:45,945 - DEBUG - orders - No users with open orders for symbol GBPNZD
+2025-07-08 21:52:45,945 - DEBUG - orders - No users with open orders for symbol EURNOK
+2025-07-08 21:52:45,945 - INFO - orders - Processing SL/TP for symbol AUDCAD with 2 users
+2025-07-08 21:52:45,947 - DEBUG - orders - No users with open orders for symbol EURUSD
+2025-07-08 21:52:45,947 - DEBUG - orders - No users with open orders for symbol GBPNOK
+2025-07-08 21:52:45,947 - DEBUG - orders - No users with open orders for symbol NZDCAD
+2025-07-08 21:52:45,950 - DEBUG - orders - No users with open orders for symbol USDCAD
+2025-07-08 21:52:45,951 - DEBUG - orders - No users with open orders for symbol EURSGD
+2025-07-08 21:52:45,951 - INFO - orders - Processing SL/TP for symbol AUDCHF with 2 users
+2025-07-08 21:52:45,954 - DEBUG - orders - No users with open orders for symbol EURGBP
+2025-07-08 21:52:45,954 - DEBUG - orders - No users with open orders for symbol EURJPY
+2025-07-08 21:52:48,179 - INFO - orders - Market data update received for symbols: ['GBPSEK', 'XAGUSD', 'NZDJPY', 'GBPAUD', 'USDJPY', 'USDCNH', 'CADCHF', 'EURNZD', 'USDSGD', 'EURZAR', 'AUDJPY', 'EURPLN', 'SGDJPY', 'EURCAD', 'USDNOK', 'CADJPY', 'USDSEK', 'GBPUSD', 'EURAUD', 'NZDUSD', 'AUDUSD', 'AUDCAD', 'EURNOK', 'GBPNZD', 'EURCHF', 'NZDCAD', 'GBPNOK', 'EURUSD', 'NOKSEK', 'EURSGD', 'USDCAD', 'EURGBP', 'EURJPY'], triggering optimized SL/TP check
+2025-07-08 21:52:48,185 - INFO - orders - Processing SL/TP batch for 33 symbols: ['GBPSEK', 'XAGUSD', 'NZDJPY', 'GBPAUD', 'USDJPY', 'USDCNH', 'CADCHF', 'EURNZD', 'USDSGD', 'EURZAR', 'AUDJPY', 'EURPLN', 'SGDJPY', 'EURCAD', 'USDNOK', 'CADJPY', 'USDSEK', 'GBPUSD', 'EURAUD', 'NZDUSD', 'AUDUSD', 'AUDCAD', 'EURNOK', 'GBPNZD', 'EURCHF', 'NZDCAD', 'GBPNOK', 'EURUSD', 'NOKSEK', 'EURSGD', 'USDCAD', 'EURGBP', 'EURJPY']
+2025-07-08 21:52:48,191 - DEBUG - orders - No users with open orders for symbol USDJPY
+2025-07-08 21:52:48,191 - DEBUG - orders - No users with open orders for symbol GBPAUD
+2025-07-08 21:52:48,191 - DEBUG - orders - No users with open orders for symbol NZDJPY
+2025-07-08 21:52:48,192 - DEBUG - orders - No users with open orders for symbol XAGUSD
+2025-07-08 21:52:48,192 - DEBUG - orders - No users with open orders for symbol GBPSEK
+2025-07-08 21:52:48,204 - DEBUG - orders - No users with open orders for symbol USDSGD
+2025-07-08 21:52:48,204 - DEBUG - orders - No users with open orders for symbol EURNZD
+2025-07-08 21:52:48,204 - DEBUG - orders - No users with open orders for symbol EURZAR
+2025-07-08 21:52:48,204 - DEBUG - orders - No users with open orders for symbol USDCNH
+2025-07-08 21:52:48,204 - DEBUG - orders - No users with open orders for symbol CADCHF
+2025-07-08 21:52:48,207 - DEBUG - orders - No users with open orders for symbol USDNOK
+2025-07-08 21:52:48,207 - DEBUG - orders - No users with open orders for symbol EURCAD
+2025-07-08 21:52:48,208 - DEBUG - orders - No users with open orders for symbol SGDJPY
+2025-07-08 21:52:48,208 - DEBUG - orders - No users with open orders for symbol EURPLN
+2025-07-08 21:52:48,208 - INFO - orders - Processing SL/TP for symbol AUDJPY with 1 users
+2025-07-08 21:52:48,211 - DEBUG - orders - No users with open orders for symbol EURAUD
+2025-07-08 21:52:48,211 - DEBUG - orders - No users with open orders for symbol GBPUSD
+2025-07-08 21:52:48,211 - DEBUG - orders - No users with open orders for symbol CADJPY
+2025-07-08 21:52:48,211 - DEBUG - orders - No users with open orders for symbol USDSEK
+2025-07-08 21:52:48,214 - DEBUG - orders - No users with open orders for symbol EURNOK
+2025-07-08 21:52:48,215 - INFO - orders - Processing SL/TP for symbol AUDCAD with 2 users
+2025-07-08 21:52:48,216 - DEBUG - orders - No users with open orders for symbol AUDUSD
+2025-07-08 21:52:48,216 - DEBUG - orders - No users with open orders for symbol NZDUSD
+2025-07-08 21:52:48,218 - DEBUG - orders - No users with open orders for symbol EURCHF
+2025-07-08 21:52:48,219 - DEBUG - orders - No users with open orders for symbol GBPNZD
+2025-07-08 21:52:48,219 - DEBUG - orders - No users with open orders for symbol NZDCAD
+2025-07-08 21:52:48,221 - DEBUG - orders - No users with open orders for symbol GBPNOK
+2025-07-08 21:52:48,222 - DEBUG - orders - No users with open orders for symbol NOKSEK
+2025-07-08 21:52:48,222 - DEBUG - orders - No users with open orders for symbol EURUSD
+2025-07-08 21:52:48,225 - DEBUG - orders - No users with open orders for symbol USDCAD
+2025-07-08 21:52:48,225 - DEBUG - orders - No users with open orders for symbol EURSGD
+2025-07-08 21:52:48,226 - DEBUG - orders - No users with open orders for symbol EURJPY
+2025-07-08 21:52:48,226 - DEBUG - orders - No users with open orders for symbol EURGBP
+2025-07-08 21:52:50,521 - INFO - orders - Market data update received for symbols: ['GBPSEK', 'XAGUSD', 'NZDJPY', 'GBPAUD', 'USDJPY', 'USDCNH', 'CADCHF', 'EURNZD', 'USDSGD', 'EURZAR', 'AUDJPY', 'EURSEK', 'EURPLN', 'SGDJPY', 'JP225', 'USDCHF', 'EURCAD', 'USDCZK', 'USDNOK', 'CADJPY', 'USDSEK', 'EURAUD', 'CHFSGD', 'AUDUSD', 'AUDCAD', 'EURNOK', 'GBPNZD', 'EURCHF', 'D30', 'NZDCAD', 'GBPNOK', 'EURUSD', 'AUDCHF', 'NOKSEK', 'EURSGD', 'USDCAD', 'EURGBP', 'EURJPY'], triggering optimized SL/TP check
+2025-07-08 21:52:50,522 - INFO - orders - Processing SL/TP batch for 38 symbols: ['GBPSEK', 'XAGUSD', 'NZDJPY', 'GBPAUD', 'USDJPY', 'USDCNH', 'CADCHF', 'EURNZD', 'USDSGD', 'EURZAR', 'AUDJPY', 'EURSEK', 'EURPLN', 'SGDJPY', 'JP225', 'USDCHF', 'EURCAD', 'USDCZK', 'USDNOK', 'CADJPY', 'USDSEK', 'EURAUD', 'CHFSGD', 'AUDUSD', 'AUDCAD', 'EURNOK', 'GBPNZD', 'EURCHF', 'D30', 'NZDCAD', 'GBPNOK', 'EURUSD', 'AUDCHF', 'NOKSEK', 'EURSGD', 'USDCAD', 'EURGBP', 'EURJPY']
+2025-07-08 21:52:50,531 - DEBUG - orders - No users with open orders for symbol GBPAUD
+2025-07-08 21:52:50,531 - DEBUG - orders - No users with open orders for symbol GBPSEK
+2025-07-08 21:52:50,532 - DEBUG - orders - No users with open orders for symbol NZDJPY
+2025-07-08 21:52:50,532 - DEBUG - orders - No users with open orders for symbol XAGUSD
+2025-07-08 21:52:50,532 - DEBUG - orders - No users with open orders for symbol USDJPY
+2025-07-08 21:52:50,536 - DEBUG - orders - No users with open orders for symbol EURZAR
+2025-07-08 21:52:50,536 - DEBUG - orders - No users with open orders for symbol USDSGD
+2025-07-08 21:52:50,537 - DEBUG - orders - No users with open orders for symbol CADCHF
+2025-07-08 21:52:50,537 - DEBUG - orders - No users with open orders for symbol EURNZD
+2025-07-08 21:52:50,538 - DEBUG - orders - No users with open orders for symbol USDCNH
+2025-07-08 21:52:50,552 - DEBUG - orders - No users with open orders for symbol SGDJPY
+2025-07-08 21:52:50,552 - DEBUG - orders - No users with open orders for symbol JP225
+2025-07-08 21:52:50,552 - DEBUG - orders - No users with open orders for symbol EURPLN
+2025-07-08 21:52:50,552 - DEBUG - orders - No users with open orders for symbol EURSEK
+2025-07-08 21:52:50,552 - INFO - orders - Processing SL/TP for symbol AUDJPY with 1 users
+2025-07-08 21:52:50,558 - DEBUG - orders - No users with open orders for symbol USDCHF
+2025-07-08 21:52:50,558 - DEBUG - orders - No users with open orders for symbol EURCAD
+2025-07-08 21:52:50,559 - DEBUG - orders - No users with open orders for symbol USDNOK
+2025-07-08 21:52:50,559 - DEBUG - orders - No users with open orders for symbol USDCZK
+2025-07-08 21:52:50,560 - DEBUG - orders - No users with open orders for symbol USDSEK
+2025-07-08 21:52:50,560 - DEBUG - orders - No users with open orders for symbol CADJPY
+2025-07-08 21:52:50,560 - DEBUG - orders - No users with open orders for symbol CHFSGD
+2025-07-08 21:52:50,561 - DEBUG - orders - No users with open orders for symbol EURAUD
+2025-07-08 21:52:50,564 - DEBUG - orders - No users with open orders for symbol GBPNZD
+2025-07-08 21:52:50,564 - DEBUG - orders - No users with open orders for symbol EURNOK
+2025-07-08 21:52:50,565 - INFO - orders - Processing SL/TP for symbol AUDCAD with 2 users
+2025-07-08 21:52:50,566 - DEBUG - orders - No users with open orders for symbol AUDUSD
+2025-07-08 21:52:50,569 - DEBUG - orders - No users with open orders for symbol D30
+2025-07-08 21:52:50,570 - DEBUG - orders - No users with open orders for symbol EURCHF
+2025-07-08 21:52:50,571 - DEBUG - orders - No users with open orders for symbol NZDCAD
+2025-07-08 21:52:50,575 - DEBUG - orders - No users with open orders for symbol EURUSD
+2025-07-08 21:52:50,576 - DEBUG - orders - No users with open orders for symbol GBPNOK
+2025-07-08 21:52:50,577 - INFO - orders - Processing SL/TP for symbol AUDCHF with 2 users
+2025-07-08 21:52:50,578 - DEBUG - orders - No users with open orders for symbol NOKSEK
+2025-07-08 21:52:50,579 - DEBUG - orders - No users with open orders for symbol USDCAD
+2025-07-08 21:52:50,580 - DEBUG - orders - No users with open orders for symbol EURSGD
+2025-07-08 21:52:50,582 - DEBUG - orders - No users with open orders for symbol EURGBP
+2025-07-08 21:52:50,584 - DEBUG - orders - No users with open orders for symbol EURJPY
+2025-07-08 21:52:52,865 - INFO - orders - Market data update received for symbols: ['GBPSEK', 'XAGUSD', 'GBPAUD', 'USDJPY', 'CADCHF', 'EURNZD', 'USDSGD', 'EURSEK', 'USDZAR', 'SGDJPY', 'EURCAD', 'USDNOK', 'CADJPY', 'GBPUSD', 'EURAUD', 'CHFSGD', 'NZDUSD', 'AUDCAD', 'GBPNZD', 'NZDCAD', 'GBPNOK', 'CHFJPY', 'EURUSD', 'AUDCHF', 'EURSGD'], triggering optimized SL/TP check
+2025-07-08 21:52:52,866 - INFO - orders - Processing SL/TP batch for 25 symbols: ['GBPSEK', 'XAGUSD', 'GBPAUD', 'USDJPY', 'CADCHF', 'EURNZD', 'USDSGD', 'EURSEK', 'USDZAR', 'SGDJPY', 'EURCAD', 'USDNOK', 'CADJPY', 'GBPUSD', 'EURAUD', 'CHFSGD', 'NZDUSD', 'AUDCAD', 'GBPNZD', 'NZDCAD', 'GBPNOK', 'CHFJPY', 'EURUSD', 'AUDCHF', 'EURSGD']
+2025-07-08 21:52:52,869 - DEBUG - orders - No users with open orders for symbol CADCHF
+2025-07-08 21:52:52,869 - DEBUG - orders - No users with open orders for symbol GBPAUD
+2025-07-08 21:52:52,869 - DEBUG - orders - No users with open orders for symbol XAGUSD
+2025-07-08 21:52:52,870 - DEBUG - orders - No users with open orders for symbol GBPSEK
+2025-07-08 21:52:52,870 - DEBUG - orders - No users with open orders for symbol USDJPY
+2025-07-08 21:52:52,880 - DEBUG - orders - No users with open orders for symbol SGDJPY
+2025-07-08 21:52:52,881 - DEBUG - orders - No users with open orders for symbol USDZAR
+2025-07-08 21:52:52,881 - DEBUG - orders - No users with open orders for symbol USDSGD
+2025-07-08 21:52:52,881 - DEBUG - orders - No users with open orders for symbol EURSEK
+2025-07-08 21:52:52,881 - DEBUG - orders - No users with open orders for symbol EURNZD
+2025-07-08 21:52:52,887 - DEBUG - orders - No users with open orders for symbol EURAUD
+2025-07-08 21:52:52,887 - DEBUG - orders - No users with open orders for symbol GBPUSD
+2025-07-08 21:52:52,887 - DEBUG - orders - No users with open orders for symbol USDNOK
+2025-07-08 21:52:52,887 - DEBUG - orders - No users with open orders for symbol CADJPY
+2025-07-08 21:52:52,887 - DEBUG - orders - No users with open orders for symbol EURCAD
+2025-07-08 21:52:52,889 - DEBUG - orders - No users with open orders for symbol NZDCAD
+2025-07-08 21:52:52,889 - DEBUG - orders - No users with open orders for symbol GBPNZD
+2025-07-08 21:52:52,890 - INFO - orders - Processing SL/TP for symbol AUDCAD with 2 users
+2025-07-08 21:52:52,890 - DEBUG - orders - No users with open orders for symbol NZDUSD
+2025-07-08 21:52:52,890 - DEBUG - orders - No users with open orders for symbol CHFSGD
+2025-07-08 21:52:52,893 - INFO - orders - Processing SL/TP for symbol AUDCHF with 2 users
+2025-07-08 21:52:52,894 - DEBUG - orders - No users with open orders for symbol EURUSD
+2025-07-08 21:52:52,894 - DEBUG - orders - No users with open orders for symbol CHFJPY
+2025-07-08 21:52:52,894 - DEBUG - orders - No users with open orders for symbol GBPNOK
+2025-07-08 21:52:52,897 - DEBUG - orders - No users with open orders for symbol EURSGD
+2025-07-08 21:52:55,215 - INFO - orders - Market data update received for symbols: ['GBPSEK', 'XAGUSD', 'NZDJPY', 'GBPAUD', 'USDJPY', 'CADCHF', 'USDSGD', 'EURZAR', 'AUDJPY', 'USDZAR', 'SGDJPY', 'EURCAD', 'USDCZK', 'USDNOK', 'CADJPY', 'GBPUSD', 'EURAUD', 'CHFSGD', 'EURNOK', 'GBPNZD', 'EURCHF', 'NZDCAD', 'GBPNOK', 'EURUSD', 'NOKSEK', 'EURSGD'], triggering optimized SL/TP check
+2025-07-08 21:52:55,216 - INFO - orders - Processing SL/TP batch for 26 symbols: ['GBPSEK', 'XAGUSD', 'NZDJPY', 'GBPAUD', 'USDJPY', 'CADCHF', 'USDSGD', 'EURZAR', 'AUDJPY', 'USDZAR', 'SGDJPY', 'EURCAD', 'USDCZK', 'USDNOK', 'CADJPY', 'GBPUSD', 'EURAUD', 'CHFSGD', 'EURNOK', 'GBPNZD', 'EURCHF', 'NZDCAD', 'GBPNOK', 'EURUSD', 'NOKSEK', 'EURSGD']
+2025-07-08 21:52:55,224 - DEBUG - orders - No users with open orders for symbol GBPAUD
+2025-07-08 21:52:55,225 - DEBUG - orders - No users with open orders for symbol USDJPY
+2025-07-08 21:52:55,225 - DEBUG - orders - No users with open orders for symbol NZDJPY
+2025-07-08 21:52:55,225 - DEBUG - orders - No users with open orders for symbol XAGUSD
+2025-07-08 21:52:55,225 - DEBUG - orders - No users with open orders for symbol GBPSEK
+2025-07-08 21:52:55,238 - DEBUG - orders - No users with open orders for symbol USDZAR
+2025-07-08 21:52:55,240 - INFO - orders - Processing SL/TP for symbol AUDJPY with 1 users
+2025-07-08 21:52:55,246 - DEBUG - orders - No users with open orders for symbol EURZAR
+2025-07-08 21:52:55,247 - DEBUG - orders - No users with open orders for symbol USDSGD
+2025-07-08 21:52:55,248 - DEBUG - orders - No users with open orders for symbol CADCHF
+2025-07-08 21:52:55,253 - DEBUG - orders - No users with open orders for symbol EURCAD
+2025-07-08 21:52:55,254 - DEBUG - orders - No users with open orders for symbol SGDJPY
+2025-07-08 21:52:55,255 - DEBUG - orders - No users with open orders for symbol USDNOK
+2025-07-08 21:52:55,255 - DEBUG - orders - No users with open orders for symbol USDCZK
+2025-07-08 21:52:55,258 - DEBUG - orders - No users with open orders for symbol CHFSGD
+2025-07-08 21:52:55,258 - DEBUG - orders - No users with open orders for symbol EURAUD
+2025-07-08 21:52:55,258 - DEBUG - orders - No users with open orders for symbol GBPUSD
+2025-07-08 21:52:55,258 - DEBUG - orders - No users with open orders for symbol CADJPY
+2025-07-08 21:52:55,261 - DEBUG - orders - No users with open orders for symbol GBPNZD
+2025-07-08 21:52:55,261 - DEBUG - orders - No users with open orders for symbol EURNOK
+2025-07-08 21:52:55,262 - DEBUG - orders - No users with open orders for symbol NZDCAD
+2025-07-08 21:52:55,262 - DEBUG - orders - No users with open orders for symbol EURCHF
+2025-07-08 21:52:55,263 - DEBUG - orders - No users with open orders for symbol EURUSD
+2025-07-08 21:52:55,264 - DEBUG - orders - No users with open orders for symbol GBPNOK
+2025-07-08 21:52:55,264 - DEBUG - orders - No users with open orders for symbol EURSGD
+2025-07-08 21:52:55,264 - DEBUG - orders - No users with open orders for symbol NOKSEK
+2025-07-08 21:52:57,467 - INFO - orders - Market data update received for symbols: ['GBPSEK', 'XAGUSD', 'NZDJPY', 'GBPAUD', 'USDJPY', 'EURZAR', 'AUDJPY', 'EURSEK', 'SGDJPY', 'EURCAD', 'USDCZK', 'USDNOK', 'CADJPY', 'GBPUSD', 'EURAUD', 'CHFSGD', 'EURNOK', 'GBPNZD', 'EURCHF', 'NZDCAD', 'GBPNOK', 'EURUSD', 'EURSGD', 'USDCAD', 'EURGBP', 'EURJPY'], triggering optimized SL/TP check
+2025-07-08 21:52:57,467 - INFO - orders - Processing SL/TP batch for 26 symbols: ['GBPSEK', 'XAGUSD', 'NZDJPY', 'GBPAUD', 'USDJPY', 'EURZAR', 'AUDJPY', 'EURSEK', 'SGDJPY', 'EURCAD', 'USDCZK', 'USDNOK', 'CADJPY', 'GBPUSD', 'EURAUD', 'CHFSGD', 'EURNOK', 'GBPNZD', 'EURCHF', 'NZDCAD', 'GBPNOK', 'EURUSD', 'EURSGD', 'USDCAD', 'EURGBP', 'EURJPY']
+2025-07-08 21:52:57,479 - DEBUG - orders - No users with open orders for symbol USDJPY
+2025-07-08 21:52:57,479 - DEBUG - orders - No users with open orders for symbol GBPSEK
+2025-07-08 21:52:57,480 - DEBUG - orders - No users with open orders for symbol XAGUSD
+2025-07-08 21:52:57,480 - DEBUG - orders - No users with open orders for symbol NZDJPY
+2025-07-08 21:52:57,480 - DEBUG - orders - No users with open orders for symbol GBPAUD
+2025-07-08 21:52:57,491 - DEBUG - orders - No users with open orders for symbol EURCAD
+2025-07-08 21:52:57,491 - DEBUG - orders - No users with open orders for symbol SGDJPY
+2025-07-08 21:52:57,492 - INFO - orders - Processing SL/TP for symbol AUDJPY with 1 users
+2025-07-08 21:52:57,493 - DEBUG - orders - No users with open orders for symbol EURSEK
+2025-07-08 21:52:57,493 - DEBUG - orders - No users with open orders for symbol EURZAR
+2025-07-08 21:52:57,499 - DEBUG - orders - No users with open orders for symbol CADJPY
+2025-07-08 21:52:57,500 - DEBUG - orders - No users with open orders for symbol USDNOK
+2025-07-08 21:52:57,500 - DEBUG - orders - No users with open orders for symbol USDCZK
+2025-07-08 21:52:57,500 - DEBUG - orders - No users with open orders for symbol GBPUSD
+2025-07-08 21:52:57,505 - DEBUG - orders - No users with open orders for symbol GBPNZD
+2025-07-08 21:52:57,505 - DEBUG - orders - No users with open orders for symbol EURNOK
+2025-07-08 21:52:57,505 - DEBUG - orders - No users with open orders for symbol CHFSGD
+2025-07-08 21:52:57,505 - DEBUG - orders - No users with open orders for symbol EURAUD
+2025-07-08 21:52:57,507 - DEBUG - orders - No users with open orders for symbol EURUSD
+2025-07-08 21:52:57,508 - DEBUG - orders - No users with open orders for symbol GBPNOK
+2025-07-08 21:52:57,508 - DEBUG - orders - No users with open orders for symbol NZDCAD
+2025-07-08 21:52:57,508 - DEBUG - orders - No users with open orders for symbol EURCHF
+2025-07-08 21:52:57,510 - DEBUG - orders - No users with open orders for symbol EURJPY
+2025-07-08 21:52:57,510 - DEBUG - orders - No users with open orders for symbol EURGBP
+2025-07-08 21:52:57,510 - DEBUG - orders - No users with open orders for symbol USDCAD
+2025-07-08 21:52:57,510 - DEBUG - orders - No users with open orders for symbol EURSGD
+2025-07-08 21:52:59,742 - INFO - orders - Market data update received for symbols: ['GBPSEK', 'XAGUSD', 'NZDJPY', 'GBPAUD', 'USDCNH', 'CADCHF', 'EURSEK', 'EURPLN', 'SGDJPY', 'JP225', 'USDCHF', 'EURCAD', 'USDNOK', 'CADJPY', 'GBPUSD', 'EURAUD', 'CHFSGD', 'NZDUSD', 'AUDUSD', 'AUDCAD', 'EURNOK', 'GBPNZD', 'EURCHF', 'D30', 'NZDCAD', 'GBPNOK', 'EURUSD', 'NOKSEK', 'EURGBP', 'EURJPY'], triggering optimized SL/TP check
+2025-07-08 21:52:59,742 - INFO - orders - Processing SL/TP batch for 30 symbols: ['GBPSEK', 'XAGUSD', 'NZDJPY', 'GBPAUD', 'USDCNH', 'CADCHF', 'EURSEK', 'EURPLN', 'SGDJPY', 'JP225', 'USDCHF', 'EURCAD', 'USDNOK', 'CADJPY', 'GBPUSD', 'EURAUD', 'CHFSGD', 'NZDUSD', 'AUDUSD', 'AUDCAD', 'EURNOK', 'GBPNZD', 'EURCHF', 'D30', 'NZDCAD', 'GBPNOK', 'EURUSD', 'NOKSEK', 'EURGBP', 'EURJPY']
+2025-07-08 21:52:59,751 - DEBUG - orders - No users with open orders for symbol USDCNH
+2025-07-08 21:52:59,752 - DEBUG - orders - No users with open orders for symbol GBPAUD
+2025-07-08 21:52:59,752 - DEBUG - orders - No users with open orders for symbol GBPSEK
+2025-07-08 21:52:59,752 - DEBUG - orders - No users with open orders for symbol NZDJPY
+2025-07-08 21:52:59,752 - DEBUG - orders - No users with open orders for symbol XAGUSD
+2025-07-08 21:52:59,770 - DEBUG - orders - No users with open orders for symbol SGDJPY
+2025-07-08 21:52:59,770 - DEBUG - orders - No users with open orders for symbol EURPLN
+2025-07-08 21:52:59,771 - DEBUG - orders - No users with open orders for symbol EURSEK
+2025-07-08 21:52:59,771 - DEBUG - orders - No users with open orders for symbol JP225
+2025-07-08 21:52:59,772 - DEBUG - orders - No users with open orders for symbol CADCHF
+2025-07-08 21:52:59,774 - DEBUG - orders - No users with open orders for symbol GBPUSD
+2025-07-08 21:52:59,774 - DEBUG - orders - No users with open orders for symbol CADJPY
+2025-07-08 21:52:59,774 - DEBUG - orders - No users with open orders for symbol USDNOK
+2025-07-08 21:52:59,774 - DEBUG - orders - No users with open orders for symbol EURCAD
+2025-07-08 21:52:59,775 - DEBUG - orders - No users with open orders for symbol USDCHF
+2025-07-08 21:52:59,776 - INFO - orders - Processing SL/TP for symbol AUDCAD with 2 users
+2025-07-08 21:52:59,778 - DEBUG - orders - No users with open orders for symbol AUDUSD
+2025-07-08 21:52:59,778 - DEBUG - orders - No users with open orders for symbol NZDUSD
+2025-07-08 21:52:59,778 - DEBUG - orders - No users with open orders for symbol CHFSGD
+2025-07-08 21:52:59,778 - DEBUG - orders - No users with open orders for symbol EURAUD
+2025-07-08 21:52:59,783 - DEBUG - orders - No users with open orders for symbol EURNOK
+2025-07-08 21:52:59,787 - DEBUG - orders - No users with open orders for symbol D30
+2025-07-08 21:52:59,787 - DEBUG - orders - No users with open orders for symbol GBPNZD
+2025-07-08 21:52:59,787 - DEBUG - orders - No users with open orders for symbol EURCHF
+2025-07-08 21:52:59,791 - DEBUG - orders - No users with open orders for symbol NOKSEK
+2025-07-08 21:52:59,792 - DEBUG - orders - No users with open orders for symbol EURUSD
+2025-07-08 21:52:59,792 - DEBUG - orders - No users with open orders for symbol GBPNOK
+2025-07-08 21:52:59,792 - DEBUG - orders - No users with open orders for symbol NZDCAD
+2025-07-08 21:52:59,793 - DEBUG - orders - No users with open orders for symbol EURGBP
+2025-07-08 21:52:59,793 - DEBUG - orders - No users with open orders for symbol EURJPY
+2025-07-08 21:53:02,091 - INFO - orders - Market data update received for symbols: ['GBPSEK', 'XAGUSD', 'NZDJPY', 'GBPAUD', 'USDJPY', 'USDCNH', 'CADCHF', 'EURNZD', 'USDSGD', 'AUDJPY', 'EURSEK', 'USDCHF', 'EURCAD', 'USDNOK', 'CADJPY', 'USDSEK', 'GBPUSD', 'EURAUD', 'CHFSGD', 'NZDUSD', 'AUDUSD', 'AUDCAD', 'EURNOK', 'GBPNZD', 'EURCHF', 'NZDCAD', 'GBPNOK', 'EURUSD', 'AUDCHF', 'NOKSEK', 'EURSGD', 'USDCAD', 'EURGBP', 'EURJPY'], triggering optimized SL/TP check
+2025-07-08 21:53:02,093 - INFO - orders - Processing SL/TP batch for 34 symbols: ['GBPSEK', 'XAGUSD', 'NZDJPY', 'GBPAUD', 'USDJPY', 'USDCNH', 'CADCHF', 'EURNZD', 'USDSGD', 'AUDJPY', 'EURSEK', 'USDCHF', 'EURCAD', 'USDNOK', 'CADJPY', 'USDSEK', 'GBPUSD', 'EURAUD', 'CHFSGD', 'NZDUSD', 'AUDUSD', 'AUDCAD', 'EURNOK', 'GBPNZD', 'EURCHF', 'NZDCAD', 'GBPNOK', 'EURUSD', 'AUDCHF', 'NOKSEK', 'EURSGD', 'USDCAD', 'EURGBP', 'EURJPY']
+2025-07-08 21:53:02,097 - DEBUG - orders - No users with open orders for symbol GBPAUD
+2025-07-08 21:53:02,097 - DEBUG - orders - No users with open orders for symbol XAGUSD
+2025-07-08 21:53:02,097 - DEBUG - orders - No users with open orders for symbol GBPSEK
+2025-07-08 21:53:02,098 - DEBUG - orders - No users with open orders for symbol USDJPY
+2025-07-08 21:53:02,098 - DEBUG - orders - No users with open orders for symbol NZDJPY
+2025-07-08 21:53:02,113 - DEBUG - orders - No users with open orders for symbol USDSGD
+2025-07-08 21:53:02,115 - DEBUG - orders - No users with open orders for symbol EURNZD
+2025-07-08 21:53:02,116 - DEBUG - orders - No users with open orders for symbol CADCHF
+2025-07-08 21:53:02,116 - DEBUG - orders - No users with open orders for symbol USDCNH
+2025-07-08 21:53:02,117 - INFO - orders - Processing SL/TP for symbol AUDJPY with 1 users
+2025-07-08 21:53:02,121 - DEBUG - orders - No users with open orders for symbol USDNOK
+2025-07-08 21:53:02,121 - DEBUG - orders - No users with open orders for symbol EURCAD
+2025-07-08 21:53:02,122 - DEBUG - orders - No users with open orders for symbol USDCHF
+2025-07-08 21:53:02,122 - DEBUG - orders - No users with open orders for symbol EURSEK
+2025-07-08 21:53:02,124 - DEBUG - orders - No users with open orders for symbol USDSEK
+2025-07-08 21:53:02,124 - DEBUG - orders - No users with open orders for symbol CADJPY
+2025-07-08 21:53:02,124 - DEBUG - orders - No users with open orders for symbol GBPUSD
+2025-07-08 21:53:02,125 - DEBUG - orders - No users with open orders for symbol EURAUD
+2025-07-08 21:53:02,127 - DEBUG - orders - No users with open orders for symbol AUDUSD
+2025-07-08 21:53:02,127 - DEBUG - orders - No users with open orders for symbol NZDUSD
+2025-07-08 21:53:02,127 - DEBUG - orders - No users with open orders for symbol CHFSGD
+2025-07-08 21:53:02,128 - INFO - orders - Processing SL/TP for symbol AUDCAD with 2 users
+2025-07-08 21:53:02,129 - DEBUG - orders - No users with open orders for symbol EURCHF
+2025-07-08 21:53:02,130 - DEBUG - orders - No users with open orders for symbol GBPNZD
+2025-07-08 21:53:02,130 - DEBUG - orders - No users with open orders for symbol EURNOK
+2025-07-08 21:53:02,132 - DEBUG - orders - No users with open orders for symbol EURUSD
+2025-07-08 21:53:02,132 - DEBUG - orders - No users with open orders for symbol GBPNOK
+2025-07-08 21:53:02,132 - DEBUG - orders - No users with open orders for symbol NZDCAD
+2025-07-08 21:53:02,135 - DEBUG - orders - No users with open orders for symbol USDCAD
+2025-07-08 21:53:02,135 - DEBUG - orders - No users with open orders for symbol EURSGD
+2025-07-08 21:53:02,135 - DEBUG - orders - No users with open orders for symbol NOKSEK
+2025-07-08 21:53:02,136 - INFO - orders - Processing SL/TP for symbol AUDCHF with 2 users
+2025-07-08 21:53:02,138 - DEBUG - orders - No users with open orders for symbol EURJPY
+2025-07-08 21:53:02,138 - DEBUG - orders - No users with open orders for symbol EURGBP
+2025-07-08 21:53:02,151 - WARNING - orders - [SLTP_CHECK] Stop loss triggered for SELL order 2312432300 at 0.5214 >= 0.52135000 (diff: 0.00005000, epsilon: 0.00001, reason: exact match)
+2025-07-08 21:53:02,158 - INFO - orders - [MARGIN_TOTAL_CONTRIB] Calculating margin for 2 positions for User 1, Symbol AUDCHF
+2025-07-08 21:53:02,158 - INFO - orders - [MARGIN_TOTAL_CONTRIB_POS] User 1, Symbol AUDCHF, Pos 1 (ID: 677): Type=BUY, Qty=0.01000000, StoredMargin=6.53668574
+2025-07-08 21:53:02,158 - INFO - orders - [MARGIN_TOTAL_CONTRIB_POS] User 1, Symbol AUDCHF, Pos 1: MarginPerLot=653.668574
+2025-07-08 21:53:02,158 - INFO - orders - [MARGIN_TOTAL_CONTRIB_POS] User 1, Symbol AUDCHF, Pos 2 (ID: 678): Type=SELL, Qty=0.01000000, StoredMargin=6.53668574
+2025-07-08 21:53:02,158 - INFO - orders - [MARGIN_TOTAL_CONTRIB_POS] User 1, Symbol AUDCHF, Pos 2: MarginPerLot=653.668574
+2025-07-08 21:53:02,159 - INFO - orders - [MARGIN_TOTAL_CONTRIB_CALC] User 1, Symbol AUDCHF: TotalBuyQty=0.01000000, TotalSellQty=0.01000000, NetQty=0.01000000, IsHedged=True
+2025-07-08 21:53:02,159 - INFO - orders - [MARGIN_TOTAL_CONTRIB_CALC] User 1, Symbol AUDCHF: AllMarginsPerLot=[Decimal('653.668574'), Decimal('653.668574')], HighestMarginPerLot=653.668574
+2025-07-08 21:53:02,159 - INFO - orders - [MARGIN_TOTAL_CONTRIB_EXIT] User 1, Symbol AUDCHF: CalculatedTotalMargin=6.54
+2025-07-08 21:53:02,159 - INFO - orders - [MARGIN_TOTAL_CONTRIB] Calculating margin for 1 positions for User 1, Symbol AUDCHF
+2025-07-08 21:53:02,159 - INFO - orders - [MARGIN_TOTAL_CONTRIB_POS] User 1, Symbol AUDCHF, Pos 1 (ID: 677): Type=BUY, Qty=0.01000000, StoredMargin=6.53668574
+2025-07-08 21:53:02,159 - INFO - orders - [MARGIN_TOTAL_CONTRIB_POS] User 1, Symbol AUDCHF, Pos 1: MarginPerLot=653.668574
+2025-07-08 21:53:02,160 - INFO - orders - [MARGIN_TOTAL_CONTRIB_CALC] User 1, Symbol AUDCHF: TotalBuyQty=0.01000000, TotalSellQty=0, NetQty=0.01000000, IsHedged=False
+2025-07-08 21:53:02,160 - INFO - orders - [MARGIN_TOTAL_CONTRIB_CALC] User 1, Symbol AUDCHF: AllMarginsPerLot=[Decimal('653.668574')], HighestMarginPerLot=653.668574
+2025-07-08 21:53:02,160 - INFO - orders - [MARGIN_TOTAL_CONTRIB_EXIT] User 1, Symbol AUDCHF: CalculatedTotalMargin=6.54
+2025-07-08 21:53:02,164 - INFO - orders - [CURRENCY_CONVERT] Starting conversion of -0.260000000000000000000000 CHF to USD for PnL on Close (user_id: 1, position: 2312432300)
+2025-07-08 21:53:02,164 - INFO - orders - [CURRENCY_CONVERT] Trying direct conversion with symbol: CHFUSD
+2025-07-08 21:53:02,165 - INFO - orders - [CURRENCY_CONVERT] Direct conversion prices from cache: None
+2025-07-08 21:53:02,165 - INFO - orders - [CURRENCY_CONVERT] No direct conversion rate found for CHFUSD, trying inverse
+2025-07-08 21:53:02,165 - INFO - orders - [CURRENCY_CONVERT] Trying inverse conversion with symbol: USDCHF
+2025-07-08 21:53:02,166 - INFO - orders - [CURRENCY_CONVERT] Inverse conversion prices from cache: {'b': Decimal('0.7970400000'), 'o': Decimal('0.7970100000')}
+2025-07-08 21:53:02,166 - INFO - orders - [CURRENCY_CONVERT] Found inverse conversion rate (bid): 0.7970400000
+2025-07-08 21:53:02,167 - INFO - orders - [CURRENCY_CONVERT] Inverse conversion successful: -0.260000000000000000000000 CHF / 0.7970400000 = -0.3262069657733614373180768845 USD
+2025-07-08 21:53:02,218 - INFO - orders - [ORDER_CLOSE] Successfully closed order 2312432300 for user 1
+2025-07-08 21:53:02,220 - INFO - orders - Balance/margin cache updated for user 1: balance=24895.55000000, margin=6.54000000
+2025-07-08 21:53:02,226 - DEBUG - orders - Updated users with orders cache for symbol AUDCHF with 2 users
+2025-07-08 21:53:04,432 - INFO - orders - Market data update received for symbols: ['GBPSEK', 'XAGUSD', 'NZDJPY', 'GBPAUD', 'USDJPY', 'USDCNH', 'EURNZD', 'EURZAR', 'EURSEK', 'EURPLN', 'SGDJPY', 'JP225', 'USDCHF', 'EURCAD', 'USDNOK', 'CADJPY', 'US30', 'GBPUSD', 'EURAUD', 'CHFSGD', 'AUDUSD', 'AUDCAD', 'EURNOK', 'GBPNZD', 'GBPNOK', 'CHFJPY', 'EURUSD', 'NOKSEK', 'EURSGD', 'USDCAD', 'EURGBP', 'EURJPY'], triggering optimized SL/TP check
+2025-07-08 21:53:04,432 - INFO - orders - Processing SL/TP batch for 32 symbols: ['GBPSEK', 'XAGUSD', 'NZDJPY', 'GBPAUD', 'USDJPY', 'USDCNH', 'EURNZD', 'EURZAR', 'EURSEK', 'EURPLN', 'SGDJPY', 'JP225', 'USDCHF', 'EURCAD', 'USDNOK', 'CADJPY', 'US30', 'GBPUSD', 'EURAUD', 'CHFSGD', 'AUDUSD', 'AUDCAD', 'EURNOK', 'GBPNZD', 'GBPNOK', 'CHFJPY', 'EURUSD', 'NOKSEK', 'EURSGD', 'USDCAD', 'EURGBP', 'EURJPY']
+2025-07-08 21:53:04,452 - DEBUG - orders - No users with open orders for symbol USDJPY
+2025-07-08 21:53:04,453 - DEBUG - orders - No users with open orders for symbol NZDJPY
+2025-07-08 21:53:04,455 - DEBUG - orders - No users with open orders for symbol GBPAUD
+2025-07-08 21:53:04,455 - DEBUG - orders - No users with open orders for symbol XAGUSD
+2025-07-08 21:53:04,455 - DEBUG - orders - No users with open orders for symbol GBPSEK
+2025-07-08 21:53:04,458 - DEBUG - orders - No users with open orders for symbol EURPLN
+2025-07-08 21:53:04,459 - DEBUG - orders - No users with open orders for symbol EURSEK
+2025-07-08 21:53:04,459 - DEBUG - orders - No users with open orders for symbol EURZAR
+2025-07-08 21:53:04,459 - DEBUG - orders - No users with open orders for symbol EURNZD
+2025-07-08 21:53:04,459 - DEBUG - orders - No users with open orders for symbol USDCNH
+2025-07-08 21:53:04,461 - DEBUG - orders - No users with open orders for symbol USDNOK
+2025-07-08 21:53:04,461 - DEBUG - orders - No users with open orders for symbol EURCAD
+2025-07-08 21:53:04,461 - DEBUG - orders - No users with open orders for symbol USDCHF
+2025-07-08 21:53:04,461 - DEBUG - orders - No users with open orders for symbol JP225
+2025-07-08 21:53:04,461 - DEBUG - orders - No users with open orders for symbol SGDJPY
+2025-07-08 21:53:04,463 - DEBUG - orders - No users with open orders for symbol CHFSGD
+2025-07-08 21:53:04,464 - DEBUG - orders - No users with open orders for symbol EURAUD
+2025-07-08 21:53:04,464 - DEBUG - orders - No users with open orders for symbol GBPUSD
+2025-07-08 21:53:04,464 - DEBUG - orders - No users with open orders for symbol US30
+2025-07-08 21:53:04,464 - DEBUG - orders - No users with open orders for symbol CADJPY
+2025-07-08 21:53:04,465 - DEBUG - orders - No users with open orders for symbol GBPNOK
+2025-07-08 21:53:04,466 - DEBUG - orders - No users with open orders for symbol GBPNZD
+2025-07-08 21:53:04,466 - DEBUG - orders - No users with open orders for symbol EURNOK
+2025-07-08 21:53:04,466 - INFO - orders - Processing SL/TP for symbol AUDCAD with 2 users
+2025-07-08 21:53:04,467 - DEBUG - orders - No users with open orders for symbol AUDUSD
+2025-07-08 21:53:04,470 - DEBUG - orders - No users with open orders for symbol EURSGD
+2025-07-08 21:53:04,470 - DEBUG - orders - No users with open orders for symbol NOKSEK
+2025-07-08 21:53:04,470 - DEBUG - orders - No users with open orders for symbol EURUSD
+2025-07-08 21:53:04,470 - DEBUG - orders - No users with open orders for symbol CHFJPY
+2025-07-08 21:53:04,473 - DEBUG - orders - No users with open orders for symbol EURJPY
+2025-07-08 21:53:04,473 - DEBUG - orders - No users with open orders for symbol EURGBP
+2025-07-08 21:53:04,473 - DEBUG - orders - No users with open orders for symbol USDCAD
+2025-07-08 21:53:06,685 - INFO - orders - Market data update received for symbols: ['GBPSEK', 'XAGUSD', 'NZDJPY', 'GBPAUD', 'USDJPY', 'CADCHF', 'EURNZD', 'USDSGD', 'AUDJPY', 'EURSEK', 'SGDJPY', 'EURCAD', 'USDCZK', 'GBPUSD', 'EURAUD', 'CHFSGD', 'AUDUSD', 'AUDCAD', 'EURNOK', 'GBPNZD', 'EURCHF', 'NZDCAD', 'GBPNOK', 'CHFJPY', 'EURUSD', 'AUDCHF', 'NOKSEK', 'EURSGD', 'EURGBP', 'EURJPY'], triggering optimized SL/TP check
+2025-07-08 21:53:06,685 - INFO - orders - Processing SL/TP batch for 30 symbols: ['GBPSEK', 'XAGUSD', 'NZDJPY', 'GBPAUD', 'USDJPY', 'CADCHF', 'EURNZD', 'USDSGD', 'AUDJPY', 'EURSEK', 'SGDJPY', 'EURCAD', 'USDCZK', 'GBPUSD', 'EURAUD', 'CHFSGD', 'AUDUSD', 'AUDCAD', 'EURNOK', 'GBPNZD', 'EURCHF', 'NZDCAD', 'GBPNOK', 'CHFJPY', 'EURUSD', 'AUDCHF', 'NOKSEK', 'EURSGD', 'EURGBP', 'EURJPY']
+2025-07-08 21:53:06,688 - DEBUG - orders - No users with open orders for symbol USDJPY
+2025-07-08 21:53:06,689 - DEBUG - orders - No users with open orders for symbol GBPAUD
+2025-07-08 21:53:06,689 - DEBUG - orders - No users with open orders for symbol NZDJPY
+2025-07-08 21:53:06,689 - DEBUG - orders - No users with open orders for symbol XAGUSD
+2025-07-08 21:53:06,689 - DEBUG - orders - No users with open orders for symbol GBPSEK
+2025-07-08 21:53:06,695 - DEBUG - orders - No users with open orders for symbol EURSEK
+2025-07-08 21:53:06,696 - INFO - orders - Processing SL/TP for symbol AUDJPY with 1 users
+2025-07-08 21:53:06,697 - DEBUG - orders - No users with open orders for symbol USDSGD
+2025-07-08 21:53:06,697 - DEBUG - orders - No users with open orders for symbol EURNZD
+2025-07-08 21:53:06,698 - DEBUG - orders - No users with open orders for symbol CADCHF
+2025-07-08 21:53:06,710 - DEBUG - orders - No users with open orders for symbol USDCZK
+2025-07-08 21:53:06,710 - DEBUG - orders - No users with open orders for symbol EURCAD
+2025-07-08 21:53:06,710 - DEBUG - orders - No users with open orders for symbol SGDJPY
+2025-07-08 21:53:06,710 - DEBUG - orders - No users with open orders for symbol GBPUSD
+2025-07-08 21:53:06,718 - DEBUG - orders - No users with open orders for symbol EURAUD
+2025-07-08 21:53:06,718 - INFO - orders - Processing SL/TP for symbol AUDCAD with 2 users
+2025-07-08 21:53:06,719 - DEBUG - orders - No users with open orders for symbol AUDUSD
+2025-07-08 21:53:06,720 - DEBUG - orders - No users with open orders for symbol CHFSGD
+2025-07-08 21:53:06,722 - DEBUG - orders - No users with open orders for symbol GBPNZD
+2025-07-08 21:53:06,722 - DEBUG - orders - No users with open orders for symbol EURNOK
+2025-07-08 21:53:06,723 - DEBUG - orders - No users with open orders for symbol EURCHF
+2025-07-08 21:53:06,726 - DEBUG - orders - No users with open orders for symbol GBPNOK
+2025-07-08 21:53:06,726 - DEBUG - orders - No users with open orders for symbol NZDCAD
+2025-07-08 21:53:06,728 - DEBUG - orders - No users with open orders for symbol CHFJPY
+2025-07-08 21:53:06,728 - INFO - orders - Processing SL/TP for symbol AUDCHF with 2 users
+2025-07-08 21:53:06,730 - DEBUG - orders - No users with open orders for symbol EURUSD
+2025-07-08 21:53:06,730 - DEBUG - orders - No users with open orders for symbol NOKSEK
+2025-07-08 21:53:06,731 - DEBUG - orders - No users with open orders for symbol EURSGD
+2025-07-08 21:53:06,732 - DEBUG - orders - No users with open orders for symbol EURGBP
+2025-07-08 21:53:06,732 - DEBUG - orders - No users with open orders for symbol EURJPY
+2025-07-08 21:53:08,955 - INFO - orders - Market data update received for symbols: ['GBPSEK', 'XAGUSD', 'NZDJPY', 'GBPAUD', 'USDCNH', 'CADCHF', 'EURNZD', 'USDSGD', 'EURZAR', 'AUDJPY', 'EURSEK', 'EURPLN', 'SGDJPY', 'JP225', 'USDCHF', 'USDNOK', 'CADJPY', 'GBPUSD', 'EURAUD', 'CHFSGD', 'NZDUSD', 'AUDUSD', 'AUDCAD', 'EURNOK', 'GBPNZD', 'EURCHF', 'NZDCAD', 'GBPNOK', 'CHFJPY', 'EURUSD', 'NOKSEK', 'EURJPY'], triggering optimized SL/TP check
+2025-07-08 21:53:08,955 - INFO - orders - Processing SL/TP batch for 32 symbols: ['GBPSEK', 'XAGUSD', 'NZDJPY', 'GBPAUD', 'USDCNH', 'CADCHF', 'EURNZD', 'USDSGD', 'EURZAR', 'AUDJPY', 'EURSEK', 'EURPLN', 'SGDJPY', 'JP225', 'USDCHF', 'USDNOK', 'CADJPY', 'GBPUSD', 'EURAUD', 'CHFSGD', 'NZDUSD', 'AUDUSD', 'AUDCAD', 'EURNOK', 'GBPNZD', 'EURCHF', 'NZDCAD', 'GBPNOK', 'CHFJPY', 'EURUSD', 'NOKSEK', 'EURJPY']
+2025-07-08 21:53:08,965 - DEBUG - orders - No users with open orders for symbol NZDJPY
+2025-07-08 21:53:08,965 - DEBUG - orders - No users with open orders for symbol GBPSEK
+2025-07-08 21:53:08,965 - DEBUG - orders - No users with open orders for symbol GBPAUD
+2025-07-08 21:53:08,966 - DEBUG - orders - No users with open orders for symbol USDCNH
+2025-07-08 21:53:08,966 - DEBUG - orders - No users with open orders for symbol XAGUSD
+2025-07-08 21:53:08,980 - INFO - orders - Processing SL/TP for symbol AUDJPY with 1 users
+2025-07-08 21:53:08,981 - DEBUG - orders - No users with open orders for symbol EURZAR
+2025-07-08 21:53:08,981 - DEBUG - orders - No users with open orders for symbol USDSGD
+2025-07-08 21:53:08,982 - DEBUG - orders - No users with open orders for symbol EURNZD
+2025-07-08 21:53:08,982 - DEBUG - orders - No users with open orders for symbol CADCHF
+2025-07-08 21:53:08,987 - DEBUG - orders - No users with open orders for symbol JP225
+2025-07-08 21:53:08,988 - DEBUG - orders - No users with open orders for symbol SGDJPY
+2025-07-08 21:53:08,988 - DEBUG - orders - No users with open orders for symbol EURPLN
+2025-07-08 21:53:08,989 - DEBUG - orders - No users with open orders for symbol EURSEK
+2025-07-08 21:53:08,991 - DEBUG - orders - No users with open orders for symbol USDNOK
+2025-07-08 21:53:08,991 - DEBUG - orders - No users with open orders for symbol USDCHF
+2025-07-08 21:53:08,991 - DEBUG - orders - No users with open orders for symbol GBPUSD
+2025-07-08 21:53:08,991 - DEBUG - orders - No users with open orders for symbol CADJPY
+2025-07-08 21:53:08,993 - DEBUG - orders - No users with open orders for symbol AUDUSD
+2025-07-08 21:53:08,993 - DEBUG - orders - No users with open orders for symbol NZDUSD
+2025-07-08 21:53:08,994 - DEBUG - orders - No users with open orders for symbol CHFSGD
+2025-07-08 21:53:08,994 - DEBUG - orders - No users with open orders for symbol EURAUD
+2025-07-08 21:53:08,997 - DEBUG - orders - No users with open orders for symbol EURCHF
+2025-07-08 21:53:08,997 - DEBUG - orders - No users with open orders for symbol GBPNZD
+2025-07-08 21:53:08,997 - DEBUG - orders - No users with open orders for symbol EURNOK
+2025-07-08 21:53:08,997 - INFO - orders - Processing SL/TP for symbol AUDCAD with 2 users
+2025-07-08 21:53:08,999 - DEBUG - orders - No users with open orders for symbol GBPNOK
+2025-07-08 21:53:09,000 - DEBUG - orders - No users with open orders for symbol NZDCAD
+2025-07-08 21:53:09,000 - DEBUG - orders - No users with open orders for symbol CHFJPY
+2025-07-08 21:53:09,001 - DEBUG - orders - No users with open orders for symbol EURUSD
+2025-07-08 21:53:09,002 - DEBUG - orders - No users with open orders for symbol NOKSEK
+2025-07-08 21:53:09,004 - DEBUG - orders - No users with open orders for symbol EURJPY
+2025-07-08 21:53:22,224 - INFO - orders - Application starting up - Orders logging initialized
+2025-07-08 21:53:22,224 - INFO - orders - SL/TP Epsilon accuracy configured: 0.00001
+2025-07-08 21:53:31,365 - INFO - orders - Starting the pending order checker background task.
+2025-07-08 21:53:31,368 - INFO - orders - Starting the SL/TP checker task (triggered by market updates).
+2025-07-08 21:53:34,524 - INFO - orders - Market data update received, triggering SL/TP check
+2025-07-08 21:53:38,851 - INFO - orders - Market data update received, triggering SL/TP check
+2025-07-08 21:53:41,013 - INFO - orders - Market data update received, triggering SL/TP check
+2025-07-08 21:53:41,091 - INFO - orders - Market data update received, triggering SL/TP check
+2025-07-08 21:53:41,163 - INFO - orders - Market data update received, triggering SL/TP check
+2025-07-08 21:53:41,301 - INFO - orders - Market data update received, triggering SL/TP check
+2025-07-08 21:53:43,545 - INFO - orders - Market data update received, triggering SL/TP check
+2025-07-08 21:53:45,906 - INFO - orders - Market data update received, triggering SL/TP check
+2025-07-08 21:53:50,166 - INFO - orders - Market data update received, triggering SL/TP check
+2025-07-08 21:53:50,524 - INFO - orders - Market data update received, triggering SL/TP check
+2025-07-08 21:53:52,776 - INFO - orders - Market data update received, triggering SL/TP check
+2025-07-08 21:53:55,127 - INFO - orders - Market data update received, triggering SL/TP check
+2025-07-08 21:53:57,380 - INFO - orders - Market data update received, triggering SL/TP check
+2025-07-08 21:53:59,721 - INFO - orders - Market data update received, triggering SL/TP check
+2025-07-08 21:54:02,088 - INFO - orders - Market data update received, triggering SL/TP check
+2025-07-08 21:54:04,350 - INFO - orders - Market data update received, triggering SL/TP check
+2025-07-08 21:54:06,691 - INFO - orders - Market data update received, triggering SL/TP check
+2025-07-08 21:54:08,978 - INFO - orders - Market data update received, triggering SL/TP check
+2025-07-08 21:54:11,298 - INFO - orders - Market data update received, triggering SL/TP check
+2025-07-08 21:54:13,654 - INFO - orders - Market data update received, triggering SL/TP check
+2025-07-08 21:54:15,919 - INFO - orders - Market data update received, triggering SL/TP check
+2025-07-08 21:54:18,193 - INFO - orders - Market data update received, triggering SL/TP check

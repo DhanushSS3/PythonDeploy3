@@ -61,6 +61,7 @@ from app.services.portfolio_calculator import calculate_user_portfolio
 # Import the Symbol and ExternalSymbolInfo models
 from app.database.models import Symbol, ExternalSymbolInfo, User, DemoUser # Import User/DemoUser for type hints
 from sqlalchemy.future import select
+from app.services.pending_orders import process_order_stoploss_takeprofit
 from app.crud.crud_order import get_all_open_orders_by_user_id, get_order_model
 from app.database.models import UserOrder, DemoUserOrder
 
